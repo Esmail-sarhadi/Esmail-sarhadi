@@ -14,7 +14,7 @@
   <h3>🚀 IoT Innovator | Embedded Systems Expert | Tech Entrepreneur</h3>
 </div>
 
-<p align="center">
+<p align="left">
   <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Visitors" />
 </p>
 
