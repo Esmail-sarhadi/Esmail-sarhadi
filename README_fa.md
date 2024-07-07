@@ -85,7 +85,7 @@
 
 ---
 
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="80" alt="ارتباط"> بیایید متصل شویم
+### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="80" alt="راه های ارتباطی ">   
 
 <p align="center">
   <a href="mailto:your.email@example.com">
