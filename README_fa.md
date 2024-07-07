@@ -14,7 +14,7 @@
 </div>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=بازدیدکنندگان&color=blueviolet&style=for-the-badge" alt="بازدیدکنندگان پروفایل" />
+  <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Visitors" />
 </p>
 
 ---
