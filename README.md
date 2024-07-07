@@ -55,7 +55,7 @@
   <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" width="80" alt="C++"/>
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnN5dzgybmZ4dDR4eG9kb3lnaWd2Nml4ZXZib2VybW5yemQ1NTNlNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif" width="80" alt="C"/>
   <img src="https://media.giphy.com/media/mFDWuDppjQJjite6FS/giphy.gif" width="80" alt="Arduino"/>
-  <img src="https://media.giphy.com/media/V8y1y1FzxDETVUtQE4/giphy.gif" width="80" alt="[Raspberry Pi](https://media.giphy.com/media/mFDWuDppjQJjite6FS/giphy.gif?cid=790b7611bqrd5wqnf7d6kuszspfe5xa2t02zmucalzz5d0el&ep=v1_gifs_search&rid=giphy.gif&ct=g)"/>
+  <img src="https://media.giphy.com/media/V8y1y1FzxDETVUtQE4/giphy.gif" width="80" alt="[Raspberry Pi]"/>
   <img src="https://media.giphy.com/media/4N5vB4aErlVtVsywBw/giphy.gif" width="80" alt="Linux"/>
   <img src="https://media.giphy.com/media/5npF1VbvR3BSYsHDX2/giphy.gif" width="80" alt="MATLAB"/>
   <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="80" alt="Git"/>
