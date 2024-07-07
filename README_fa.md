@@ -14,46 +14,45 @@
   <h3>🚀 نوآور اینترنت اشیاء | متخصص سیستم‌های جاسازی شده | کارآفرین فناوری</h3>
 </div>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=بازدیدهای%20پروفایل&color=blueviolet&style=for-the-badge" alt="بازدیدکنندگان پروفایل" />
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Visitors" />
 </p>
 
----
 
-### <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzh6eGF1aWRyYTEycnprdDU1cjFwMGZjeHh1ZW15bDlmaDQ5N3JtYSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/fAbbq1tF99d0uiizsr/giphy.gif" width="80" alt="درباره من"> درباره من
+### <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzh6eGF1aWRyYTEycnprdDU1cjFwMGZjeHh1ZW15bDlmaDQ5N3JtYSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/fAbbq1tF99d0uiizsr/giphy.gif" width="40" alt="درباره من"> درباره من
+<div align="right">
 
-
-- 🎓 **تحصیلات:**
+🎓 **تحصیلات:**
   <img src="https://media.giphy.com/media/l0He4nkyI5cMhXzvW/giphy.gif" width="40" alt="دنیای اینترنت اشیاء">
   - کارشناسی مهندسی کامپیوتر، دانشگاه سیستان و بلوچستان
   - تمرکز بر اینترنت اشیاء و سیستم‌های هوشمند
 
-- 💼 **تجربه حرفه‌ای:**
+ 💼 **تجربه حرفه‌ای:**
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnNwN3IybnprMG1qcmJwYWZuNXczc25rejZkZjg0M2dneXB3cXZlcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fha1cv4Le2lVRXXJsc/giphy.gif" width="40" alt="برنامه‌نویسی لینوکس">
   - مدیرعامل سابق یک شرکت راهکارهای هوشمند و اینترنت اشیاء
   - هدایت پروژه‌های نوآورانه در فناوری هوشمند
     
-- 🔭 **تمرکز فعلی:**
+  🔭 **تمرکز فعلی:**
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmphd3MydDRtOTRjZ2NieHd5dXk1aHpnNWd4cHc4c2RhMHh4amFlNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UDclWKlmfmq7twI3iJ/giphy.gif" width="40" alt="برنامه‌نویسی">
   - کار بر روی پروژه‌های هیجان‌انگیز اینترنت اشیاء
   - کاوش در فناوری‌های پیشرفته سیستم‌های هوشمند
 
-- 🌱 **یادگیری مداوم:**
+ 🌱 **یادگیری مداوم:**
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjJncXE3eHRqaWVjcWFrYXhpc3B0OXJqYXZpenRxeGtqMXI4amlpNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="40" alt="برنامه‌نویسی">
   - همواره در حال کشف فناوری‌ها و روش‌های جدید
   - مشتاق ماندن در خط مقدم نوآوری فناوری
 
-- 💡 **حل مسئله:**
+ 💡 **حل مسئله:**
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzViaXlra3JkZTd1dG55eGZzc2Eya20yd2k4MndkdXduOW4xc2d1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QDjpIL6oNCVZ4qzGs7/giphy.gif" width="40" alt="برنامه‌نویسی">
   - رویکرد خلاقانه به چالش‌های پیچیده فنی
   - ترکیب اینترنت اشیاء با هوش مصنوعی برای راهکارهای نوآورانه
 
-- 🤝 **همکاری:**
+ 🤝 **همکاری:**
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTM0NDc3MGFwM2hudmVqeGVuMW9tZGpzcmRtZGg5cjR4OWQ1bHZ4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2R0flMBPtMGU0wbm/giphy.gif" width="40" alt="تصویر متحرک حلقه‌ای">
   - مشتاق همکاری در پروژه‌های پیشگامانه اینترنت اشیاء
   - آماده شبکه‌سازی با علاقه‌مندان به فناوری
+</div>
 
----
 
 ### <img src="https://i.pinimg.com/originals/19/51/12/19511217715fbb1a635d021fc1117342.gif" width="20" alt="مهارت‌ها"> مهارت‌ها و تخصص‌ها
 
@@ -90,7 +89,7 @@
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjd5aWc3MGt2aWNmYWJpbzVobmN6dGwybDRzNzZ1MmJlbW94NzFieCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bAQH7WXKqtIBrPs7sR/giphy.gif" width="650" alt="فریلنسر">
 </div>
 <p align="center">
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:sarhadiesmail@gmail.com">
     <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" height="40"/>
   </a>
   <a href="https://linkedin.com/in/yourusername">
@@ -108,7 +107,7 @@
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWxlMmxraW1pcWR4cXY1dGVxYmc2NDhnOGl0d2M4NG96dmE0M3B0eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zXmbOaTpbY6mA/giphy.gif" width="400" alt="Matrix">
 </div>
 
-<h3 align="left">نوآوری در آینده، با هر دستگاه هوشمند به‌طور گام به گام 🌍✨</h3>
+<h3 align="right">نوآوری در آینده، با هر دستگاه هوشمند به‌طور گام به گام 🌍✨</h3>
 
 ---
 
