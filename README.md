@@ -127,7 +127,6 @@
 <h3 align="center">Innovating the Future, One Smart Device at a Time 🌍✨</h3>
 
 ---
-<h3 align="left">Will you buy me a coffee?</h3>
 <a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&source=lk_donation&medium=referral" target="_blank">
    <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
 </a>
