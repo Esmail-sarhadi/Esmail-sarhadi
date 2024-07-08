@@ -13,12 +13,26 @@
   <h1>👨‍💻 سلام دنیا! من اسماعیل سرحدی هستم 🌟</h1>
   <h3>🚀 نوآور اینترنت اشیاء | متخصص سیستم‌های جاسازی شده | کارآفرین فناوری</h3>
 </div>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=esmail-sarhadi" alt="esmail-sarhadi" /></a> </p>
+
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Visitors" />
 </p>
 
+</p>
 
+<h3 align="right">زبان ها و ابزار ها : </h3>
+
+<p align="center"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://hadoop.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
+
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=esmail-sarhadi&show_icons=true&locale=en&layout=compact" alt="esmail-sarhadi" /></p>
+
+
+
+
+---
 ### <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzh6eGF1aWRyYTEycnprdDU1cjFwMGZjeHh1ZW15bDlmaDQ5N3JtYSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/fAbbq1tF99d0uiizsr/giphy.gif" width="40" alt="درباره من"> درباره من
 <div align="right">
 
