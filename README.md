@@ -133,6 +133,7 @@
 
 
 ---
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/0*G3Jb-PHGOrWiG3oS.gif" width="800" alt="IoT Poster 2">
-</div>
+
+<p align="center">
+ <img width="1000" src="assets/github-snake.svg" alt="snake"/>
+</p>
