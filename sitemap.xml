@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://esmail-sarhadi.github.io/Esmail-sarhadi/index.html</loc>
+    <xhtml:link 
+             rel="alternate"
+             hreflang="fa"
+             href="https://esmail-sarhadi.github.io/Esmail-sarhadi/index_fa.html"/>
+    <lastmod>2024-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://esmail-sarhadi.github.io/Esmail-sarhadi/index_fa.html</loc>
+    <xhtml:link 
+             rel="alternate"
+             hreflang="en"
+             href="https://esmail-sarhadi.github.io/Esmail-sarhadi/index.html"/>
+    <lastmod>2024-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
