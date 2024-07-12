@@ -33,6 +33,7 @@
 </p>
 
 
+
 ---
 ### <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzh6eGF1aWRyYTEycnprdDU1cjFwMGZjeHh1ZW15bDlmaDQ5N3JtYSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/fAbbq1tF99d0uiizsr/giphy.gif" width="80" alt="About Me"> About Me
 
@@ -47,6 +48,7 @@
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnNwN3IybnprMG1qcmJwYWZuNXczc25rejZkZjg0M2dneXB3cXZlcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fha1cv4Le2lVRXXJsc/giphy.gif" width="40" alt="Coding Linux">
   - Former CEO of an IoT and Smart Solutions company
   - Led innovative projects in smart technology
+
     
 - 🔭 **Current Focus:**
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmphd3MydDRtOTRjZ2NieHd5dXk1aHpnNWd4cHc4c2RhMHh4amFlNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UDclWKlmfmq7twI3iJ/giphy.gif" width="40" alt="Coding">
