@@ -95,6 +95,42 @@
             opacity: 0.6;
             animation: rain 3s linear infinite;
         }
+        .lang-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .lang-btn {
+            padding: 10px;
+            background: var(--panel-bg);
+            border: 2px solid var(--cyber-green);
+            color: var(--cyber-green);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.1);
+        }
+        
+        .lang-btn img {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: var(--cyber-green);
+            box-shadow: 0 0 20px var(--shadow-green), inset 0 0 15px rgba(0, 255, 65, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        .lang-btn:hover img {
+            transform: scale(1.2);
+        }
 
         @keyframes rain {
             from {
