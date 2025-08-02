@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/1.jpg" type="image/jpeg">
-    <meta name="google-site-verification" content="vqq11CWNVkLVnZvjCeZReKc8-FRmgxek2SOWjr35CbY" />
-    <link rel="alternate" hreflang="fa" href="https://esmail-sarhadi.github.io/Esmail-sarhadi/index_fa.html" />
-    <link rel="alternate" hreflang="en" href="https://esmail-sarhadi.github.io/Esmail-sarhadi/index.html" />
-    <title>اسماعیل سرحدی - نوآور اینترنت اشیاء و متخصص سیستم‌های جاسازی شده</title>
-    <meta name="description" content="اسماعیل سرحدی، نوآور در زمینه اینترنت اشیاء و متخصص سیستم‌های جاسازی شده، با تخصص در راهکارهای فناوری هوشمند و پروژه‌های نوآورانه IoT.">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>اسماعیل سرحدی - کاشف کهکشان فناوری</title>
+    <meta name="description" content="اسماعیل سرحدی - کاشف کهکشان IoT و معمار سیستم‌های هوشمند">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -18,169 +15,363 @@
         }
 
         :root {
-            --primary-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            --secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            --neon-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
-            --dark-bg: #0f172a;
-            --darker-bg: #020617;
-            --card-bg: rgba(30, 41, 59, 0.6);
-            --text-light: #f8fafc;
-            --text-secondary: #cbd5e1;
-            --text-accent: #00d2ff;
-            --border-color: rgba(100, 116, 139, 0.2);
+            /* Galaxy Colors */
+            --cosmic-black: #000000;
+            --deep-space: #0a0a0f;
+            --nebula-blue: #1e3a8a;
+            --nebula-purple: #7c3aed;
+            --star-white: #ffffff;
+            --cosmic-orange: #fb923c;
+            --plasma-pink: #ec4899;
+            --stellar-yellow: #fbbf24;
+            --cosmic-red: #dc2626;
+            --galaxy-cyan: #06b6d4;
+            
+            /* Text Colors */
+            --text-bright: #f8fafc;
+            --text-dim: #cbd5e1;
+            --text-faint: #64748b;
         }
 
         body {
-            font-family: 'Vazirmatn', Arial, sans-serif;
-            background: var(--dark-bg);
-            color: var(--text-light);
-            line-height: 1.6;
+            font-family: 'Vazirmatn', 'Orbitron', monospace;
+            background: var(--cosmic-black);
+            color: var(--text-bright);
             overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
         }
 
-        /* Animated Background */
-        .bg-animation {
+        /* Galaxy Background */
+        .galaxy-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #475569);
-            background-size: 400% 400%;
-            animation: gradientShift 20s ease infinite;
+            background: radial-gradient(ellipse at center, 
+                var(--deep-space) 0%, 
+                var(--cosmic-black) 50%, 
+                var(--cosmic-black) 100%);
         }
 
-        .bg-animation::before {
-            content: '';
+        /* Spiral Galaxy */
+        .spiral-galaxy {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 20%, rgba(0, 210, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 60%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+            top: 50%;
+            left: 50%;
+            width: 1200px;
+            height: 1200px;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: galaxy-rotation 120s linear infinite;
+            opacity: 0.6;
         }
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        @keyframes galaxy-rotation {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .spiral-arm {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            width: 600px;
+            height: 4px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                var(--nebula-blue) 20%, 
+                var(--nebula-purple) 40%, 
+                var(--cosmic-orange) 60%, 
+                var(--stellar-yellow) 80%, 
+                transparent 100%);
+            border-radius: 2px;
+            box-shadow: 0 0 20px var(--nebula-blue);
+        }
+
+        .spiral-arm:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg); }
+        .spiral-arm:nth-child(2) { transform: translate(-50%, -50%) rotate(60deg); }
+        .spiral-arm:nth-child(3) { transform: translate(-50%, -50%) rotate(120deg); }
+        .spiral-arm:nth-child(4) { transform: translate(-50%, -50%) rotate(180deg); }
+        .spiral-arm:nth-child(5) { transform: translate(-50%, -50%) rotate(240deg); }
+        .spiral-arm:nth-child(6) { transform: translate(-50%, -50%) rotate(300deg); }
+
+        /* Galaxy Core */
+        .galaxy-core {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, 
+                var(--stellar-yellow) 0%, 
+                var(--cosmic-orange) 30%, 
+                var(--cosmic-red) 60%, 
+                transparent 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 50px var(--stellar-yellow);
+            animation: core-pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes core-pulse {
+            0%, 100% { 
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+            50% { 
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        /* Cosmic Stars */
+        .stars-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            background: var(--star-white);
+            border-radius: 50%;
+            animation: star-twinkle 3s ease-in-out infinite;
+        }
+
+        @keyframes star-twinkle {
+            0%, 100% { 
+                opacity: 0.3; 
+                transform: scale(0.5);
+                box-shadow: 0 0 4px var(--star-white);
+            }
+            50% { 
+                opacity: 1; 
+                transform: scale(1);
+                box-shadow: 0 0 12px var(--star-white);
+            }
+        }
+
+        /* Nebula Clouds */
+        .nebula {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: nebula-drift 60s ease-in-out infinite;
+        }
+
+        @keyframes nebula-drift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(20px, -30px) scale(1.1); }
+            50% { transform: translate(-20px, 20px) scale(0.9); }
+            75% { transform: translate(30px, 10px) scale(1.05); }
+        }
+
+        /* Cosmic Particles */
+        .cosmic-particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--galaxy-cyan);
+            border-radius: 50%;
+            animation: particle-float 8s linear infinite;
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) translateX(50px);
+                opacity: 0;
+            }
         }
 
         /* Navigation */
-        .navbar {
+        .nav-cosmos {
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 20px 50px;
-            background: rgba(10, 10, 10, 0.9);
+            padding: 20px 0;
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.8) 0%, 
+                rgba(30, 58, 138, 0.3) 50%, 
+                rgba(0, 0, 0, 0.8) 100%);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(251, 146, 60, 0.3);
             z-index: 1000;
-            transition: all 0.3s ease;
         }
 
         .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: var(--accent-gradient);
+        .cosmic-logo {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, 
+                var(--stellar-yellow), 
+                var(--cosmic-orange), 
+                var(--plasma-pink));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-shadow: 0 0 20px var(--cosmic-orange);
         }
 
-        .lang-switcher {
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            color: var(--text-bright);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(251, 146, 60, 0.3), 
+                transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-link:hover::before {
+            left: 100%;
+        }
+
+        .nav-link:hover {
+            border-color: var(--cosmic-orange);
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            color: var(--cosmic-orange);
+        }
+
+        .lang-selector {
             display: flex;
             gap: 15px;
-            align-items: center;
         }
 
         .lang-btn {
+            padding: 8px 16px;
+            background: rgba(30, 58, 138, 0.3);
+            border: 1px solid var(--galaxy-cyan);
+            border-radius: 20px;
+            color: var(--text-bright);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
             gap: 8px;
-            padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 25px;
-            text-decoration: none;
-            color: var(--text-light);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
         }
 
         .lang-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.3);
+            background: rgba(6, 182, 212, 0.2);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
         }
 
         /* Hero Section */
-        .hero {
+        .hero-cosmos {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 100px 20px 50px;
+            padding: 100px 40px 40px;
             position: relative;
         }
 
+        .hero-grid {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
         .hero-content {
-            max-width: 800px;
             z-index: 2;
         }
 
-        .hero-title {
+        .cosmic-title {
+            font-family: 'Orbitron', monospace;
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
-            margin-bottom: 20px;
-            background: var(--primary-gradient);
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, 
+                var(--star-white) 0%,
+                var(--stellar-yellow) 25%,
+                var(--cosmic-orange) 50%,
+                var(--plasma-pink) 75%,
+                var(--nebula-purple) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: fadeInUp 1s ease;
+            background-size: 300% 300%;
+            animation: cosmic-flow 6s ease-in-out infinite;
+            text-shadow: 0 0 30px rgba(251, 146, 60, 0.5);
+        }
+
+        @keyframes cosmic-flow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
 
         .hero-subtitle {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            margin-bottom: 30px;
-            color: var(--text-secondary);
-            animation: fadeInUp 1s ease 0.2s both;
+            font-size: 1.4rem;
+            color: var(--galaxy-cyan);
+            margin-bottom: 20px;
+            font-weight: 600;
         }
 
         .hero-description {
             font-size: 1.1rem;
+            color: var(--text-dim);
+            line-height: 1.8;
             margin-bottom: 40px;
-            color: var(--text-secondary);
-            animation: fadeInUp 1s ease 0.4s both;
         }
 
-        .cta-buttons {
+        .cosmic-buttons {
             display: flex;
             gap: 20px;
-            justify-content: center;
             flex-wrap: wrap;
-            animation: fadeInUp 1s ease 0.6s both;
         }
 
-        .btn {
+        .cosmic-btn {
             padding: 15px 30px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
+            border: 2px solid;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 700;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -190,108 +381,235 @@
             overflow: hidden;
         }
 
-        .btn-primary {
-            background: var(--accent-gradient);
-            color: white;
+        .cosmic-btn-primary {
+            background: linear-gradient(45deg, var(--cosmic-orange), var(--plasma-pink));
+            border-color: var(--cosmic-orange);
+            color: var(--star-white);
         }
 
-        .btn-secondary {
+        .cosmic-btn-secondary {
             background: transparent;
-            color: var(--text-light);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-color: var(--galaxy-cyan);
+            color: var(--galaxy-cyan);
         }
 
-        .btn:hover {
+        .cosmic-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 242, 254, 0.4);
+            box-shadow: 0 10px 30px rgba(251, 146, 60, 0.4);
         }
 
-        /* Floating Elements */
-        .floating-elements {
+        .cosmic-btn-secondary:hover {
+            background: rgba(6, 182, 212, 0.1);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.4);
+        }
+
+        /* Avatar Section */
+        .avatar-cosmos {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar-orbit {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .avatar-ring {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            pointer-events: none;
+            border: 2px solid;
+            border-radius: 50%;
+            animation: ring-rotation 10s linear infinite;
         }
 
-        .floating-icon {
+        .avatar-ring:nth-child(1) {
+            width: 320px;
+            height: 320px;
+            border-color: var(--cosmic-orange);
+            top: -10px;
+            left: -10px;
+            animation-duration: 15s;
+        }
+
+        .avatar-ring:nth-child(2) {
+            width: 350px;
+            height: 350px;
+            border-color: var(--galaxy-cyan);
+            top: -25px;
+            left: -25px;
+            animation-duration: 20s;
+            animation-direction: reverse;
+        }
+
+        .avatar-ring:nth-child(3) {
+            width: 380px;
+            height: 380px;
+            border-color: var(--plasma-pink);
+            top: -40px;
+            left: -40px;
+            animation-duration: 25s;
+        }
+
+        @keyframes ring-rotation {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .avatar-image {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 4px solid var(--stellar-yellow);
+            box-shadow: 0 0 50px var(--cosmic-orange);
+            position: relative;
+            z-index: 2;
+            animation: avatar-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes avatar-glow {
+            0%, 100% { 
+                box-shadow: 0 0 30px var(--cosmic-orange);
+            }
+            50% { 
+                box-shadow: 0 0 60px var(--stellar-yellow);
+            }
+        }
+
+        /* Planet Orbits */
+        .planet {
             position: absolute;
-            font-size: 2rem;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
+            border-radius: 50%;
+            animation: planet-orbit 8s linear infinite;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
+        .planet-1 {
+            width: 12px;
+            height: 12px;
+            background: var(--cosmic-red);
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-duration: 8s;
         }
 
-        /* Section Styling */
-        .section {
-            padding: 80px 20px;
+        .planet-2 {
+            width: 8px;
+            height: 8px;
+            background: var(--galaxy-cyan);
+            bottom: 50px;
+            right: 50%;
+            transform: translateX(50%);
+            animation-duration: 12s;
+            animation-direction: reverse;
+        }
+
+        .planet-3 {
+            width: 10px;
+            height: 10px;
+            background: var(--plasma-pink);
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            animation-duration: 10s;
+        }
+
+        @keyframes planet-orbit {
+            from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+        }
+
+        /* Content Sections */
+        .section-cosmos {
+            padding: 80px 40px;
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
         }
 
         .section-title {
+            font-family: 'Orbitron', monospace;
             font-size: 2.5rem;
             font-weight: 800;
             text-align: center;
-            margin-bottom: 50px;
-            background: var(--neon-gradient);
+            margin-bottom: 60px;
+            background: linear-gradient(45deg, 
+                var(--stellar-yellow), 
+                var(--cosmic-orange), 
+                var(--plasma-pink));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            position: relative;
         }
 
-        /* Cards */
-        .cards-container {
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                var(--cosmic-orange), 
+                var(--plasma-pink));
+            border-radius: 2px;
+        }
+
+        /* Card Grid */
+        .cosmic-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
 
-        .card {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-color);
+        .cosmic-card {
+            background: linear-gradient(135deg, 
+                rgba(30, 58, 138, 0.1) 0%, 
+                rgba(0, 0, 0, 0.8) 50%, 
+                rgba(124, 58, 237, 0.1) 100%);
+            border: 1px solid rgba(251, 146, 60, 0.3);
             border-radius: 20px;
             padding: 30px;
+            backdrop-filter: blur(20px);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .card::before {
+        .cosmic-card::before {
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--neon-gradient);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(251, 146, 60, 0.1), 
+                transparent);
+            transition: left 0.6s ease;
         }
 
-        .card:hover::before {
-            transform: scaleX(1);
+        .cosmic-card:hover::before {
+            left: 100%;
         }
 
-        .card:hover {
+        .cosmic-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 210, 255, 0.15);
-            background: rgba(30, 41, 59, 0.8);
-            border-color: var(--text-accent);
+            border-color: var(--cosmic-orange);
+            box-shadow: 0 20px 40px rgba(251, 146, 60, 0.3);
         }
 
         .card-icon {
             font-size: 3rem;
             margin-bottom: 20px;
-            background: var(--neon-gradient);
+            background: linear-gradient(45deg, 
+                var(--cosmic-orange), 
+                var(--stellar-yellow));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -300,83 +618,127 @@
         .card-title {
             font-size: 1.4rem;
             font-weight: 700;
+            color: var(--text-bright);
             margin-bottom: 15px;
-            color: var(--text-light);
         }
 
         .card-description {
-            color: var(--text-secondary);
+            color: var(--text-dim);
             line-height: 1.6;
         }
 
-        /* Skills Section */
-        .skills-grid {
+        /* Skills Constellation */
+        .skills-constellation {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 20px;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
-        .skill-item {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .skill-star {
+            background: linear-gradient(135deg, 
+                rgba(30, 58, 138, 0.2) 0%, 
+                rgba(0, 0, 0, 0.9) 100%);
+            border: 2px solid var(--galaxy-cyan);
             border-radius: 15px;
             padding: 20px;
             text-align: center;
             transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
         }
 
-        .skill-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 242, 254, 0.2);
+        .skill-star::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 6px;
+            height: 6px;
+            background: var(--stellar-yellow);
+            border-radius: 50%;
+            animation: skill-twinkle 2s ease-in-out infinite;
+        }
+
+        @keyframes skill-twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .skill-star:hover {
+            transform: translateY(-5px) scale(1.05);
+            border-color: var(--cosmic-orange);
+            box-shadow: 0 15px 30px rgba(6, 182, 212, 0.3);
         }
 
         .skill-icon {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 10px;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--galaxy-cyan);
         }
 
         .skill-name {
             font-size: 0.9rem;
             font-weight: 600;
-            color: var(--text-light);
+            color: var(--text-bright);
         }
 
-        /* Stats Section */
-        .stats-container {
+        /* Stats Galaxy */
+        .stats-galaxy {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
 
-        .stat-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .stat-planet {
+            background: radial-gradient(circle at center, 
+                rgba(251, 146, 60, 0.2) 0%, 
+                rgba(0, 0, 0, 0.9) 70%);
+            border: 2px solid var(--cosmic-orange);
             border-radius: 20px;
             padding: 30px;
             text-align: center;
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .stat-card:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-5px);
+        .stat-planet::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, 
+                transparent, 
+                rgba(251, 146, 60, 0.1), 
+                transparent);
+            animation: stat-rotate 4s linear infinite;
+            opacity: 0;
+        }
+
+        .stat-planet:hover::before {
+            opacity: 1;
+        }
+
+        @keyframes stat-rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .stat-planet:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(251, 146, 60, 0.4);
         }
 
         .stat-number {
+            font-family: 'Orbitron', monospace;
             font-size: 2.5rem;
             font-weight: 900;
-            background: var(--accent-gradient);
+            background: linear-gradient(45deg, 
+                var(--stellar-yellow), 
+                var(--cosmic-orange));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -384,276 +746,334 @@
         }
 
         .stat-label {
-            color: var(--text-secondary);
+            color: var(--text-dim);
             font-weight: 500;
         }
 
-        /* Contact Section */
-        .contact-container {
+        /* Contact Constellation */
+        .contact-constellation {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
-        .contact-btn {
+        .contact-star {
+            background: linear-gradient(135deg, 
+                rgba(124, 58, 237, 0.1) 0%, 
+                rgba(0, 0, 0, 0.9) 100%);
+            border: 2px solid var(--plasma-pink);
+            border-radius: 15px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text-bright);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 15px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            text-decoration: none;
-            color: var(--text-light);
             font-weight: 600;
             transition: all 0.3s ease;
         }
 
-        .contact-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 242, 254, 0.3);
+        .contact-star:hover {
+            transform: translateY(-5px);
+            border-color: var(--cosmic-orange);
+            box-shadow: 0 15px 30px rgba(236, 72, 153, 0.3);
         }
 
         .contact-icon {
             font-size: 1.5rem;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--plasma-pink);
         }
 
         /* Footer */
-        .footer {
+        .footer-cosmos {
             text-align: center;
-            padding: 50px 20px;
-            background: rgba(10, 10, 10, 0.8);
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px 40px;
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.9) 0%, 
+                rgba(30, 58, 138, 0.2) 50%, 
+                rgba(0, 0, 0, 0.9) 100%);
+            border-top: 1px solid rgba(251, 146, 60, 0.3);
+            margin-top: 80px;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .footer-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, 
+                var(--stellar-yellow), 
+                var(--cosmic-orange), 
+                var(--plasma-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
         }
 
-        .fade-in {
-            animation: fadeInUp 1s ease;
+        .footer-subtitle {
+            color: var(--text-dim);
+            font-size: 0.9rem;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .navbar {
-                padding: 15px 20px;
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
             }
             
             .nav-content {
                 flex-direction: column;
-                gap: 15px;
+                gap: 20px;
+                padding: 0 20px;
             }
             
-            .hero {
-                padding: 120px 20px 50px;
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .section {
-                padding: 60px 20px;
-            }
-            
-            .cards-container {
+            .cosmic-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .avatar-orbit {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .avatar-image {
+                width: 220px;
+                height: 220px;
             }
         }
 
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 10px;
         }
 
         ::-webkit-scrollbar-track {
-            background: var(--dark-bg);
+            background: var(--cosmic-black);
         }
 
         ::-webkit-scrollbar-thumb {
-            background: var(--accent-gradient);
-            border-radius: 4px;
+            background: linear-gradient(180deg, 
+                var(--cosmic-orange), 
+                var(--plasma-pink));
+            border-radius: 5px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-gradient);
+            background: linear-gradient(180deg, 
+                var(--stellar-yellow), 
+                var(--cosmic-orange));
         }
     </style>
 </head>
 <body>
-    <div class="bg-animation"></div>
-    
+    <!-- Galaxy Background -->
+    <div class="galaxy-container">
+        <div class="spiral-galaxy">
+            <div class="spiral-arm"></div>
+            <div class="spiral-arm"></div>
+            <div class="spiral-arm"></div>
+            <div class="spiral-arm"></div>
+            <div class="spiral-arm"></div>
+            <div class="spiral-arm"></div>
+            <div class="galaxy-core"></div>
+        </div>
+
+        <!-- Stars Layer -->
+        <div class="stars-layer" id="starsLayer"></div>
+
+        <!-- Nebula Clouds -->
+        <div class="nebula" id="nebula1" style="top: 20%; left: 10%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(30, 58, 138, 0.3) 0%, transparent 70%);"></div>
+        <div class="nebula" id="nebula2" style="top: 60%; right: 15%; width: 150px; height: 150px; background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, transparent 70%);"></div>
+        <div class="nebula" id="nebula3" style="bottom: 20%; left: 20%; width: 180px; height: 180px; background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 70%);"></div>
+
+        <!-- Cosmic Particles -->
+        <div id="cosmicParticles"></div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="nav-cosmos">
         <div class="nav-content">
-            <div class="logo">اسماعیل سرحدی</div>
-            <div class="lang-switcher">
-                <span style="font-weight: 600;">تغییر زبان:</span>
+            <div class="cosmic-logo">کهکشان.اسماعیل</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">درباره</a>
+                <a href="#skills" class="nav-link">مهارت‌ها</a>
+                <a href="#stats" class="nav-link">آمار</a>
+                <a href="#contact" class="nav-link">ارتباط</a>
+            </div>
+            <div class="lang-selector">
                 <a href="index.html" class="lang-btn">
-                    <img src="https://flagcdn.com/w20/gb.png" width="20" alt="English">
-                    English
+                    <img src="https://flagcdn.com/w16/gb.png" width="16" alt="English">
+                    EN
                 </a>
                 <a href="index_fa.html" class="lang-btn">
-                    <img src="https://flagcdn.com/w20/ir.png" width="20" alt="فارسی">
-                    فارسی
+                    <img src="https://flagcdn.com/w16/ir.png" width="16" alt="فارسی">
+                    فا
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="floating-elements">
-            <div class="floating-icon" style="top: 20%; left: 10%;">🤖</div>
-            <div class="floating-icon" style="top: 30%; right: 15%;">💻</div>
-            <div class="floating-icon" style="top: 60%; left: 20%;">🚀</div>
-            <div class="floating-icon" style="top: 70%; right: 25%;">⚡</div>
-            <div class="floating-icon" style="top: 40%; left: 70%;">🔧</div>
-        </div>
-        
-        <div class="hero-content">
-            <h1 class="hero-title">سلام دنیا! 👨‍💻</h1>
-            <h2 class="hero-subtitle">اسماعیل سرحدی هستم</h2>
-            <p class="hero-description">
-                نوآور اینترنت اشیاء | متخصص سیستم‌های جاسازی شده | کارآفرین فناوری<br>
-                خالق راهکارهای هوشمند برای آینده دیجیتال
-            </p>
-            <div class="cta-buttons">
-                <a href="#about" class="btn btn-primary">
-                    <span>درباره من</span>
-                    <span>🌟</span>
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <span>تماس با من</span>
-                    <span>📧</span>
-                </a>
+    <section class="hero-cosmos">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="cosmic-title">کاشف کهکشان فناوری</h1>
+                <h2 class="hero-subtitle">اسماعیل سرحدی</h2>
+                <p class="hero-description">
+                    🌌 معمار سیستم‌های جاسازی شده در کهکشان IoT<br>
+                    ⭐ خالق راهکارهای هوشمند برای تمدن‌های دیجیتال<br>
+                    🚀 کاوشگر فناوری‌های آینده در عمق فضای سایبر
+                </p>
+                <div class="cosmic-buttons">
+                    <a href="#about" class="cosmic-btn cosmic-btn-primary">
+                        <span>کاوش کهکشان</span>
+                        <span>🌟</span>
+                    </a>
+                    <a href="#contact" class="cosmic-btn cosmic-btn-secondary">
+                        <span>ارتباط کیهانی</span>
+                        <span>📡</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="avatar-cosmos">
+                <div class="avatar-orbit">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring"></div>
+                    <img src="assets/1.jpg" alt="اسماعیل سرحدی" class="avatar-image">
+                    <div class="planet planet-1"></div>
+                    <div class="planet planet-2"></div>
+                    <div class="planet planet-3"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section" id="about">
-        <h2 class="section-title">درباره من 🎯</h2>
-        <div class="cards-container">
-            <div class="card">
+    <section class="section-cosmos" id="about">
+        <h2 class="section-title">ماموریت کهکشانی 🛸</h2>
+        <div class="cosmic-grid">
+            <div class="cosmic-card">
                 <div class="card-icon">🎓</div>
-                <h3 class="card-title">تحصیلات</h3>
+                <h3 class="card-title">آکادمی ستاره‌ای</h3>
                 <p class="card-description">
-                    کارشناسی مهندسی کامپیوتر از دانشگاه سیستان و بلوچستان<br>
-                    تمرکز بر اینترنت اشیاء و سیستم‌های هوشمند
+                    کارشناسی مهندسی کامپیوتر از دانشگاه سیستان و بلوچستان
+                    <br><br>
+                    تخصص در سیستم‌های هوشمند و فناوری‌های کهکشانی آینده
                 </p>
             </div>
-            <div class="card">
-                <div class="card-icon">💼</div>
-                <h3 class="card-title">تجربه حرفه‌ای</h3>
+
+            <div class="cosmic-card">
+                <div class="card-icon">👑</div>
+                <h3 class="card-title">فرماندهی فضایی</h3>
                 <p class="card-description">
-                    مدیرعامل سابق شرکت راهکارهای هوشمند IoT<br>
-                    رهبری پروژه‌های نوآورانه در فناوری‌های پیشرفته
+                    مدیرعامل سابق شرکت راهکارهای هوشمند IoT
+                    <br><br>
+                    رهبری ۱۵+ مهندس در پروژه‌های انقلابی کهکشان فناوری
                 </p>
             </div>
-            <div class="card">
-                <div class="card-icon">🔭</div>
-                <h3 class="card-title">تمرکز فعلی</h3>
+
+            <div class="cosmic-card">
+                <div class="card-icon">🔬</div>
+                <h3 class="card-title">تحقیقات بین‌ستاره‌ای</h3>
                 <p class="card-description">
-                    توسعه پروژه‌های هیجان‌انگیز اینترنت اشیاء<br>
-                    کاوش در فناوری‌های نوین سیستم‌های هوشمند
+                    توسعه فناوری‌های نسل آینده IoT در عمق فضای سایبر
+                    <br><br>
+                    ترکیب هوش مصنوعی با سیستم‌های جاسازی شده کهکشانی
                 </p>
             </div>
-            <div class="card">
+
+            <div class="cosmic-card">
                 <div class="card-icon">🌱</div>
-                <h3 class="card-title">یادگیری مداوم</h3>
+                <h3 class="card-title">تکامل کیهانی</h3>
                 <p class="card-description">
-                    کشف دائمی فناوری‌ها و روش‌های جدید<br>
-                    حفظ جایگاه در خط مقدم نوآوری فناوری
+                    کاوشگر دائمی فناوری‌های پیشرفته در کهکشان‌های دور
+                    <br><br>
+                    حفظ جایگاه در خط مقدم نوآوری تمدن‌های دیجیتال
                 </p>
             </div>
-            <div class="card">
-                <div class="card-icon">💡</div>
-                <h3 class="card-title">حل مسائل خلاقانه</h3>
+
+            <div class="cosmic-card">
+                <div class="card-icon">⚡</div>
+                <h3 class="card-title">حل معادلات کیهانی</h3>
                 <p class="card-description">
-                    رویکرد نوآورانه به چالش‌های فنی پیچیده<br>
-                    ترکیب IoT با هوش مصنوعی برای راهکارهای منحصربه‌فرد
+                    رویکرد خلاقانه به چالش‌های فنی پیچیده فضایی
+                    <br><br>
+                    ایجاد راهکارهای غیرممکن در جهان‌های موازی
                 </p>
             </div>
-            <div class="card">
+
+            <div class="cosmic-card">
                 <div class="card-icon">🤝</div>
-                <h3 class="card-title">همکاری</h3>
+                <h3 class="card-title">اتحاد کهکشانی</h3>
                 <p class="card-description">
-                    علاقه‌مند به همکاری در پروژه‌های پیشگامانه IoT<br>
-                    آماده شبکه‌سازی با متخصصان فناوری
+                    همکاری با تمدن‌های پیشرفته فضای سایبر
+                    <br><br>
+                    ساخت شبکه‌ای از متخصصان آینده در سراسر کیهان
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="section" id="skills">
-        <h2 class="section-title">مهارت‌ها و تخصص‌ها 🛠️</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
+    <section class="section-cosmos" id="skills">
+        <h2 class="section-title">صورت‌فلکی مهارت‌ها ⭐</h2>
+        <div class="skills-constellation">
+            <div class="skill-star">
                 <div class="skill-icon">⚡</div>
                 <div class="skill-name">C++</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-star">
                 <div class="skill-icon">🔧</div>
                 <div class="skill-name">C</div>
             </div>
-            <div class="skill-item">
-                <div class="skill-icon">🤖</div>
-                <div class="skill-name">IoT</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">📱</div>
-                <div class="skill-name">Arduino</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">🔗</div>
-                <div class="skill-name">Embedded</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">🐧</div>
-                <div class="skill-name">Linux</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">🛠️</div>
-                <div class="skill-name">CMake</div>
-            </div>
-            <div class="skill-item">
+            <div class="skill-star">
                 <div class="skill-icon">🐍</div>
                 <div class="skill-name">Python</div>
             </div>
-            <div class="skill-item">
-                <div class="skill-icon">📊</div>
-                <div class="skill-name">Data Analysis</div>
+            <div class="skill-star">
+                <div class="skill-icon">🌐</div>
+                <div class="skill-name">JavaScript</div>
             </div>
-            <div class="skill-item">
-                <div class="skill-icon">🔐</div>
-                <div class="skill-name">Security</div>
+            <div class="skill-star">
+                <div class="skill-icon">🤖</div>
+                <div class="skill-name">IoT</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-star">
+                <div class="skill-icon">📡</div>
+                <div class="skill-name">Arduino</div>
+            </div>
+            <div class="skill-star">
+                <div class="skill-icon">🔗</div>
+                <div class="skill-name">Embedded</div>
+            </div>
+            <div class="skill-star">
+                <div class="skill-icon">🐧</div>
+                <div class="skill-name">Linux</div>
+            </div>
+            <div class="skill-star">
+                <div class="skill-icon">🛠️</div>
+                <div class="skill-name">CMake</div>
+            </div>
+            <div class="skill-star">
                 <div class="skill-icon">☁️</div>
-                <div class="skill-name">Cloud</div>
+                <div class="skill-name">AWS</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-star">
+                <div class="skill-icon">🐳</div>
+                <div class="skill-name">Docker</div>
+            </div>
+            <div class="skill-star">
                 <div class="skill-icon">🧠</div>
                 <div class="skill-name">AI/ML</div>
             </div>
@@ -661,63 +1081,98 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="section" id="stats">
-        <h2 class="section-title">آمار و دستاوردها 📊</h2>
-        <div class="stats-container">
-            <div class="stat-card">
+    <section class="section-cosmos" id="stats">
+        <h2 class="section-title">کهکشان آمار 📊</h2>
+        <div class="stats-galaxy">
+            <div class="stat-planet">
                 <div class="stat-number">50+</div>
-                <div class="stat-label">پروژه موفق</div>
+                <div class="stat-label">ماموریت موفق</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-planet">
                 <div class="stat-number">5+</div>
-                <div class="stat-label">سال تجربه</div>
+                <div class="stat-label">سال سفر فضایی</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-number">1000+</div>
-                <div class="stat-label">خط کد</div>
+            <div class="stat-planet">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">خط کد کیهانی</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-planet">
                 <div class="stat-number">24/7</div>
-                <div class="stat-label">پشتیبانی</div>
+                <div class="stat-label">مانیتورینگ کهکشان</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section" id="contact">
-        <h2 class="section-title">بیایید در ارتباط باشیم 🌐</h2>
-        <div class="contact-container">
-            <a href="mailto:sarhadiemsail@gmail.com" class="contact-btn">
+    <section class="section-cosmos" id="contact">
+        <h2 class="section-title">ارتباط بین‌کهکشانی 🌌</h2>
+        <div class="contact-constellation">
+            <a href="mailto:sarhadiemsail@gmail.com" class="contact-star">
                 <span class="contact-icon">📧</span>
-                <span>ایمیل</span>
+                <span>پیام کیهانی</span>
             </a>
-            <a href="https://linkedin.com/in/yourusername" class="contact-btn">
+            <a href="https://linkedin.com/in/esmail-sarhadi" class="contact-star">
                 <span class="contact-icon">💼</span>
-                <span>لینکدین</span>
+                <span>شبکه کهکشانی</span>
             </a>
-            <a href="https://twitter.com/esmail62535258" class="contact-btn">
+            <a href="https://twitter.com/esmail62535258" class="contact-star">
                 <span class="contact-icon">🐦</span>
-                <span>توییتر</span>
+                <span>سیگنال فضایی</span>
             </a>
-            <a href="https://github.com/esmail-sarhadi" class="contact-btn">
+            <a href="https://github.com/esmail-sarhadi" class="contact-star">
                 <span class="contact-icon">💻</span>
-                <span>گیت‌هاب</span>
+                <span>مخزن ستاره‌ای</span>
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p style="margin-bottom: 20px; font-size: 1.2rem; font-weight: 600;">
-            نوآوری در آینده، یک دستگاه هوشمند در هر زمان 🌍✨
-        </p>
-        <p style="color: var(--text-secondary);">
-            ساخته شده با ❤️ توسط اسماعیل سرحدی
+    <footer class="footer-cosmos">
+        <h3 class="footer-title">
+            نوآوری آینده، یک دستگاه هوشمند در هر کهکشان 🌌✨
+        </h3>
+        <p class="footer-subtitle">
+            طراحی شده در عمق فضا توسط اسماعیل سرحدی
         </p>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Create Cosmic Stars
+        function createStars() {
+            const starsLayer = document.getElementById('starsLayer');
+            const colors = ['#ffffff', '#fbbf24', '#fb923c', '#06b6d4', '#ec4899'];
+            
+            for (let i = 0; i < 300; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = (Math.random() * 3 + 1) + 'px';
+                star.style.height = star.style.width;
+                star.style.background = colors[Math.floor(Math.random() * colors.length)];
+                star.style.animationDelay = Math.random() * 3 + 's';
+                star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                starsLayer.appendChild(star);
+            }
+        }
+
+        // Create Cosmic Particles
+        function createCosmicParticles() {
+            const container = document.getElementById('cosmicParticles');
+            const colors = ['#06b6d4', '#ec4899', '#fbbf24', '#7c3aed'];
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'cosmic-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -731,17 +1186,27 @@
             });
         });
 
-        // Navbar background change on scroll
+        // Parallax Effect for Galaxy
         window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(2, 6, 23, 0.98)';
-            } else {
-                navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+            const scrolled = window.pageYOffset;
+            const galaxy = document.querySelector('.spiral-galaxy');
+            const nebulas = document.querySelectorAll('.nebula');
+            
+            if (galaxy) {
+                galaxy.style.transform = `translate(-50%, -50%) rotate(${scrolled * 0.1}deg)`;
             }
+            
+            nebulas.forEach((nebula, index) => {
+                const speed = 0.5 + (index * 0.1);
+                nebula.style.transform = `translate(${scrolled * speed * 0.1}px, ${scrolled * speed * 0.05}px)`;
+            });
         });
 
-        // Add intersection observer for fade-in animations
+        // Initialize
+        createStars();
+        createCosmicParticles();
+
+        // Intersection Observer for Animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -750,22 +1215,47 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
+                    entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
                 }
             });
         }, observerOptions);
 
-        // Observe all cards and sections
-        document.querySelectorAll('.card, .skill-item, .stat-card').forEach(el => {
+        // Observe elements
+        document.querySelectorAll('.cosmic-card, .skill-star, .stat-planet').forEach(el => {
             observer.observe(el);
         });
 
-        // Add floating animation to icons
-        const floatingIcons = document.querySelectorAll('.floating-icon');
-        floatingIcons.forEach((icon, index) => {
-            icon.style.animationDelay = `${index * 0.5}s`;
-            icon.style.animationDuration = `${6 + (index % 3)}s`;
-        });
+        // Add fade-in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Dynamic Particle Creation
+        setInterval(() => {
+            if (document.querySelectorAll('.cosmic-particle').length < 50) {
+                const particle = document.createElement('div');
+                particle.className = 'cosmic-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.background = ['#06b6d4', '#ec4899', '#fbbf24', '#7c3aed'][Math.floor(Math.random() * 4)];
+                particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                document.getElementById('cosmicParticles').appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 8000);
+            }
+        }, 2000);
     </script>
 </body>
 </html>
