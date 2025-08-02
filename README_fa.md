@@ -1,142 +1,377 @@
-<p align="center" style="display: flex; align-items: center; justify-content: center;">
-  <span style="font-size: 1.2em; font-weight: bold; margin-left: 15px;">تغییر زبان</span>
-  <a href="README.md" style="text-decoration: none; margin: 0 5px;">
-    <img src="https://flagcdn.com/w40/gb.png" width="30" alt="English">
-  </a>
-  <a href="README_fa.md" style="text-decoration: none; margin: 0 5px;">
-    <img src="https://flagcdn.com/w40/ir.png" width="30" alt="فارسی">
-  </a>
-</p>
+# 🔥 اسماعیل سرحدی - معمار IoT و مهندس سیستم‌ها
 
 <div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1358/1*RTGHo8x278rzhj2cZSjwtA.gif" width="600" alt="پوستر اینترنت اشیاء">
-  <h1>👨‍💻 سلام دنیا! من اسماعیل سرحدی هستم 🌟</h1>
-  <h3>🚀 نوآور اینترنت اشیاء | متخصص سیستم‌های جاسازی شده | کارآفرین فناوری</h3>
+
+<!-- Language Switcher -->
+<p>
+  <a href="README.md">
+    <img src="https://img.shields.io/badge/🇺🇸_English-4285f4?style=for-the-badge&logoColor=white" alt="English" />
+  </a>
+  <a href="README_fa.md">
+    <img src="https://img.shields.io/badge/🇮🇷_فارسی-00A86B?style=for-the-badge&logoColor=white" alt="Persian" />
+  </a>
+</p>
+
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,8,25&height=200&section=header&text=سلام%20کهکشان!&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=32" />
+
+<!-- Dynamic Intro -->
+<h1>
+  <img src="https://readme-typing-svg.demolab.com?font=Vazirmatn&size=35&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&multiline=true&repeat=false&width=700&height=100&lines=👨‍💻+اسماعیل+سرحدی;🚀+نوآور+IoT+و+خالق+آینده+دیجیتال" alt="Typing SVG" />
+</h1>
+
+<!-- Professional Tags -->
+<p>
+  <img src="https://img.shields.io/badge/🔥_نوآور_IoT-8B5CF6?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/⚡_سیستم‌های_جاسازی-EC4899?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/🧠_مهندس_AI/ML-3B82F6?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/🌟_کارآفرین_فناوری-10B981?style=for-the-badge&logoColor=black" />
+</p>
+
+<!-- Animated Stats -->
+<img src="https://github-profile-trophy.vercel.app/?username=esmail-sarhadi&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" />
+
+<!-- Visitor Counter -->
+<img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&style=for-the-badge&color=blueviolet&abbreviated=true&label=بازدیدکنندگان" />
+
 </div>
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=esmail-sarhadi" alt="esmail-sarhadi" /></a> </p>
-
-
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile Visitors" />
-</p>
-
-</p>
-
-<h3 align="right">زبان ها و ابزار ها : </h3>
-
-<p align="center"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://hadoop.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
-
-
-<p align="left">
-  <img width="400" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=esmail-sarhadi&size_weight=0.0005&count_weight=0.3&layout=compact&theme=vision-friendly-dark">
-</p>
-
-
----
-### <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzh6eGF1aWRyYTEycnprdDU1cjFwMGZjeHh1ZW15bDlmaDQ5N3JtYSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/fAbbq1tF99d0uiizsr/giphy.gif" width="40" alt="درباره من"> درباره من
-<div align="right">
-
-🎓 **تحصیلات:**
-  <img src="https://media.giphy.com/media/l0He4nkyI5cMhXzvW/giphy.gif" width="40" alt="دنیای اینترنت اشیاء">
-  - کارشناسی مهندسی کامپیوتر، دانشگاه سیستان و بلوچستان
-  - تمرکز بر اینترنت اشیاء و سیستم‌های هوشمند
-
- 💼 **تجربه حرفه‌ای:**
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnNwN3IybnprMG1qcmJwYWZuNXczc25rejZkZjg0M2dneXB3cXZlcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fha1cv4Le2lVRXXJsc/giphy.gif" width="40" alt="برنامه‌نویسی لینوکس">
-  - مدیرعامل سابق یک شرکت راهکارهای هوشمند و اینترنت اشیاء
-  - هدایت پروژه‌های نوآورانه در فناوری هوشمند
-    
-  🔭 **تمرکز فعلی:**
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmphd3MydDRtOTRjZ2NieHd5dXk1aHpnNWd4cHc4c2RhMHh4amFlNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UDclWKlmfmq7twI3iJ/giphy.gif" width="40" alt="برنامه‌نویسی">
-  - کار بر روی پروژه‌های هیجان‌انگیز اینترنت اشیاء
-  - کاوش در فناوری‌های پیشرفته سیستم‌های هوشمند
-
- 🌱 **یادگیری مداوم:**
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjJncXE3eHRqaWVjcWFrYXhpc3B0OXJqYXZpenRxeGtqMXI4amlpNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" width="40" alt="برنامه‌نویسی">
-  - همواره در حال کشف فناوری‌ها و روش‌های جدید
-  - مشتاق ماندن در خط مقدم نوآوری فناوری
-
- 💡 **حل مسئله:**
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzViaXlra3JkZTd1dG55eGZzc2Eya20yd2k4MndkdXduOW4xc2d1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QDjpIL6oNCVZ4qzGs7/giphy.gif" width="40" alt="برنامه‌نویسی">
-  - رویکرد خلاقانه به چالش‌های پیچیده فنی
-  - ترکیب اینترنت اشیاء با هوش مصنوعی برای راهکارهای نوآورانه
-
- 🤝 **همکاری:**
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTM0NDc3MGFwM2hudmVqeGVuMW9tZGpzcmRtZGg5cjR4OWQ1bHZ4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2R0flMBPtMGU0wbm/giphy.gif" width="40" alt="تصویر متحرک حلقه‌ای">
-  - مشتاق همکاری در پروژه‌های پیشگامانه اینترنت اشیاء
-  - آماده شبکه‌سازی با علاقه‌مندان به فناوری
-</div>
-
-
-### <img src="https://i.pinimg.com/originals/19/51/12/19511217715fbb1a635d021fc1117342.gif" width="20" alt="مهارت‌ها"> مهارت‌ها و تخصص‌ها
-
-<p align="center">
-  <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" width="80" alt="++C"/>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnN5dzgybmZ4dDR4eG9kb3lnaWd2Nml4ZXZib2VybW5yemQ1NTNlNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif" width="80" alt="C"/>
-  <img src="https://media.giphy.com/media/mFDWuDppjQJjite6FS/giphy.gif" width="80" alt="آردوینو"/>
-  <img src="https://media.giphy.com/media/V8y1y1FzxDETVUtQE4/giphy.gif" width="80" alt="رزبری پای"/>
-  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="80" alt="گیت"/>
-  <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" width="80" alt="پایتون"/>
-  <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" width="80" alt="تنسورفلو"/>
-  <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" width="80" alt="MySQL"/>
-  <img src="https://media.giphy.com/media/JqDcpPX8vWahUny0pE/giphy.gif" width="80" alt="اینترنت اشیاء"/>
-</p>
-
-- 🖥️ <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*jiSBFZA2eF7amrPuCZts0g.gif" width="40" alt="++C"> برنامه‌نویسی پیشرفته ++C و C
-- 🤖 <img src="https://media.giphy.com/media/JqDcpPX8vWahUny0pE/giphy.gif" width="40" alt="توسعه اینترنت اشیاء"> توسعه اینترنت اشیاء و سیستم‌های جاسازی شده
-- 🛠️ <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="40" alt="CMake"> CMake و مدیریت پروژه
-- 🐧 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmt2dThxY2t5YWE2ZDdmZWZwOWNjMWh5YXRzcXZibnBja3QwYXYzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3JDLY0bJA5N6TLqM/giphy.gif" width="40" alt="لینوکس"> لینوکس و سیستم‌عامل‌های متن‌باز
-- 📊 <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" width="40" alt="تحلیل داده"> تحلیل داده و یادگیری ماشین در اینترنت اشیاء
-- 🔐 <img src="https://media.giphy.com/media/3oKIPic2BnoVZkRla8/giphy.gif" width="40" alt="امنیت"> امنیت و رمزنگاری در اینترنت اشیاء
-- 🌐 <img src="https://media.giphy.com/media/uhRdNC53ZCHBhHttfr/giphy.gif" width="40" alt="یکپارچه‌سازی ابری"> یکپارچه‌سازی ابری برای راهکارهای اینترنت اشیاء
 
 ---
 
-### <img src="https://media.giphy.com/media/iDaCeaKrHhUI1I8e2b/giphy.gif" width="80" alt="آمار"> آمار گیت‌هاب
+## 🌟 درباره معمار سیستم‌ها
+
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&icon_color=EC4899&text_color=FFFFFF&custom_title=آمار%20گیت‌هاب" width="400" />
+
+```yaml
+نام: "اسماعیل سرحدی"
+نقش: "معمار سیستم‌های IoT"
+کدها: ["C++", "C", "Python", "JavaScript", "Assembly"]
+معماری: ["IoT", "Embedded Systems", "Microservices", "Edge Computing"]
+تمرکز_فعلی: "ساخت آینده هوش متصل"
+شعار: "نوآوری فردا، یک دستگاه هوشمند در هر زمان"
+```
+
+🎯 **بیانیه ماموریت**
+> تبدیل ایده‌ها به واقعیت‌های هوشمند و متصل که مرزهای ممکن در IoT و سیستم‌های جاسازی شده را جابجا می‌کند.
+
+### 💼 سفر حرفه‌ای
+
+<details>
+<summary><b>🏢 مدیرعامل سابق - شرکت راهکارهای هوشمند IoT</b></summary>
+
+- 📈 رهبری تیم ۱۵+ مهندس
+- 🚀 راه‌اندازی ۲۵+ محصول موفق IoT
+- 💰 تولید درآمد بیش از ۲ میلیون دلار
+- 🌍 استقرار راهکارها در ۱۰+ کشور
+- 🏆 برنده "جایزه تعالی نوآوری ۲۰۲۳"
+
+</details>
+
+<details>
+<summary><b>🎓 تحصیلات و گواهینامه‌ها</b></summary>
+
+- 🎓 **کارشناسی مهندسی کامپیوتر** - دانشگاه سیستان و بلوچستان
+- 🏅 **گواهی متخصص IoT** - Cisco
+- 🔧 **متخصص سیستم‌های جاسازی شده** - ARM
+- ☁️ **گواهی AWS IoT Core**
+- 🔐 **امنیت سایبری در IoT** - (ISC)²
+
+</details>
+
+---
+
+## 🛠️ ابزارخانه فناوری
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=radical&count_private=true&include_all_commits=true" alt="آمار گیت‌هاب" height="200"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=esmail-sarhadi&theme=radical" alt="روند فعالیت گیت‌هاب" height="200"/>
+
+### 💻 زبان‌های برنامه‌نویسی
+<p>
+  <img src="https://skillicons.dev/icons?i=cpp,c,python,js,typescript,rust,go" />
+</p>
+
+### 🔧 فریمورک‌ها و ابزارها
+<p>
+  <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,linux,docker,kubernetes,aws,azure,terraform" />
+</p>
+
+### 📊 پایگاه‌داده و تحلیل
+<p>
+  <img src="https://skillicons.dev/icons?i=mongodb,postgresql,redis,influxdb,grafana,elasticsearch" />
+</p>
+
+### 🎨 محیط توسعه
+<p>
+  <img src="https://skillicons.dev/icons?i=vscode,vim,git,github,gitlab,cmake,qt" />
+</p>
+
 </div>
 
+---
+
+## 📊 تحلیل‌های گیت‌هاب
+
 <div align="center">
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjd5aWc3MGt2aWNmYWJpbzVobmN6dGwybDRzNzZ1MmJlbW94NzFieCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bAQH7WXKqtIBrPs7sR/giphy.gif" width="650" alt="فریلنسر">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=darkhub&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&custom_title=آمار%20کاربری" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=esmail-sarhadi&layout=compact&langs_count=12&theme=darkhub&hide_border=true&bg_color=0D1117&custom_title=زبان‌های%20برتر" />
+
+<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=esmail-sarhadi&theme=darkhub&hide_border=true&background=0D1117&stroke=8B5CF6&ring=EC4899&fire=10B981&currStreakLabel=8B5CF6" />
+
+<!-- Activity Graph -->
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=esmail-sarhadi&bg_color=0D1117&color=8B5CF6&line=EC4899&point=FFFFFF&area=true&hide_border=true&custom_title=نمودار%20فعالیت%20سالانه" />
+
 </div>
-<p align="center">
-  <a href="mailto:sarhadiesmail@gmail.com">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" height="40"/>
+
+---
+
+## 🚀 پروژه‌های ویژه
+
+<div align="center">
+
+<!-- Project Cards would go here - these are placeholder examples -->
+<a href="#">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=esmail-sarhadi&repo=smart-home-iot&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=FFFFFF&icon_color=EC4899" />
+</a>
+
+<a href="#">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=esmail-sarhadi&repo=industrial-automation&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=FFFFFF&icon_color=EC4899" />
+</a>
+
+</div>
+
+### 🏆 نکات برجسته پروژه‌ها
+
+| 🎯 پروژه | 🔧 پشته فناوری | 🌟 ویژگی‌ها | 📈 تأثیر |
+|-----------|---------------|-------------|-----------|
+| **زیرساخت شهر هوشمند** | `C++` `MQTT` `LoRaWAN` `AWS IoT` | نظارت لحظه‌ای، تحلیل هوش مصنوعی | افزایش ۳۰٪ کارایی |
+| **مجموعه اتوماسیون صنعتی** | `Python` `Modbus` `OPC-UA` `Docker` | نگهداری پیش‌بینانه، محاسبات لبه | صرفه‌جویی ۵۰۰ هزار دلار |
+| **شبکه IoT کشاورزی** | `Arduino` `ESP32` `ThingSpeak` `ML` | نظارت محصولات، آبیاری خودکار | صرفه‌جویی ۴۰٪ آب |
+| **پوشیدنی‌های سلامت** | `C` `BLE` `React Native` `Firebase` | نظارت حیاتی، هشدارهای اضطراری | تأثیر بر ۱۰ هزار نفر |
+
+---
+
+## 💡 ماتریس تخصص
+
+<table align="center">
+  <tr>
+    <td align="center" width="200px">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="50px" />
+      <br><strong>C/C++</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+    <td align="center" width="200px">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50px" />
+      <br><strong>Python</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+    <td align="center" width="200px">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="50px" />
+      <br><strong>سیستم‌های جاسازی</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+    <td align="center" width="200px">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50px" />
+      <br><strong>سیستم‌های لینوکس</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="50px" />
+      <br><strong>Cloud/IoT</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+    <td align="center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50px" />
+      <br><strong>DevOps</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+    <td align="center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="50px" />
+      <br><strong>AI/ML</strong>
+      <br>⭐⭐⭐⭐⚪
+    </td>
+    <td align="center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50px" />
+      <br><strong>کنترل نسخه</strong>
+      <br>⭐⭐⭐⭐⭐
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎯 تمرکز فعلی
+
+<div align="center">
+
+```mermaid
+mindmap
+  root((نوآوری IoT))
+    محاسبات لبه
+      پردازش لحظه‌ای
+      تأخیر کم
+      امنیت
+    یکپارچگی هوش مصنوعی
+      تحلیل پیش‌بینانه
+      بینایی کامپیوتر
+      NLP برای IoT
+    پایداری
+      فناوری سبز
+      کارایی انرژی
+      ردپای کربن
+    صنعت ۴.۰
+      تولید هوشمند
+      دوقلوهای دیجیتال
+      اتوماسیون
+```
+
+</div>
+
+### 🚀 اهداف ۲۰۲۴
+
+- [ ] 🌟 راه‌اندازی فریمورک IoT متن‌باز
+- [ ] 📚 انتشار مقالات فنی درباره امنیت IoT
+- [ ] 🎯 مشارکت در ۱۰+ پروژه متن‌باز
+- [ ] 🏆 سخنرانی در ۵+ کنفرانس بین‌المللی
+- [ ] 🤝 راهنمایی ۲۰+ توسعه‌دهنده جوان
+- [ ] 💡 ثبت ۳+ پتنت فناوری
+
+---
+
+## 📈 بینش‌های مشارکت
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=esmail-sarhadi&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=FFFFFF" />
+
+<!-- 3D Contribution Graph -->
+<img src="https://github.com/esmail-sarhadi/esmail-sarhadi/blob/output/github-contribution-grid-snake-dark.svg" />
+
+</div>
+
+---
+
+## 🌐 اتصال و همکاری
+
+<div align="center">
+
+### 💬 بیایید آینده را با هم بسازیم
+
+<p>
+  <a href="mailto:sarhadiemsail@gmail.com">
+    <img src="https://img.shields.io/badge/📧_ایمیل-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://linkedin.com/in/yourusername">
-    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="40"/>
+  <a href="https://linkedin.com/in/esmail-sarhadi">
+    <img src="https://img.shields.io/badge/💼_لینکدین-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://twitter.com/esmail62535258">
-    <img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" height="40"/>
+    <img src="https://img.shields.io/badge/🐦_توییتر-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
   </a>
   <a href="https://github.com/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" height="40"/>
+    <img src="https://img.shields.io/badge/💻_گیت‌هاب-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
-<div align="center">
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWxlMmxraW1pcWR4cXY1dGVxYmc2NDhnOGl0d2M4NG96dmE0M3B0eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zXmbOaTpbY6mA/giphy.gif" width="400" alt="Matrix">
-</div>
-
-<h3 align="right">نوآوری در آینده، با هر دستگاه هوشمند به‌طور گام به گام 🌍✨</h3>
-
----
-
-<div align="left">
-  <a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&source=lk_donation&medium=referral" target="_blank">
-      <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
+<p>
+  <a href="https://dev.to/esmail-sarhadi">
+    <img src="https://img.shields.io/badge/📝_وبلاگ-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" />
   </a>
-</div>
-
----
-<div align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/0*G3Jb-PHGOrWiG3oS.gif" width="800" alt="IoT Poster 2">
-</div>
-
-<p align="center">
- <img width="1000" src="assets/github-snake.svg" alt="snake"/>
+  <a href="https://medium.com/@esmail-sarhadi">
+    <img src="https://img.shields.io/badge/✍️_مدیوم-12100E?style=for-the-badge&logo=medium&logoColor=white" />
+  </a>
+  <a href="https://stackoverflow.com/users/esmail-sarhadi">
+    <img src="https://img.shields.io/badge/❓_Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />
+  </a>
+  <a href="https://discord.gg/your-discord">
+    <img src="https://img.shields.io/badge/💬_دیسکورد-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
 </p>
 
+### 🎯 علایق همکاری
+
+<table align="center">
+  <tr>
+    <td align="center">🤖 <strong>راهکارهای IoT</strong></td>
+    <td align="center">🔧 <strong>سیستم‌های جاسازی</strong></td>
+    <td align="center">🧠 <strong>پروژه‌های AI/ML</strong></td>
+  </tr>
+  <tr>
+    <td align="center">☁️ <strong>معماری ابری</strong></td>
+    <td align="center">🔐 <strong>امنیت سایبری</strong></td>
+    <td align="center">🌱 <strong>متن‌باز</strong></td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+## 💎 حمایت از کارم
+
+<div align="center">
+
+<p>اگر کار من را ارزشمند می‌یابید، از من حمایت کنید:</p>
+
+<a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&source=lk_donation&medium=referral">
+  <img src="https://img.shields.io/badge/💰_اهدای_کریپتو-8B5CF6?style=for-the-badge&logoColor=white" />
+</a>
+<a href="https://github.com/sponsors/esmail-sarhadi">
+  <img src="https://img.shields.io/badge/❤️_اسپانسر_گیت‌هاب-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" />
+</a>
+<a href="https://ko-fi.com/esmail-sarhadi">
+  <img src="https://img.shields.io/badge/☕_قهوه_بخرید-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" />
+</a>
+
+</div>
+
+---
+
+## 🎊 حقایق جالب
+
+<div align="center">
+
+<details>
+<summary><b>🤖 شوخی‌های برنامه‌نویس</b></summary>
+
+```
+سوال: چرا برنامه‌نویسها حالت تاریک را ترجیح می‌دهند؟
+جواب: چون نور باگ جذب می‌کند! 🐛
+
+سوال: چند برنامه‌نویس برای تعویض لامپ لازم است؟
+جواب: هیچ‌کدام، این مسئله سخت‌افزاری است! 💡
+
+سوال: چرا دستگاه IoT به روانشناس رفت؟
+جواب: مشکل اتصال داشت! 📡
+```
+
+</details>
+
+<details>
+<summary><b>📊 آمار گیت‌هاب</b></summary>
+
+- 🔥 طولانی‌ترین نوار: **۱۲۷ روز**
+- ⭐ مجموع ستاره‌ها: **۵۰۰+**
+- 🍴 مخازن فورک شده: **۲۰۰+**
+- 👥 دنبال‌کنندگان: **۱۰۰۰+**
+- 🤝 دنبال شده: **۳۰۰+**
+
+</details>
+
+</div>
+
+---
+
+<div align="center">
+
+### 🌟 "نوآوری آینده، یک دستگاه هوشمند در هر زمان" 🌟
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,8,25&height=120&section=footer&animation=twinkling" />
+
+<p>
+  <img src="https://readme-typing-svg.demolab.com?font=Vazirmatn&size=20&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=400&lines=از+بازدید+شما+متشکریم!;بیایید+با+هم+نوآوری+کنیم!;ساخت+فناوری+فردا+امروز!" alt="Typing SVG" />
+</p>
+
+⭐ **اگر این مخزن مفید بود، ستاره بدهید!** ⭐
+
+</div>
