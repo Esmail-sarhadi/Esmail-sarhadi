@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="footer banner">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="fwave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="75%" stop-color="#7CFFB2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="fglow" cx="50%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="fgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0F1F38" stroke-width="1"/>
+    </pattern>
+    <filter id="fsoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes fspin { to { transform: rotate(360deg); } }
+    @keyframes fblink { 0%,48%{opacity:1} 52%,96%{opacity:0.15} 100%{opacity:1} }
+    @keyframes fdrift { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-18px)} }
+    .fspin { animation: fspin 30s linear infinite; transform-origin: 600px 150px; }
+    .fblink { animation: fblink 1.8s steps(1,end) infinite; }
+    .fdrift { animation: fdrift 8s ease-in-out infinite; }
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+  </style>
+
+  <rect width="1200" height="240" fill="url(#fbg)"/>
+  <rect width="1200" height="240" fill="url(#fgrid)" opacity="0.45"/>
+  <ellipse cx="600" cy="240" rx="620" ry="190" fill="url(#fglow)"/>
+
+  <!-- rotating dashed halo -->
+  <circle class="fspin" cx="600" cy="150" r="150" fill="none" stroke="#123354" stroke-width="1" stroke-dasharray="4 14"/>
+  <circle class="fspin" cx="600" cy="150" r="182" fill="none" stroke="#0E2846" stroke-width="1" stroke-dasharray="2 22" style="animation-duration:44s;animation-direction:reverse"/>
+
+  <!-- handle -->
+  <text class="mono" x="600" y="40" text-anchor="middle" fill="#2F5F8C" font-size="13" letter-spacing="4.5">@ESMAIL-SARHADI</text>
+
+  <!-- waves -->
+  <g class="fdrift" fill="none" stroke="url(#fwave)" stroke-width="1.6">
+    <path d="M-40 168 Q 100 138 240 168 T 520 168 T 800 168 T 1080 168 T 1360 168" opacity="0.55"/>
+    <path d="M-40 186 Q 110 216 260 186 T 560 186 T 860 186 T 1160 186 T 1460 186" opacity="0.35"/>
+  </g>
+
+  <!-- pulses -->
+  <g filter="url(#fsoft)">
+    <circle r="3" fill="#7CFFB2">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M-40 168 Q 100 138 240 168 T 520 168 T 800 168 T 1080 168 T 1360 168"/>
+    </circle>
+    <circle r="2.6" fill="#00E5FF">
+      <animateMotion dur="8.5s" begin="2s" repeatCount="indefinite" path="M-40 186 Q 110 216 260 186 T 560 186 T 860 186 T 1160 186 T 1460 186"/>
+    </circle>
+  </g>
+
+  <!-- headline -->
+  <text class="sans" x="600" y="96" text-anchor="middle" fill="#EAF6FF" font-size="27" font-weight="700" letter-spacing="2.4">
+    HARDWARE FIRST. FIRMWARE HONEST. SYSTEMS THAT RUN.
+  </text>
+
+  <text class="mono" x="600" y="132" text-anchor="middle" fill="#4E7CA8" font-size="13.5" letter-spacing="2.6">
+    ESP32 &#183; STM32 &#183; MODBUS &#183; MQTT &#183; LORA &#183; SNMP &#183; IEC 60870-5-104
+  </text>
+
+  <!-- status footer: anchored from the centre so it can never collide -->
+  <g transform="translate(600,212)">
+    <circle class="fblink" cx="-14" cy="-4" r="4" fill="#7CFFB2"/>
+    <text class="mono" x="-32" y="0" text-anchor="end" fill="#5C89B8" font-size="13" letter-spacing="2.4">OPEN TO COLLABORATION</text>
+    <text class="mono" x="0" y="0" fill="#1F4A73" font-size="13">|</text>
+    <text class="mono" x="16" y="0" text-anchor="start" fill="#5C89B8" font-size="13" letter-spacing="2.4">ZAHEDAN, IRAN</text>
+  </g>
+
+  <g stroke="#1E4A78" stroke-width="2" fill="none">
+    <path d="M16 34 V16 H34"/>
+    <path d="M1184 34 V16 H1166"/>
+    <path d="M16 206 V224 H34"/>
+    <path d="M1184 206 V224 H1166"/>
+  </g>
+</svg>

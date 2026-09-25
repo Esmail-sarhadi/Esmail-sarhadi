@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" role="img" aria-label="Industrial IoT stack: field, control, transport, integration, application">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="l1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B2233"/><stop offset="100%" stop-color="#071523"/>
+    </linearGradient>
+    <linearGradient id="l2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A1F2E"/><stop offset="100%" stop-color="#06131F"/>
+    </linearGradient>
+    <linearGradient id="l3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10203A"/><stop offset="100%" stop-color="#0A1424"/>
+    </linearGradient>
+    <linearGradient id="l4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#131C3A"/><stop offset="100%" stop-color="#0C1226"/>
+    </linearGradient>
+    <linearGradient id="l5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A1A38"/><stop offset="100%" stop-color="#100F26"/>
+    </linearGradient>
+    <pattern id="sgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0E1D33" stroke-width="1"/>
+    </pattern>
+    <filter id="sglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes dash { to { stroke-dashoffset: -240; } }
+    @keyframes blink { 0%,45%{opacity:1} 55%,95%{opacity:.2} 100%{opacity:1} }
+    @keyframes breathe { 0%,100%{opacity:.45} 50%{opacity:1} }
+    .dash { stroke-dasharray: 8 16; animation: dash 5s linear infinite; }
+    .blink { animation: blink 2.2s steps(1,end) infinite; }
+    .breathe { animation: breathe 3.4s ease-in-out infinite; }
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+  </style>
+
+  <rect width="1200" height="470" fill="url(#sbg)"/>
+  <rect width="1200" height="470" fill="url(#sgrid)" opacity="0.45"/>
+
+  <!-- header -->
+  <g>
+    <circle class="blink" cx="34" cy="30" r="4" fill="#7CFFB2" filter="url(#sglow)"/>
+    <text class="mono" x="50" y="35" fill="#5C89B8" font-size="13" letter-spacing="3">SYSTEM ARCHITECTURE</text>
+    <text class="mono" x="290" y="35" fill="#1F4A73" font-size="13" letter-spacing="3">//</text>
+    <text class="mono" x="316" y="35" fill="#5C89B8" font-size="13" letter-spacing="3">FIELD TO DASHBOARD</text>
+    <line x1="24" y1="52" x2="1176" y2="52" stroke="#14304F" stroke-width="1"/>
+  </g>
+
+  <!-- ================= L1 FIELD ================= -->
+  <g>
+    <rect x="24" y="68" width="1152" height="64" rx="8" fill="url(#l1)" stroke="#1A4568" stroke-width="1.2"/>
+    <rect x="24" y="68" width="4" height="64" rx="2" fill="#00E5FF"/>
+    <text class="mono" x="46" y="94" fill="#7CFFB2" font-size="12" letter-spacing="2.6">L1</text>
+    <text class="mono" x="46" y="116" fill="#8FB6D9" font-size="15" letter-spacing="1.8">FIELD</text>
+    <line x1="166" y1="80" x2="166" y2="120" stroke="#1A4568" stroke-width="1"/>
+    <g class="mono" font-size="12.5" letter-spacing="1.2" fill="#9CC4E4">
+      <text x="186" y="98">Sensors</text><text x="186" y="118" fill="#4E7CA8" font-size="11">DHT21 / DHT22 / MQ135</text>
+      <text x="380" y="98">Actuators</text><text x="380" y="118" fill="#4E7CA8" font-size="11">Relays / Contactors</text>
+      <text x="590" y="98">Positioning</text><text x="590" y="118" fill="#4E7CA8" font-size="11">UWB / GPS &#183; NMEA</text>
+      <text x="800" y="98">Identification</text><text x="800" y="118" fill="#4E7CA8" font-size="11">RFID / Pulse</text>
+      <text x="1010" y="98">Drives</text><text x="1010" y="118" fill="#4E7CA8" font-size="11">Shihlin 7.5 kW VFD</text>
+    </g>
+  </g>
+
+  <!-- link 1 -->
+  <g stroke="#1E4A78" stroke-width="1.3" fill="none">
+    <path d="M600 132 V152" class="dash"/>
+  </g>
+  <text class="mono" x="612" y="147" fill="#2F5F8C" font-size="10.5" letter-spacing="1.6">ANALOG / DIGITAL I&#47;O &#183; RS-485</text>
+
+  <!-- ================= L2 CONTROL ================= -->
+  <g>
+    <rect x="24" y="154" width="1152" height="64" rx="8" fill="url(#l2)" stroke="#1A4568" stroke-width="1.2"/>
+    <rect x="24" y="154" width="4" height="64" rx="2" fill="#7CFFB2"/>
+    <text class="mono" x="46" y="180" fill="#7CFFB2" font-size="12" letter-spacing="2.6">L2</text>
+    <text class="mono" x="46" y="202" fill="#8FB6D9" font-size="15" letter-spacing="1.8">CONTROL</text>
+    <line x1="166" y1="166" x2="166" y2="206" stroke="#1A4568" stroke-width="1"/>
+    <g class="mono" font-size="12.5" letter-spacing="1.2" fill="#9CC4E4">
+      <text x="186" y="184">ESP32</text><text x="186" y="204" fill="#4E7CA8" font-size="11">Wi-Fi / BT / Touch</text>
+      <text x="380" y="184">STM32</text><text x="380" y="204" fill="#4E7CA8" font-size="11">Bare-metal C</text>
+      <text x="590" y="184">C &#47; C++</text><text x="590" y="204" fill="#4E7CA8" font-size="11">CMake toolchain</text>
+      <text x="800" y="184">OTA Updates</text><text x="800" y="204" fill="#4E7CA8" font-size="11">Web-server firmware</text>
+      <text x="1010" y="184">Firmware</text><text x="1010" y="204" fill="#4E7CA8" font-size="11">Watchdog / recovery</text>
+    </g>
+  </g>
+
+  <!-- link 2 -->
+  <g stroke="#1E4A78" stroke-width="1.3" fill="none">
+    <path d="M600 218 V238" class="dash"/>
+  </g>
+  <text class="mono" x="612" y="233" fill="#2F5F8C" font-size="10.5" letter-spacing="1.6">MODBUS RTU &#183; LoRa RFM95 &#183; BLE</text>
+
+  <!-- ================= L3 TRANSPORT ================= -->
+  <g>
+    <rect x="24" y="240" width="1152" height="64" rx="8" fill="url(#l3)" stroke="#22496E" stroke-width="1.2"/>
+    <rect x="24" y="240" width="4" height="64" rx="2" fill="#B388FF"/>
+    <text class="mono" x="46" y="266" fill="#B388FF" font-size="12" letter-spacing="2.6">L3</text>
+    <text class="mono" x="46" y="288" fill="#8FB6D9" font-size="15" letter-spacing="1.8">TRANSPORT</text>
+    <line x1="166" y1="252" x2="166" y2="292" stroke="#22496E" stroke-width="1"/>
+    <g class="mono" font-size="12.5" letter-spacing="1.2" fill="#A9B8E8">
+      <text x="186" y="270">Modbus TCP</text><text x="186" y="290" fill="#5B6FA8" font-size="11">PLC integration</text>
+      <text x="380" y="270">RS-485</text><text x="380" y="290" fill="#5B6FA8" font-size="11">Multi-drop bus</text>
+      <text x="590" y="270">LoRa &#47; RFM95</text><text x="590" y="290" fill="#5B6FA8" font-size="11">Long range, low power</text>
+      <text x="800" y="270">Ethernet</text><text x="800" y="290" fill="#5B6FA8" font-size="11">ENC28J60 &#183; W5500</text>
+      <text x="1010" y="270">NMEA</text><text x="1010" y="290" fill="#5B6FA8" font-size="11">GPGGA parsing</text>
+    </g>
+  </g>
+
+  <!-- link 3 -->
+  <g stroke="#1E4A78" stroke-width="1.3" fill="none">
+    <path d="M600 304 V324" class="dash"/>
+  </g>
+  <text class="mono" x="612" y="319" fill="#2F5F8C" font-size="10.5" letter-spacing="1.6">MQTT TOPICS &#183; SNMP v2 &#183; IEC 60870-5-104</text>
+
+  <!-- ================= L4 INTEGRATION ================= -->
+  <g>
+    <rect x="24" y="326" width="1152" height="64" rx="8" fill="url(#l4)" stroke="#2A4470" stroke-width="1.2"/>
+    <rect x="24" y="326" width="4" height="64" rx="2" fill="#5B8DEF"/>
+    <text class="mono" x="46" y="352" fill="#5B8DEF" font-size="12" letter-spacing="2.6">L4</text>
+    <text class="mono" x="46" y="374" fill="#8FB6D9" font-size="15" letter-spacing="1.8">INTEGRATION</text>
+    <line x1="166" y1="338" x2="166" y2="378" stroke="#2A4470" stroke-width="1"/>
+    <g class="mono" font-size="12.5" letter-spacing="1.2" fill="#9FAEE0">
+      <text x="186" y="356">MQTT broker</text><text x="186" y="376" fill="#5566A0" font-size="11">Pub &#47; Sub</text>
+      <text x="380" y="356">HTTP &#47; REST</text><text x="380" y="376" fill="#5566A0" font-size="11">Flask endpoints</text>
+      <text x="590" y="356">WebSocket</text><text x="590" y="376" fill="#5566A0" font-size="11">Live dashboards</text>
+      <text x="800" y="356">SNMP v2</text><text x="800" y="376" fill="#5566A0" font-size="11">Network monitoring</text>
+      <text x="1010" y="356">IEC 60870-5-104</text><text x="1010" y="376" fill="#5566A0" font-size="11">SCADA telecontrol</text>
+    </g>
+  </g>
+
+  <!-- link 4 -->
+  <g stroke="#1E4A78" stroke-width="1.3" fill="none">
+    <path d="M600 390 V410" class="dash"/>
+  </g>
+  <text class="mono" x="612" y="405" fill="#2F5F8C" font-size="10.5" letter-spacing="1.6">REST &#183; JSON &#183; SQL</text>
+
+  <!-- ================= L5 APPLICATION ================= -->
+  <g>
+    <rect x="24" y="412" width="1152" height="44" rx="8" fill="url(#l5)" stroke="#3A3A6E" stroke-width="1.2"/>
+    <rect x="24" y="412" width="4" height="44" rx="2" fill="#FF6B9D"/>
+    <text class="mono" x="46" y="440" fill="#FF6B9D" font-size="12" letter-spacing="2.6">L5</text>
+    <line x1="166" y1="422" x2="166" y2="446" stroke="#3A3A6E" stroke-width="1"/>
+    <text class="mono" x="46" y="440" fill="#8FB6D9" font-size="15" letter-spacing="1.8">APPLICATION</text>
+    <g class="mono" font-size="12" letter-spacing="1.2" fill="#A79FD8">
+      <text x="340" y="440">Python &#47; Flask</text>
+      <text x="500" y="440">React &#183; Next.js</text>
+      <text x="690" y="440">SQL &#183; SQLite</text>
+      <text x="860" y="440">Android (Kotlin)</text>
+      <text x="1050" y="440">VR &#183; Quest 3</text>
+    </g>
+  </g>
+
+  <!-- left rail -->
+  <line x1="12" y1="68" x2="12" y2="456" stroke="#14304F" stroke-width="1"/>
+  <circle class="breathe" cx="12" cy="68" r="3" fill="#00E5FF" filter="url(#sglow)"/>
+  <circle class="breathe" cx="12" cy="456" r="3" fill="#FF6B9D" filter="url(#sglow)"/>
+
+  <rect x="1" y="1" width="1198" height="468" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

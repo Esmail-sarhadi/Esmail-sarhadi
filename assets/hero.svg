@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Esmail Sarhadi - Embedded Systems and Industrial IoT Engineer">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070C16"/>
+      <stop offset="55%" stop-color="#050810"/>
+      <stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF">
+        <animate attributeName="stop-color" values="#00E5FF;#7CFFB2;#00E5FF" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#EAF6FF"/>
+      <stop offset="100%" stop-color="#00E5FF">
+        <animate attributeName="stop-color" values="#00E5FF;#B388FF;#00E5FF" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1728"/>
+      <stop offset="100%" stop-color="#061020"/>
+    </linearGradient>
+
+    <linearGradient id="busGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00E5FF" stop-opacity="0.75"/>
+      <stop offset="80%" stop-color="#00E5FF" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#00E5FF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#122544" stroke-width="1" opacity="0.6"/>
+    </pattern>
+
+    <pattern id="dotgrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#1B3358" opacity="0.5"/>
+    </pattern>
+
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="tight" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="360" rx="0"/></clipPath>
+  </defs>
+
+  <style>
+    .mono  { font-family: Consolas, Menlo, 'DejaVu Sans Mono', 'Courier New', monospace; }
+    .sans  { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+
+    @keyframes blink   { 0%,46%{opacity:1} 50%,96%{opacity:0.12} 100%{opacity:1} }
+    @keyframes blink2  { 0%,18%{opacity:1} 22%,100%{opacity:0.15} }
+    @keyframes spin    { to { transform: rotate(360deg); } }
+    @keyframes spinR   { to { transform: rotate(-360deg); } }
+    @keyframes sweep   { 0%{transform:translateX(-240px)} 100%{transform:translateX(1240px)} }
+    @keyframes corep   { 0%,100%{opacity:0.35; transform:scale(0.86)} 50%{opacity:1; transform:scale(1.06)} }
+    @keyframes trace   { to { stroke-dashoffset: -400; } }
+    @keyframes floaty  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+    @keyframes barp    { 0%,100%{opacity:0.25} 50%{opacity:1} }
+
+    .blink   { animation: blink 2.4s steps(1,end) infinite; }
+    .blink2  { animation: blink2 1.6s steps(1,end) infinite; }
+    .ring1   { animation: spin 26s linear infinite; transform-origin: 175px 180px; }
+    .ring2   { animation: spinR 16s linear infinite; transform-origin: 175px 180px; }
+    .sweep   { animation: sweep 6.5s linear infinite; }
+    .core    { animation: corep 2.6s ease-in-out infinite; transform-origin: 175px 180px; }
+    .trace   { stroke-dasharray: 26 74; animation: trace 3.4s linear infinite; }
+    .floaty  { animation: floaty 6s ease-in-out infinite; }
+    .bar     { animation: barp 1.5s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <!-- background -->
+    <rect width="1200" height="360" fill="url(#bgGrad)"/>
+    <rect width="1200" height="360" fill="url(#dotgrid)"/>
+    <rect x="0" y="0" width="1200" height="360" fill="url(#grid)" opacity="0.5"/>
+
+    <!-- ambient glows -->
+    <ellipse cx="175" cy="180" rx="290" ry="230" fill="url(#glow)"/>
+    <ellipse cx="1010" cy="330" rx="360" ry="180" fill="url(#glow)" opacity="0.55"/>
+
+    <!-- moving scan sweep -->
+    <g opacity="0.35">
+      <rect class="sweep" x="0" y="0" width="150" height="360" fill="url(#busGrad)" opacity="0.16"/>
+    </g>
+
+    <!-- ============ CIRCUIT BUSES ============ -->
+    <g opacity="0.9">
+      <!-- top bus -->
+      <path d="M0 46 H300 L332 78 H1200" fill="none" stroke="#14304F" stroke-width="1.4"/>
+      <path d="M0 46 H300 L332 78 H1200" fill="none" stroke="url(#busGrad)" stroke-width="1.4" class="trace"/>
+      <!-- bottom bus -->
+      <path d="M0 318 H210 L240 288 H1200" fill="none" stroke="#14304F" stroke-width="1.4"/>
+      <path d="M0 318 H210 L240 288 H1200" fill="none" stroke="url(#busGrad)" stroke-width="1.4" class="trace"/>
+      <!-- mid right bus -->
+      <path d="M1200 120 H900 L872 148 H620" fill="none" stroke="#14304F" stroke-width="1.2"/>
+      <path d="M1200 120 H900 L872 148 H620" fill="none" stroke="url(#busGrad)" stroke-width="1.2" class="trace"/>
+
+      <!-- vias -->
+      <g fill="#0E2138" stroke="#1E4A78" stroke-width="1.2">
+        <circle cx="300" cy="46" r="4"/><circle cx="900" cy="120" r="4"/>
+        <circle cx="210" cy="318" r="4"/><circle cx="620" cy="148" r="3.4"/>
+      </g>
+
+      <!-- data pulses -->
+      <circle r="3.2" fill="#7CFFB2" filter="url(#tight)" opacity="0.95">
+        <animateMotion dur="5.2s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"
+                       path="M0 46 H300 L332 78 H1200"/>
+      </circle>
+      <circle r="3.2" fill="#00E5FF" filter="url(#tight)" opacity="0.95">
+        <animateMotion dur="7.4s" begin="1.6s" repeatCount="indefinite" path="M0 318 H210 L240 288 H1200"/>
+      </circle>
+      <circle r="2.8" fill="#B388FF" filter="url(#tight)" opacity="0.9">
+        <animateMotion dur="6.1s" begin="0.8s" repeatCount="indefinite" path="M1200 120 H900 L872 148 H620"/>
+      </circle>
+    </g>
+
+    <!-- ============ CHIP EMBLEM ============ -->
+    <g class="floaty">
+      <!-- rotating rings -->
+      <circle class="ring1" cx="175" cy="180" r="118" fill="none" stroke="#1B3F68" stroke-width="1" stroke-dasharray="6 12"/>
+      <circle class="ring2" cx="175" cy="180" r="98" fill="none" stroke="#123354" stroke-width="1" stroke-dasharray="2 9"/>
+
+      <!-- pins -->
+      <g fill="#1E4A78">
+        <rect x="104" y="132" width="18" height="6" rx="2"/>
+        <rect x="104" y="158" width="18" height="6" rx="2"/>
+        <rect x="104" y="184" width="18" height="6" rx="2"/>
+        <rect x="104" y="210" width="18" height="6" rx="2"/>
+        <rect x="104" y="236" width="18" height="6" rx="2"/>
+        <rect x="228" y="132" width="18" height="6" rx="2"/>
+        <rect x="228" y="158" width="18" height="6" rx="2"/>
+        <rect x="228" y="184" width="18" height="6" rx="2"/>
+        <rect x="228" y="210" width="18" height="6" rx="2"/>
+        <rect x="228" y="236" width="18" height="6" rx="2"/>
+        <rect x="151" y="80" width="6" height="18" rx="2"/>
+        <rect x="175" y="80" width="6" height="18" rx="2"/>
+        <rect x="199" y="80" width="6" height="18" rx="2"/>
+        <rect x="151" y="262" width="6" height="18" rx="2"/>
+        <rect x="175" y="262" width="6" height="18" rx="2"/>
+        <rect x="199" y="262" width="6" height="18" rx="2"/>
+      </g>
+
+      <!-- die -->
+      <rect x="122" y="98" width="106" height="164" rx="14" fill="url(#chipGrad)" stroke="#2A6FA8" stroke-width="1.6"/>
+      <rect x="132" y="108" width="86" height="144" rx="9" fill="none" stroke="#153A5E" stroke-width="1"/>
+
+      <!-- notch -->
+      <circle cx="175" cy="112" r="6" fill="#050810" stroke="#2A6FA8" stroke-width="1.2"/>
+
+      <!-- core pulse -->
+      <circle class="core" cx="175" cy="180" r="34" fill="#00E5FF" opacity="0.22" filter="url(#soft)"/>
+      <circle cx="175" cy="180" r="24" fill="none" stroke="#00E5FF" stroke-width="1.4" opacity="0.8"/>
+      <circle cx="175" cy="180" r="15" fill="none" stroke="#7CFFB2" stroke-width="1.2" opacity="0.7"/>
+      <circle cx="175" cy="180" r="5.5" fill="#7CFFB2" filter="url(#tight)"/>
+
+      <!-- die traces -->
+      <g stroke="#1E5C8C" stroke-width="1.1" fill="none" opacity="0.9">
+        <path d="M141 128 H175 V164"/>
+        <path d="M209 128 H175 V164"/>
+        <path d="M141 232 H175 V196"/>
+        <path d="M209 232 H175 V196"/>
+      </g>
+      <g fill="#1E5C8C">
+        <rect x="138" y="125" width="6" height="6" rx="1"/>
+        <rect x="206" y="125" width="6" height="6" rx="1"/>
+        <rect x="138" y="229" width="6" height="6" rx="1"/>
+        <rect x="206" y="229" width="6" height="6" rx="1"/>
+      </g>
+
+      <!-- signal bars -->
+      <g>
+        <rect class="bar" x="141" y="248" width="4" height="8" fill="#00E5FF" style="animation-delay:0s"/>
+        <rect class="bar" x="149" y="244" width="4" height="12" fill="#00E5FF" style="animation-delay:.15s"/>
+        <rect class="bar" x="157" y="240" width="4" height="16" fill="#7CFFB2" style="animation-delay:.3s"/>
+        <rect class="bar" x="165" y="244" width="4" height="12" fill="#7CFFB2" style="animation-delay:.45s"/>
+      </g>
+    </g>
+
+    <!-- ============ TEXT BLOCK ============ -->
+    <g transform="translate(348,0)">
+      <!-- status line -->
+      <g>
+        <circle class="blink" cx="0" cy="66" r="4.5" fill="#7CFFB2" filter="url(#tight)"/>
+        <text class="mono" x="16" y="71" fill="#5C89B8" font-size="14" letter-spacing="2.6">SYSTEM ONLINE</text>
+        <text class="mono" x="176" y="71" fill="#1F4A73" font-size="14" letter-spacing="2.6">//</text>
+        <text class="mono" x="204" y="71" fill="#5C89B8" font-size="14" letter-spacing="2.6">ZAHEDAN, IRAN</text>
+        <text class="mono" x="392" y="71" fill="#1F4A73" font-size="14" letter-spacing="2.6">//</text>
+        <text class="mono" x="420" y="71" fill="#5C89B8" font-size="14" letter-spacing="2.6">EST. 2018</text>
+      </g>
+
+      <!-- name -->
+      <text class="mono" x="-2" y="152" fill="url(#nameGrad)" font-size="56" font-weight="700" letter-spacing="5.5">ESMAIL SARHADI</text>
+
+      <!-- rule -->
+      <rect x="0" y="172" width="700" height="1.4" fill="#1B3F68"/>
+      <rect x="0" y="172" width="120" height="1.4" fill="#00E5FF">
+        <animate attributeName="x" values="0;580;0" dur="9s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- role -->
+      <text class="sans" x="0" y="204" fill="#8FB6D9" font-size="19" letter-spacing="1.2">Embedded Systems Engineer</text>
+      <text class="mono" x="0" y="230" fill="#3E6E9C" font-size="17" letter-spacing="1.2">//</text>
+      <text class="sans" x="24" y="230" fill="#8FB6D9" font-size="19" letter-spacing="1.2">Industrial IoT &amp; Automation</text>
+
+      <!-- spec chips -->
+      <g class="mono" font-size="13" letter-spacing="1.6">
+        <g>
+          <rect x="0" y="252" width="86" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="14" y="269" fill="#7FB2DC">ESP32</text>
+        </g>
+        <g>
+          <rect x="94" y="252" width="92" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="108" y="269" fill="#7FB2DC">STM32</text>
+        </g>
+        <g>
+          <rect x="194" y="252" width="94" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="208" y="269" fill="#7FB2DC">MODBUS</text>
+        </g>
+        <g>
+          <rect x="296" y="252" width="72" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="310" y="269" fill="#7FB2DC">MQTT</text>
+        </g>
+        <g>
+          <rect x="376" y="252" width="70" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="390" y="269" fill="#7FB2DC">LoRa</text>
+        </g>
+        <g>
+          <rect x="454" y="252" width="66" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="468" y="269" fill="#7FB2DC">SNMP</text>
+        </g>
+        <g>
+          <rect x="528" y="252" width="104" height="26" rx="13" fill="#08182A" stroke="#1E4A78"/>
+          <text x="542" y="269" fill="#7FB2DC">IEC 60870</text>
+        </g>
+      </g>
+
+      <!-- right-side telemetry -->
+      <g transform="translate(700,60)">
+        <rect x="0" y="0" width="140" height="118" rx="8" fill="#061020" stroke="#14304F" opacity="0.95"/>
+        <text class="mono" x="12" y="20" fill="#3E6E9C" font-size="11" letter-spacing="1.4">TELEMETRY</text>
+        <g stroke="#0F2A46" stroke-width="1">
+          <line x1="12" y1="30" x2="128" y2="30"/>
+        </g>
+        <text class="mono" x="12" y="48" fill="#7CFFB2" font-size="11">CPU</text>
+        <text class="mono" x="112" y="48" fill="#7CFFB2" font-size="11">OK</text>
+        <text class="mono" x="12" y="66" fill="#7CFFB2" font-size="11">RF</text>
+        <text class="mono" x="112" y="66" fill="#7CFFB2" font-size="11">OK</text>
+        <text class="mono" x="12" y="84" fill="#7FB2DC" font-size="11">BUS</text>
+        <text class="mono" x="106" y="84" fill="#7FB2DC" font-size="11">485</text>
+        <text class="mono" x="12" y="102" fill="#5C89B8" font-size="11">UPTIME</text>
+        <text class="mono" x="82" y="102" fill="#5C89B8" font-size="11">99.9%</text>
+        <circle class="blink2" cx="132" cy="16" r="3" fill="#7CFFB2"/>
+      </g>
+    </g>
+
+    <!-- HUD corners -->
+    <g stroke="#2A6FA8" stroke-width="2" fill="none" opacity="0.85">
+      <path d="M14 40 V14 H40"/>
+      <path d="M1186 40 V14 H1160"/>
+      <path d="M14 320 V346 H40"/>
+      <path d="M1186 320 V346 H1160"/>
+    </g>
+
+    <!-- border -->
+    <rect x="1" y="1" width="1198" height="358" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+  </g>
+</svg>
