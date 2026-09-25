@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 44" width="1200" height="44" role="img" aria-label="packet flow divider">
+  <defs>
+    <linearGradient id="pG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00E5FF" stop-opacity="0.75"/>
+      <stop offset="80%" stop-color="#7CFFB2" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="pGlow" x="-60%" y="-200%" width="220%" height="500%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pDash { to { stroke-dashoffset: -300px; } }
+    @keyframes pBlink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    .pDash { stroke-dasharray: 2 26; animation: pDash 2.2s linear infinite; }
+    .pBlink { animation: pBlink 1.4s steps(1,end) infinite; }
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="44" fill="#050810"/>
+
+  <!-- guide -->
+  <line x1="0" y1="22" x2="1200" y2="22" stroke="#122544" stroke-width="1.2"/>
+  <line x1="0" y1="22" x2="1200" y2="22" stroke="url(#pG)" stroke-width="1.4"/>
+  <line x1="0" y1="22" x2="1200" y2="22" stroke="#7CFFB2" stroke-width="2.4" class="pDash" opacity="0.55"/>
+
+  <!-- packets -->
+  <g filter="url(#pGlow)">
+    <rect x="-60" y="16" width="16" height="12" rx="2" fill="#00E5FF" opacity="0.95">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="1320 0" dur="4.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-60" y="16" width="12" height="12" rx="2" fill="#7CFFB2" opacity="0.95">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="1320 0" dur="4.2s" begin="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-60" y="16" width="20" height="12" rx="2" fill="#B388FF" opacity="0.95">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="1320 0" dur="4.2s" begin="2.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-60" y="16" width="14" height="12" rx="2" fill="#FFB86C" opacity="0.9">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="1320 0" dur="4.2s" begin="3.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- end caps -->
+  <g stroke="#1E4A78" stroke-width="1.4" fill="none">
+    <path d="M0 10 V22"/><path d="M0 34 V22"/><path d="M1200 10 V22"/><path d="M1200 34 V22"/>
+  </g>
+  <circle class="pBlink" cx="596" cy="22" r="2.6" fill="#7CFFB2"/>
+  <text class="mono" x="16" y="14" fill="#2F5F8C" font-size="8" letter-spacing="1.5">TX</text>
+  <text class="mono" x="1184" y="14" text-anchor="end" fill="#2F5F8C" font-size="8" letter-spacing="1.5">RX</text>
+</svg>

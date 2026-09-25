@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 56" width="1200" height="56" role="img" aria-label="logic analyzer divider">
+  <defs>
+    <clipPath id="wclip"><rect x="66" y="2" width="1046" height="52"/></clipPath>
+    <filter id="wglow" x="-60%" y="-200%" width="220%" height="500%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes wblink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes wsq  { to { transform: translateX(-68px); } }
+    @keyframes wsin { to { transform: translateX(-44px); } }
+    @keyframes wdash{ to { stroke-dashoffset: -264px; } }
+    .wblink { animation: wblink 1.3s steps(1,end) infinite; }
+    .wsq  { animation: wsq 1.7s linear infinite; }
+    .wsin { animation: wsin 3.4s linear infinite; }
+    .wdash{ stroke-dasharray: 3 30; animation: wdash 2.4s linear infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="56" fill="#050810"/>
+
+  <g clip-path="url(#wclip)">
+    <!-- CH1 : square -->
+    <path class="wsq" fill="none" stroke="#00E5FF" stroke-width="1.3" opacity="0.85"
+      d="M-10 19 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14 h17 v-14 h34 v14"/>
+    <!-- CH2 : pulse train -->
+    <path class="wdash" d="M-10 28 H1214" fill="none" stroke="#7CFFB2" stroke-width="1.3" opacity="0.8"/>
+    <!-- CH3 : sine -->
+    <path class="wsin" fill="none" stroke="#B388FF" stroke-width="1.2" opacity="0.75"
+      d="M-10 44 q11 -11 22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0"/>
+  </g>
+
+  <!-- channel labels -->
+  <g class="mono" fill="#2F5F8C" font-size="8" letter-spacing="1.5">
+    <text x="16" y="15">CH1</text>
+    <text x="16" y="31">CH2</text>
+    <text x="16" y="47">CH3</text>
+  </g>
+
+  <!-- capture indicator -->
+  <circle class="wblink" cx="1114" cy="26" r="2.6" fill="#FF6B9D" filter="url(#wglow)"/>
+  <text class="mono" x="1122" y="29.5" fill="#2F5F8C" font-size="8" letter-spacing="1">LA-8 // 1MS</text>
+
+  <!-- corner brackets -->
+  <g stroke="#1E4A78" stroke-width="1.4" fill="none">
+    <path d="M8 1 H1 V8"/><path d="M1192 1 H1199 V8"/>
+    <path d="M1 48 V55 H8"/><path d="M1199 48 V55 H1192"/>
+  </g>
+</svg>

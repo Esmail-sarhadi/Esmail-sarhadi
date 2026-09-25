@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Section — selected work">
+  <defs>
+    <linearGradient id="hbus2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#7CFFB2" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hglow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hdots2" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#16304F" opacity="0.5"/>
+    </pattern>
+    <filter id="hsoft2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes hblink2 { 0%,45%{opacity:1} 55%,95%{opacity:.2} 100%{opacity:1} }
+    @keyframes hflow2  { to { stroke-dashoffset: -480; } }
+    .hblink2 { animation: hblink2 2.2s steps(1,end) infinite; }
+    .hflow2 { stroke-dasharray: 12 28; animation: hflow2 4s linear infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="150" fill="#050810"/>
+  <rect width="1200" height="150" fill="url(#hdots2)"/>
+  <ellipse cx="920" cy="70" rx="300" ry="80" fill="url(#hglow2)"/>
+
+  <!-- header -->
+  <circle class="hblink2" cx="40" cy="34" r="4" fill="#7CFFB2" filter="url(#hsoft2)"/>
+  <text class="mono" x="56" y="39" fill="#4E7CA8" font-size="11" letter-spacing="3">SEC/02 // DEPLOYED SYSTEMS</text>
+  <text class="mono" x="40" y="86" fill="#EAF6FF" font-size="30" font-weight="700" letter-spacing="3">SELECTED WORK</text>
+  <text class="mono" x="40" y="112" fill="#4E7CA8" font-size="12" letter-spacing="2">// TEN PUBLIC REPOSITORIES · STARS &amp; LANGUAGES LIVE FROM GITHUB</text>
+  <text class="mono" x="1160" y="20" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">FIG.02 // PROTO BOARD</text>
+
+  <!-- board -->
+  <rect x="736" y="26" width="340" height="90" rx="6" fill="#060F1E" stroke="#14304F" stroke-width="1.3"/>
+  <g fill="#050810" stroke="#1E4A78" stroke-width="1.2">
+    <circle cx="750" cy="38" r="2.6"/><circle cx="1062" cy="38" r="2.6"/>
+    <circle cx="750" cy="104" r="2.6"/><circle cx="1062" cy="104" r="2.6"/>
+  </g>
+
+  <!-- chip pins -->
+  <g stroke="#1E4A78" stroke-width="1.1">
+    <path d="M774 34 V42 M791 34 V42 M808 34 V42 M774 82 V90 M791 82 V90 M808 82 V90"/>
+    <path d="M868 30 V38 M885 30 V38 M902 30 V38 M868 86 V94 M885 86 V94 M902 86 V94"/>
+    <path d="M970 36 V44 M983 36 V44 M996 36 V44 M970 80 V88 M983 80 V88 M996 80 V88"/>
+  </g>
+
+  <!-- chips -->
+  <rect x="762" y="42" width="58" height="40" rx="3" fill="#08182A" stroke="#2A6FA8" stroke-width="1.3"/>
+  <text class="mono" x="791" y="66" text-anchor="middle" fill="#9CC4E4" font-size="9" letter-spacing="1">ESP32</text>
+  <rect x="850" y="38" width="70" height="48" rx="3" fill="#08182A" stroke="#2A6FA8" stroke-width="1.3"/>
+  <text class="mono" x="885" y="66" text-anchor="middle" fill="#9CC4E4" font-size="9" letter-spacing="1">STM32</text>
+  <rect x="952" y="44" width="62" height="36" rx="3" fill="#08182A" stroke="#2A6FA8" stroke-width="1.3"/>
+  <text class="mono" x="983" y="66" text-anchor="middle" fill="#9CC4E4" font-size="9" letter-spacing="1">RFM95</text>
+
+  <!-- stubs + vias + board bus -->
+  <path d="M791 90 V98 M885 94 V98 M983 88 V98" stroke="#1E4A78" stroke-width="1.2"/>
+  <line x1="756" y1="98" x2="1056" y2="98" stroke="#1E4A78" stroke-width="1.2"/>
+  <line x1="756" y1="98" x2="1056" y2="98" stroke="url(#hbus2)" stroke-width="1.8" class="hflow2" opacity="0.6"/>
+  <g fill="#0E2138" stroke="#2A6FA8" stroke-width="1.1">
+    <circle cx="791" cy="98" r="2.6"/><circle cx="885" cy="98" r="2.6"/><circle cx="983" cy="98" r="2.6"/>
+  </g>
+
+  <!-- compile ok -->
+  <circle class="hblink2" cx="1036" cy="42" r="3" fill="#7CFFB2" filter="url(#hsoft2)"/>
+  <text class="mono" x="1044" y="46" fill="#7CFFB2" font-size="8" letter-spacing="1">OK</text>
+
+  <!-- silkscreen -->
+  <text class="mono" x="756" y="110" fill="#2F5F8C" font-size="8" letter-spacing="2">PROTO-76 // REV C</text>
+
+  <!-- bus -->
+  <line x1="24" y1="132" x2="1176" y2="132" stroke="#14304F" stroke-width="1.2"/>
+  <line x1="24" y1="132" x2="1176" y2="132" stroke="url(#hbus2)" stroke-width="2" class="hflow2" opacity="0.7"/>
+  <g stroke="#1E4A78" stroke-width="1.4"><path d="M24 120 V132"/><path d="M1176 120 V132"/></g>
+
+  <rect x="1" y="1" width="1198" height="148" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

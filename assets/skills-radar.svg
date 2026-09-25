@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Capability radar — repositories per technology">
+  <defs>
+    <linearGradient id="rbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="rwedge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="rfill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.06"/>
+    </radialGradient>
+    <linearGradient id="sweepW" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.20"/>
+    </linearGradient>
+    <pattern id="rgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0E1D33" stroke-width="1"/>
+    </pattern>
+    <filter id="rglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes rblink { 0%,46%{opacity:1} 52%,96%{opacity:.18} 100%{opacity:1} }
+    @keyframes rspin  { to { transform: rotate(360deg); } }
+    @keyframes rpulse { 0%,100%{opacity:.5} 50%{opacity:1} }
+    .rblink { animation: rblink 2.2s steps(1,end) infinite; }
+    .rspin  { animation: rspin 7s linear infinite; transform-origin: 600px 240px; }
+    .rpulse { animation: rpulse 3.4s ease-in-out infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="440" fill="url(#rbg)"/>
+  <rect width="1200" height="440" fill="url(#rgrid)" opacity="0.4"/>
+
+  <!-- header -->
+  <circle class="rblink" cx="40" cy="28" r="4" fill="#7CFFB2" filter="url(#rglow)"/>
+  <text class="mono" x="56" y="33" fill="#4E7CA8" font-size="11" letter-spacing="3">FIG.07 // CAPABILITY RADAR</text>
+  <text class="mono" x="40" y="61" fill="#EAF6FF" font-size="21" font-weight="700" letter-spacing="1.5">DENSITY OF WORK PER TECHNOLOGY</text>
+  <text class="mono" x="40" y="83" fill="#3E6E9C" font-size="11" letter-spacing="1">// RADIUS = &#8730;N REPOSITORIES, SO ENCLOSED AREA IS PROPORTIONAL TO THE COUNT</text>
+  <text class="mono" x="1160" y="33" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">N MAX = 29 · ESP32</text>
+
+  <!-- spider web -->
+  <g fill="none" stroke="#14304F" stroke-width="1">
+    <polygon points="600,212 619.8,220.2 628,240 619.8,259.8 600,268 580.2,259.8 572,240 580.2,220.2"/>
+    <polygon points="600,184 639.6,200.4 656,240 639.6,279.6 600,296 560.4,279.6 544,240 560.4,200.4"/>
+    <polygon points="600,156 659.4,180.6 684,240 659.4,299.4 600,324 540.6,299.4 516,240 540.6,180.6"/>
+    <polygon points="600,128 679.2,160.8 712,240 679.2,319.2 600,352 520.8,319.2 488,240 520.8,160.8"/>
+    <polygon points="600,100 699,141 740,240 699,339 600,380 501,339 460,240 501,141" stroke="#1A4568" stroke-width="1.3"/>
+  </g>
+  <g stroke="#123354" stroke-width="1">
+    <path d="M600 240 V100"/><path d="M600 240 L699 141"/><path d="M600 240 H740"/>
+    <path d="M600 240 L699 339"/><path d="M600 240 V380"/><path d="M600 240 L501 339"/>
+    <path d="M600 240 H460"/><path d="M600 240 L501 141"/>
+  </g>
+
+  <!-- rotating sweep wedge -->
+  <g class="rspin">
+    <path d="M600 240 L600 100 A140 140 0 0 1 699 141 Z" fill="url(#rwedge)"/>
+    <path d="M600 240 L600 100 A140 140 0 0 1 699 141 Z" fill="url(#sweepW)"/>
+    <line x1="600" y1="240" x2="600" y2="100" stroke="#00E5FF" stroke-width="1.4" opacity="0.55"/>
+  </g>
+
+  <!-- data polygon -->
+  <polygon points="600,100 668.8,171.2 678,240 652,292 600,308.8 558.9,281.1 548,240 568.1,208.1"
+           fill="url(#rfill)" stroke="#00E5FF" stroke-width="2" filter="url(#rglow)"/>
+  <polygon class="rpulse" points="600,100 668.8,171.2 678,240 652,292 600,308.8 558.9,281.1 548,240 568.1,208.1"
+           fill="none" stroke="#7CFFB2" stroke-width="1" opacity="0.5"/>
+
+  <!-- vertices -->
+  <g fill="#050810" stroke="#7CFFB2" stroke-width="1.8">
+    <circle cx="600" cy="100" r="4"/>
+    <circle cx="668.8" cy="171.2" r="4"/>
+    <circle cx="678" cy="240" r="4"/>
+    <circle cx="652" cy="292" r="4"/>
+    <circle cx="600" cy="308.8" r="4"/>
+    <circle cx="558.9" cy="281.1" r="4"/>
+    <circle cx="548" cy="240" r="4"/>
+    <circle cx="568.1" cy="208.1" r="4"/>
+  </g>
+
+  <!-- axis labels -->
+  <g class="mono" font-size="12" letter-spacing="1.2">
+    <text x="600" y="80" text-anchor="middle" fill="#EAF6FF">ESP32</text>
+    <text x="600" y="94" text-anchor="middle" fill="#00E5FF" font-size="10">29</text>
+
+    <text x="716" y="124" text-anchor="start" fill="#EAF6FF">C / C++</text>
+    <text x="716" y="138" text-anchor="start" fill="#00E5FF" font-size="10">14</text>
+
+    <text x="762" y="243" text-anchor="start" fill="#EAF6FF">SENSORS</text>
+    <text x="762" y="257" text-anchor="start" fill="#00E5FF" font-size="10">9</text>
+
+    <text x="716" y="360" text-anchor="start" fill="#EAF6FF">PYTHON</text>
+    <text x="716" y="374" text-anchor="start" fill="#00E5FF" font-size="10">8</text>
+
+    <text x="600" y="404" text-anchor="middle" fill="#EAF6FF">LoRa / RF</text>
+    <text x="600" y="418" text-anchor="middle" fill="#00E5FF" font-size="10">7</text>
+
+    <text x="484" y="360" text-anchor="end" fill="#EAF6FF">OTA</text>
+    <text x="484" y="374" text-anchor="end" fill="#00E5FF" font-size="10">5</text>
+
+    <text x="438" y="243" text-anchor="end" fill="#EAF6FF">NMEA / GPS</text>
+    <text x="438" y="257" text-anchor="end" fill="#00E5FF" font-size="10">4</text>
+
+    <text x="484" y="124" text-anchor="end" fill="#EAF6FF">MQTT</text>
+    <text x="484" y="138" text-anchor="end" fill="#00E5FF" font-size="10">3</text>
+  </g>
+
+  <!-- legend chip -->
+  <g transform="translate(940,150)">
+    <rect x="0" y="0" width="216" height="112" rx="6" fill="#061020" stroke="#14304F" stroke-width="1.2"/>
+    <text class="mono" x="14" y="22" fill="#3E6E9C" font-size="9.5" letter-spacing="1.6">READING THIS CHART</text>
+    <line x1="12" y1="32" x2="204" y2="32" stroke="#14304F" stroke-width="1"/>
+    <text class="mono" x="14" y="50" fill="#8FB6D9" font-size="10">Each axis counts public</text>
+    <text class="mono" x="14" y="66" fill="#8FB6D9" font-size="10">repositories touching that</text>
+    <text class="mono" x="14" y="82" fill="#8FB6D9" font-size="10">technology — not a score</text>
+    <text class="mono" x="14" y="98" fill="#8FB6D9" font-size="10">and not a self-rating.</text>
+    <circle class="rblink" cx="196" cy="98" r="3" fill="#7CFFB2"/>
+  </g>
+
+  <g stroke="#2A6FA8" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M16 30 V16 H30"/><path d="M1184 30 V16 H1170"/>
+    <path d="M16 410 V424 H30"/><path d="M1184 410 V424 H1170"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="438" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

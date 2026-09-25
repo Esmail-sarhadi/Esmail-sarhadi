@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Key figures — repositories, stars, projects, languages, since">
+  <defs>
+    <linearGradient id="kbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="ksweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="kdots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#16304F" opacity="0.5"/>
+    </pattern>
+    <filter id="kglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes kblink { 0%,45%{opacity:1} 55%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes kedge { 0%,100%{opacity:.35} 50%{opacity:1} }
+    @keyframes ksweep { from{transform:translateX(-180px)} to{transform:translateX(1200px)} }
+    .kblink { animation: kblink 2s steps(1,end) infinite; }
+    .kedge { animation: kedge 3.2s ease-in-out infinite; }
+    .ksweep { animation: ksweep 7s linear infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="180" fill="url(#kbg)"/>
+  <rect width="1200" height="180" fill="url(#kdots)"/>
+
+  <!-- header -->
+  <circle class="kblink" cx="40" cy="26" r="3.6" fill="#7CFFB2" filter="url(#kglow)"/>
+  <text class="mono" x="54" y="30" fill="#4E7CA8" font-size="10.5" letter-spacing="3">FIG.08 // KEY FIGURES</text>
+  <text class="mono" x="1160" y="30" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">EVERY NUMBER PULLED FROM THE GITHUB API</text>
+  <line x1="24" y1="44" x2="1176" y2="44" stroke="#14304F" stroke-width="1"/>
+
+  <!-- sweep behind tiles -->
+  <rect class="ksweep" x="0" y="52" width="180" height="106" fill="url(#ksweep)"/>
+
+  <!-- ===== TILE 1 : repos ===== -->
+  <g>
+    <rect x="43" y="62" width="174" height="86" rx="6" fill="#07182B" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect class="kedge" x="43" y="62" width="174" height="86" rx="6" fill="none" stroke="#00E5FF" stroke-width="1.2" opacity="0.5"/>
+    <circle class="kblink" cx="203" cy="78" r="2.6" fill="#00E5FF"/>
+    <text class="mono" x="59" y="86" fill="#4E7CA8" font-size="9" letter-spacing="1.6">PUBLIC REPOS</text>
+    <text class="mono" x="59" y="122" fill="#00E5FF" font-size="30" font-weight="700">70</text>
+    <text class="mono" x="59" y="138" fill="#3E6E9C" font-size="8.5">forks excluded</text>
+  </g>
+
+  <!-- ===== TILE 2 : stars ===== -->
+  <g>
+    <rect x="231" y="62" width="174" height="86" rx="6" fill="#07182B" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect class="kedge" x="231" y="62" width="174" height="86" rx="6" fill="none" stroke="#7CFFB2" stroke-width="1.2" opacity="0.5" style="animation-delay:.4s"/>
+    <circle class="kblink" cx="391" cy="78" r="2.6" fill="#7CFFB2" style="animation-delay:.4s"/>
+    <text class="mono" x="247" y="86" fill="#4E7CA8" font-size="9" letter-spacing="1.6">STARS EARNED</text>
+    <text class="mono" x="247" y="122" fill="#7CFFB2" font-size="30" font-weight="700">222</text>
+    <text class="mono" x="247" y="138" fill="#3E6E9C" font-size="8.5">across own repos</text>
+  </g>
+
+  <!-- ===== TILE 3 : esp32 ===== -->
+  <g>
+    <rect x="419" y="62" width="174" height="86" rx="6" fill="#07182B" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect class="kedge" x="419" y="62" width="174" height="86" rx="6" fill="none" stroke="#B388FF" stroke-width="1.2" opacity="0.5" style="animation-delay:.8s"/>
+    <circle class="kblink" cx="579" cy="78" r="2.6" fill="#B388FF" style="animation-delay:.8s"/>
+    <text class="mono" x="435" y="86" fill="#4E7CA8" font-size="9" letter-spacing="1.6">ESP32 PROJECTS</text>
+    <text class="mono" x="435" y="122" fill="#B388FF" font-size="30" font-weight="700">29</text>
+    <text class="mono" x="435" y="138" fill="#3E6E9C" font-size="8.5">name + description match</text>
+  </g>
+
+  <!-- ===== TILE 4 : c/c++ ===== -->
+  <g>
+    <rect x="607" y="62" width="174" height="86" rx="6" fill="#07182B" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect class="kedge" x="607" y="62" width="174" height="86" rx="6" fill="none" stroke="#5B8DEF" stroke-width="1.2" opacity="0.5" style="animation-delay:1.2s"/>
+    <circle class="kblink" cx="767" cy="78" r="2.6" fill="#5B8DEF" style="animation-delay:1.2s"/>
+    <text class="mono" x="623" y="86" fill="#4E7CA8" font-size="9" letter-spacing="1.6">C / C++ REPOS</text>
+    <text class="mono" x="623" y="122" fill="#5B8DEF" font-size="30" font-weight="700">14</text>
+    <text class="mono" x="623" y="138" fill="#3E6E9C" font-size="8.5">12 C++ &#183; 2 C</text>
+  </g>
+
+  <!-- ===== TILE 5 : contributions ===== -->
+  <g>
+    <rect x="795" y="62" width="174" height="86" rx="6" fill="#07182B" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect class="kedge" x="795" y="62" width="174" height="86" rx="6" fill="none" stroke="#FF6B9D" stroke-width="1.2" opacity="0.5" style="animation-delay:1.6s"/>
+    <circle class="kblink" cx="955" cy="78" r="2.6" fill="#FF6B9D" style="animation-delay:1.6s"/>
+    <text class="mono" x="811" y="86" fill="#4E7CA8" font-size="9" letter-spacing="1.6">CONTRIBUTIONS</text>
+    <text class="mono" x="811" y="122" fill="#FF6B9D" font-size="30" font-weight="700">1.4k</text>
+    <text class="mono" x="811" y="138" fill="#3E6E9C" font-size="8.5">all-time, per API</text>
+  </g>
+
+  <!-- ===== TILE 6 : since ===== -->
+  <g>
+    <rect x="983" y="62" width="174" height="86" rx="6" fill="#07182B" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect class="kedge" x="983" y="62" width="174" height="86" rx="6" fill="none" stroke="#FFB86C" stroke-width="1.2" opacity="0.5" style="animation-delay:2s"/>
+    <circle class="kblink" cx="1143" cy="78" r="2.6" fill="#FFB86C" style="animation-delay:2s"/>
+    <text class="mono" x="999" y="86" fill="#4E7CA8" font-size="9" letter-spacing="1.6">ACTIVE SINCE</text>
+    <text class="mono" x="999" y="122" fill="#FFB86C" font-size="30" font-weight="700">2018</text>
+    <text class="mono" x="999" y="138" fill="#3E6E9C" font-size="8.5">account created Dec 2018</text>
+  </g>
+
+  <text class="mono" x="43" y="166" fill="#2F5F8C" font-size="8.5" letter-spacing="1.3">NO ESTIMATES, NO ROUNDED-UP MARKETING NUMBERS — THESE RECONCILE LINE BY LINE WITH api.github.com</text>
+
+  <rect x="1" y="1" width="1198" height="178" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

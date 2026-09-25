@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Section — establish uplink, contact">
+  <defs>
+    <linearGradient id="hbus4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#7CFFB2" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hglow4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hdots4" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#16304F" opacity="0.5"/>
+    </pattern>
+    <filter id="hsoft4" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes hblink4 { 0%,45%{opacity:1} 55%,95%{opacity:.2} 100%{opacity:1} }
+    @keyframes hflow4  { to { stroke-dashoffset: -600; } }
+    @keyframes hbreathe4 { 0%,100%{opacity:.35} 50%{opacity:1} }
+    .hblink4 { animation: hblink4 2.2s steps(1,end) infinite; }
+    .hflow4 { stroke-dasharray: 12 28; animation: hflow4 5s linear infinite; }
+    .hb1x { animation: hbreathe4 2.6s ease-in-out infinite; }
+    .hb2x { animation: hbreathe4 2.6s ease-in-out infinite; animation-delay: .65s; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="150" fill="#050810"/>
+  <rect width="1200" height="150" fill="url(#hdots4)"/>
+  <ellipse cx="980" cy="70" rx="280" ry="80" fill="url(#hglow4)"/>
+
+  <!-- header -->
+  <circle class="hblink4" cx="40" cy="34" r="4" fill="#7CFFB2" filter="url(#hsoft4)"/>
+  <text class="mono" x="56" y="39" fill="#4E7CA8" font-size="11" letter-spacing="3">SEC/05 // COMMS</text>
+  <text class="mono" x="40" y="86" fill="#EAF6FF" font-size="30" font-weight="700" letter-spacing="3">ESTABLISH UPLINK</text>
+  <text class="mono" x="40" y="112" fill="#4E7CA8" font-size="12" letter-spacing="2">// OPEN CHANNEL — EMBEDDED · IIOT · SCADA · LoRa</text>
+  <text class="mono" x="1160" y="20" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">FIG.05 // UPLINK</text>
+
+  <!-- ground + mast -->
+  <line x1="880" y1="106" x2="1108" y2="106" stroke="#14304F" stroke-width="1.4"/>
+  <line x1="994" y1="106" x2="994" y2="44" stroke="#2A6FA8" stroke-width="2"/>
+  <path d="M994 52 L972 106 M994 52 L1016 106" stroke="#1E4A78" stroke-width="1"/>
+  <circle class="hblink4" cx="994" cy="40" r="4" fill="#00E5FF" filter="url(#hsoft4)"/>
+
+  <!-- expanding rings -->
+  <g fill="none" stroke="#00E5FF" stroke-width="1.2">
+    <circle cx="994" cy="40" r="6" opacity="0">
+      <animate attributeName="r" values="6;36" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2.4s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="994" cy="40" r="6" opacity="0">
+      <animate attributeName="r" values="6;36" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="994" cy="40" r="6" opacity="0">
+      <animate attributeName="r" values="6;36" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- inbound packet -->
+  <circle r="2.5" fill="#B388FF" filter="url(#hsoft4)">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M890 96 H986"/>
+  </circle>
+
+  <!-- signal bars -->
+  <g>
+    <rect class="hb1x" x="1042" y="96"  width="8" height="10" rx="1" fill="#7CFFB2"/>
+    <rect class="hb2x" x="1054" y="90"  width="8" height="16" rx="1" fill="#7CFFB2"/>
+    <rect class="hb1x" x="1066" y="84"  width="8" height="22" rx="1" fill="#7CFFB2"/>
+    <rect class="hb2x" x="1078" y="78"  width="8" height="28" rx="1" fill="#EAF6FF"/>
+  </g>
+  <text class="mono" x="1042" y="120" fill="#7CFFB2" font-size="9" letter-spacing="1.5">LINK: STABLE</text>
+
+  <!-- bus -->
+  <line x1="24" y1="132" x2="1176" y2="132" stroke="#14304F" stroke-width="1.2"/>
+  <line x1="24" y1="132" x2="1176" y2="132" stroke="url(#hbus4)" stroke-width="2" class="hflow4" opacity="0.7"/>
+  <g stroke="#1E4A78" stroke-width="1.4"><path d="M24 120 V132"/><path d="M1176 120 V132"/></g>
+
+  <rect x="1" y="1" width="1198" height="148" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

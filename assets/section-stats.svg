@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Section — GitHub telemetry">
+  <defs>
+    <linearGradient id="hbus3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#7CFFB2" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hglow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hdots3" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#16304F" opacity="0.5"/>
+    </pattern>
+    <filter id="hsoft3" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="scr"><rect x="781" y="37" width="286" height="60"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes hblink3 { 0%,45%{opacity:1} 55%,95%{opacity:.2} 100%{opacity:1} }
+    @keyframes hflow3  { to { stroke-dashoffset: -600; } }
+    @keyframes ws1 { to { transform: translateX(-46px); } }
+    @keyframes ws2 { to { transform: translateX(-56px); } }
+    .hblink3 { animation: hblink3 2.2s steps(1,end) infinite; }
+    .hflow3 { stroke-dasharray: 12 28; animation: hflow3 5s linear infinite; }
+    .ws1 { animation: ws1 2.6s linear infinite; }
+    .ws2 { animation: ws2 2s linear infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="150" fill="#050810"/>
+  <rect width="1200" height="150" fill="url(#hdots3)"/>
+  <ellipse cx="920" cy="70" rx="300" ry="80" fill="url(#hglow3)"/>
+
+  <!-- header -->
+  <circle class="hblink3" cx="40" cy="34" r="4" fill="#7CFFB2" filter="url(#hsoft3)"/>
+  <text class="mono" x="56" y="39" fill="#4E7CA8" font-size="11" letter-spacing="3">SEC/03 // LIVE METRICS</text>
+  <text class="mono" x="40" y="86" fill="#EAF6FF" font-size="30" font-weight="700" letter-spacing="3">GITHUB TELEMETRY</text>
+  <text class="mono" x="40" y="112" fill="#4E7CA8" font-size="12" letter-spacing="2">// COMMITS · STREAKS · LANGUAGES · CONTRIBUTION SNAKE</text>
+  <text class="mono" x="1160" y="20" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">FIG.03 // OSCILLOSCOPE</text>
+
+  <!-- scope body -->
+  <rect x="768" y="24" width="312" height="94" rx="6" fill="#050E1B" stroke="#1A4568" stroke-width="1.3"/>
+  <rect x="780" y="36" width="288" height="62" fill="#03070E" stroke="#14304F" stroke-width="1.2"/>
+  <path d="M804 36 V98 M828 36 V98 M852 36 V98 M876 36 V98 M900 36 V98 M924 36 V98 M948 36 V98 M972 36 V98 M996 36 V98 M1020 36 V98 M1044 36 V98" stroke="#0D2036" stroke-width="1"/>
+  <path d="M780 51 H1068 M780 81 H1068" stroke="#0D2036" stroke-width="1"/>
+  <path d="M924 36 V98 M780 66 H1068" stroke="#16406B" stroke-width="1"/>
+
+  <!-- waves -->
+  <g clip-path="url(#scr)">
+    <path class="ws1" d="M660 67 Q671.5 35 683 67 T706 67 T729 67 T752 67 T775 67 T798 67 T821 67 T844 67 T867 67 T890 67 T913 67 T936 67 T959 67 T982 67 T1005 67 T1028 67 T1051 67 T1074 67 T1097 67 T1120 67 T1143 67"
+          fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.9"/>
+    <path class="ws2" d="M660 95 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14 h14 v-14 h28 v14"
+          fill="none" stroke="#7CFFB2" stroke-width="1.3" opacity="0.85"/>
+  </g>
+
+  <!-- readouts -->
+  <g class="mono" font-size="8.5" letter-spacing="1">
+    <text x="788" y="47" fill="#00E5FF">CH1 5V/div</text>
+    <text x="788" y="58" fill="#7CFFB2">CH2 PWM</text>
+    <text x="984" y="47" fill="#4E7CA8">TRIG</text>
+    <text x="1050" y="47" fill="#7CFFB2">RUN</text>
+  </g>
+  <circle class="hblink3" cx="1042" cy="44" r="2.5" fill="#7CFFB2"/>
+
+  <!-- knobs -->
+  <g fill="#081527" stroke="#1E4A78" stroke-width="1.3">
+    <circle cx="798" cy="107" r="5"/><circle cx="1022" cy="107" r="5"/><circle cx="1044" cy="107" r="5"/>
+  </g>
+  <g stroke="#2A6FA8" stroke-width="1.2">
+    <path d="M798 103.5 V110.5"/><path d="M1022 103.5 V110.5"/><path d="M1044 103.5 V110.5"/>
+  </g>
+
+  <!-- bus -->
+  <line x1="24" y1="132" x2="1176" y2="132" stroke="#14304F" stroke-width="1.2"/>
+  <line x1="24" y1="132" x2="1176" y2="132" stroke="url(#hbus3)" stroke-width="2" class="hflow3" opacity="0.7"/>
+  <g stroke="#1E4A78" stroke-width="1.4"><path d="M24 120 V132"/><path d="M1176 120 V132"/></g>
+
+  <rect x="1" y="1" width="1198" height="148" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

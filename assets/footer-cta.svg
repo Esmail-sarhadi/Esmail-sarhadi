@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Footer call to action — open to embedded and industrial IoT work">
+  <defs>
+    <linearGradient id="fbg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="fwave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00E5FF" stop-opacity="0.85"/>
+      <stop offset="75%" stop-color="#7CFFB2" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7CFFB2" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="fglow2b" cx="50%" cy="100%" r="72%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="fgrid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0F1F38" stroke-width="1"/>
+    </pattern>
+    <filter id="fsoft2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    @keyframes fspin2 { to { transform: rotate(360deg); } }
+    @keyframes fblink2 { 0%,48%{opacity:1} 52%,96%{opacity:.15} 100%{opacity:1} }
+    @keyframes fdrift2 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-20px)} }
+    @keyframes fsweep2 { from{transform:translateX(-240px)} to{transform:translateX(1240px)} }
+    @keyframes fbar2 { 0%,100%{opacity:.25} 50%{opacity:1} }
+    .fspin2 { animation: fspin2 34s linear infinite; transform-origin: 600px 190px; }
+    .fblink2 { animation: fblink2 1.9s steps(1,end) infinite; }
+    .fdrift2 { animation: fdrift2 9s ease-in-out infinite; }
+    .fsweep2 { animation: fsweep2 8s linear infinite; }
+    .fbar2 { animation: fbar2 1.5s ease-in-out infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="300" fill="url(#fbg2)"/>
+  <rect width="1200" height="300" fill="url(#fgrid2)" opacity="0.45"/>
+  <ellipse cx="600" cy="300" rx="640" ry="220" fill="url(#fglow2b)"/>
+
+  <!-- halo -->
+  <circle class="fspin2" cx="600" cy="190" r="170" fill="none" stroke="#123354" stroke-width="1" stroke-dasharray="4 16"/>
+  <circle class="fspin2" cx="600" cy="190" r="206" fill="none" stroke="#0E2846" stroke-width="1" stroke-dasharray="2 24" style="animation-duration:48s;animation-direction:reverse"/>
+
+  <!-- sweep -->
+  <rect class="fsweep2" x="0" y="0" width="150" height="300" fill="#00E5FF" opacity="0.035"/>
+
+  <!-- handle -->
+  <text class="mono" x="600" y="42" text-anchor="middle" fill="#2F5F8C" font-size="12.5" letter-spacing="4.5">@ESMAIL-SARHADI</text>
+
+  <!-- waves -->
+  <g class="fdrift2" fill="none" stroke="url(#fwave2)" stroke-width="1.6">
+    <path d="M-40 208 Q 100 178 240 208 T 520 208 T 800 208 T 1080 208 T 1360 208" opacity="0.55"/>
+    <path d="M-40 226 Q 110 256 260 226 T 560 226 T 860 226 T 1160 226 T 1460 226" opacity="0.35"/>
+  </g>
+  <g filter="url(#fsoft2)">
+    <circle r="3" fill="#7CFFB2">
+      <animateMotion dur="6.4s" repeatCount="indefinite" path="M-40 208 Q 100 178 240 208 T 520 208 T 800 208 T 1080 208 T 1360 208"/>
+    </circle>
+    <circle r="2.6" fill="#00E5FF">
+      <animateMotion dur="9s" begin="2.2s" repeatCount="indefinite" path="M-40 226 Q 110 256 260 226 T 560 226 T 860 226 T 1160 226 T 1460 226"/>
+    </circle>
+  </g>
+
+  <!-- headline -->
+  <text class="sans" x="600" y="108" text-anchor="middle" fill="#EAF6FF" font-size="29" font-weight="700" letter-spacing="1.6">
+    LET&#8217;S SHIP SOMETHING THAT SURVIVES THE FIELD.
+  </text>
+  <text class="mono" x="600" y="146" text-anchor="middle" fill="#4E7CA8" font-size="13" letter-spacing="2.4">
+    FIRMWARE THAT UPDATES ITSELF &#183; PROTOCOLS THAT HOLD UP ON A REAL PLANT FLOOR
+  </text>
+
+  <!-- contact chips -->
+  <g class="mono" font-size="11.5" letter-spacing="1.2">
+    <rect x="264" y="164" width="200" height="28" rx="14" fill="#08182A" stroke="#1E4A78"/>
+    <circle class="fblink2" cx="284" cy="178" r="2.6" fill="#00E5FF"/>
+    <text x="296" y="182" fill="#9CC4E4">github.com/Esmail-sarhadi</text>
+
+    <rect x="500" y="164" width="200" height="28" rx="14" fill="#08182A" stroke="#1E4A78"/>
+    <circle class="fblink2" cx="520" cy="178" r="2.6" fill="#7CFFB2" style="animation-delay:.6s"/>
+    <text x="532" y="182" fill="#9CC4E4">esmailsarhadi.mycvresume.ir</text>
+
+    <rect x="736" y="164" width="200" height="28" rx="14" fill="#08182A" stroke="#1E4A78"/>
+    <circle class="fblink2" cx="756" cy="178" r="2.6" fill="#B388FF" style="animation-delay:1.2s"/>
+    <text x="768" y="182" fill="#9CC4E4">sarhadiesmail@gmail.com</text>
+  </g>
+
+  <!-- status row -->
+  <g transform="translate(600,262)">
+    <text class="mono" x="-146" y="5" text-anchor="end" fill="#5C89B8" font-size="12.5" letter-spacing="2.2">STATUS: OPEN FOR WORK</text>
+    <text class="mono" x="0" y="5" fill="#1F4A73" font-size="12.5">&#183;</text>
+    <text class="mono" x="14" y="5" fill="#5C89B8" font-size="12.5" letter-spacing="2.2">ZAHEDAN, IRAN</text>
+    <g>
+      <rect class="fbar2" x="150" y="-4" width="4" height="9" fill="#7CFFB2"/>
+      <rect class="fbar2" x="157" y="-8" width="4" height="13" fill="#7CFFB2" style="animation-delay:.2s"/>
+      <rect class="fbar2" x="164" y="-12" width="4" height="17" fill="#7CFFB2" style="animation-delay:.4s"/>
+      <rect class="fbar2" x="171" y="-8" width="4" height="13" fill="#EAF6FF" style="animation-delay:.6s"/>
+    </g>
+  </g>
+
+  <g stroke="#1E4A78" stroke-width="2" fill="none">
+    <path d="M16 34 V16 H34"/><path d="M1184 34 V16 H1166"/>
+    <path d="M16 266 V284 H34"/><path d="M1184 266 V284 H1166"/>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-label="Track record timeline, 2018 to present">
+  <defs>
+    <linearGradient id="tlbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="tlbus" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00E5FF" stop-opacity="0.75"/>
+      <stop offset="85%" stop-color="#FF6B9D" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="tlgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0E1D33" stroke-width="1"/>
+    </pattern>
+    <filter id="tlsoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes tlblink { 0%,45%{opacity:1} 55%,95%{opacity:.2} 100%{opacity:1} }
+    @keyframes tlflow { to { stroke-dashoffset: -600; } }
+    @keyframes tlbreathe { 0%,100%{opacity:.4} 50%{opacity:1} }
+    .tblink { animation: tlblink 2.2s steps(1,end) infinite; }
+    .tflow { stroke-dasharray: 12 28; animation: tlflow 5.5s linear infinite; }
+    .tb1 { animation: tlbreathe 3.2s ease-in-out infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="370" fill="url(#tlbg)"/>
+  <rect width="1200" height="370" fill="url(#tlgrid)" opacity="0.4"/>
+
+  <!-- header -->
+  <circle class="tblink" cx="34" cy="30" r="4" fill="#7CFFB2" filter="url(#tlsoft)"/>
+  <text class="mono" x="50" y="35" fill="#5C89B8" font-size="13" letter-spacing="3">SEC/04 // TRACK RECORD</text>
+  <text class="mono" x="290" y="35" fill="#1F4A73" font-size="13" letter-spacing="3">//</text>
+  <text class="mono" x="316" y="35" fill="#5C89B8" font-size="13" letter-spacing="3">2018 → PRESENT</text>
+  <text class="mono" x="1176" y="35" text-anchor="end" fill="#2F5F8C" font-size="10" letter-spacing="2">FIG.04 // TIMELINE</text>
+  <line x1="24" y1="52" x2="1176" y2="52" stroke="#14304F" stroke-width="1"/>
+
+  <!-- main trace -->
+  <line x1="36" y1="195" x2="1164" y2="195" stroke="#14304F" stroke-width="1.6"/>
+  <line x1="36" y1="195" x2="1164" y2="195" stroke="url(#tlbus)" stroke-width="1.8" class="tflow" opacity="0.7"/>
+  <rect x="30" y="190" width="6" height="10" rx="1" fill="#1E4A78"/>
+  <path d="M1152 189 l12 6 -12 6" fill="none" stroke="#2A6FA8" stroke-width="1.6"/>
+  <circle r="3.4" fill="#7CFFB2" filter="url(#tlsoft)">
+    <animateMotion dur="9s" repeatCount="indefinite" path="M40 195 H1150"/>
+  </circle>
+
+  <!-- node 1 : 2018 -->
+  <line x1="140" y1="150" x2="140" y2="187" stroke="#00E5FF" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="140" cy="195" r="8" fill="#07182B" stroke="#00E5FF" stroke-width="1.6"/>
+  <circle cx="140" cy="195" r="3" fill="#00E5FF"/>
+  <text class="mono" x="140" y="104" text-anchor="middle" fill="#00E5FF" font-size="12" font-weight="700" letter-spacing="2">2018</text>
+  <text class="mono" x="140" y="126" text-anchor="middle" fill="#EAF6FF" font-size="13.5" letter-spacing="1">FIRST FLASH</text>
+  <text class="mono" x="140" y="144" text-anchor="middle" fill="#4E7CA8" font-size="10.5">ESP32 · first deployed nodes</text>
+
+  <!-- node 2 : Amvaj -->
+  <line x1="400" y1="203" x2="400" y2="240" stroke="#7CFFB2" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="400" cy="195" r="8" fill="#07182B" stroke="#7CFFB2" stroke-width="1.6"/>
+  <circle cx="400" cy="195" r="3" fill="#7CFFB2"/>
+  <text class="mono" x="400" y="262" text-anchor="middle" fill="#7CFFB2" font-size="12" font-weight="700" letter-spacing="2">2019 — 2021</text>
+  <text class="mono" x="400" y="284" text-anchor="middle" fill="#EAF6FF" font-size="13.5" letter-spacing="1">TECHNOLOGY MANAGER</text>
+  <text class="mono" x="400" y="302" text-anchor="middle" fill="#4E7CA8" font-size="10.5">Plastic Amvaj Co. · Babolsar</text>
+
+  <!-- node 3 : BSc -->
+  <line x1="650" y1="150" x2="650" y2="187" stroke="#5B8DEF" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="650" cy="195" r="8" fill="#07182B" stroke="#5B8DEF" stroke-width="1.6"/>
+  <circle cx="650" cy="195" r="3" fill="#5B8DEF"/>
+  <text class="mono" x="650" y="104" text-anchor="middle" fill="#5B8DEF" font-size="12" font-weight="700" letter-spacing="2">2019 — 2024</text>
+  <text class="mono" x="650" y="126" text-anchor="middle" fill="#EAF6FF" font-size="13.5" letter-spacing="1">B.SC. COMPUTER ENGINEERING</text>
+  <text class="mono" x="650" y="144" text-anchor="middle" fill="#4E7CA8" font-size="10.5">University of Sistan &amp; Baluchestan</text>
+
+  <!-- node 4 : Sana -->
+  <line x1="890" y1="203" x2="890" y2="240" stroke="#B388FF" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="890" cy="195" r="8" fill="#07182B" stroke="#B388FF" stroke-width="1.6"/>
+  <circle cx="890" cy="195" r="3" fill="#B388FF"/>
+  <text class="mono" x="890" y="262" text-anchor="middle" fill="#B388FF" font-size="12" font-weight="700" letter-spacing="2">2021 — 2024</text>
+  <text class="mono" x="890" y="284" text-anchor="middle" fill="#EAF6FF" font-size="13.5" letter-spacing="1">FOUNDER &amp; CEO</text>
+  <text class="mono" x="890" y="302" text-anchor="middle" fill="#4E7CA8" font-size="10.5">Sana Smart Life · Zahedan</text>
+  <text class="mono" x="890" y="318" text-anchor="middle" fill="#5566A0" font-size="9.5">knowledge-based cert in progress</text>
+
+  <!-- node 5 : now -->
+  <line x1="1085" y1="150" x2="1085" y2="187" stroke="#FF6B9D" stroke-width="1.2" opacity="0.65"/>
+  <circle cx="1085" cy="195" r="8" fill="#07182B" stroke="#FF6B9D" stroke-width="1.6"/>
+  <circle cx="1085" cy="195" r="3" fill="#FF6B9D"/>
+  <circle cx="1085" cy="195" r="9" fill="none" stroke="#FF6B9D" stroke-width="1.2">
+    <animate attributeName="r" values="9;19" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text class="mono" x="1085" y="104" text-anchor="middle" fill="#FF6B9D" font-size="12" font-weight="700" letter-spacing="2">NOW</text>
+  <text class="mono" x="1085" y="126" text-anchor="middle" fill="#EAF6FF" font-size="13.5" letter-spacing="1">OPEN FOR WORK</text>
+  <text class="mono" x="1085" y="144" text-anchor="middle" fill="#4E7CA8" font-size="10.5">embedded · IIoT · SCADA</text>
+
+  <!-- left rail -->
+  <line x1="12" y1="68" x2="12" y2="342" stroke="#14304F" stroke-width="1"/>
+  <circle class="tb1" cx="12" cy="68" r="3" fill="#00E5FF" filter="url(#tlsoft)"/>
+  <circle class="tb1" cx="12" cy="342" r="3" fill="#FF6B9D" filter="url(#tlsoft)" style="animation-delay:1.6s"/>
+
+  <rect x="1" y="1" width="1198" height="368" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>
