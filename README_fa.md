@@ -1,377 +1,236 @@
-# 🔥 اسماعیل سرحدی - معمار IoT و مهندس سیستم‌ها
+<div align="center">
+  <img src="assets/hero.svg" alt="اسماعیل سرحدی — مهندس سیستم‌های نهفته و اینترنت اشیاء صنعتی" width="100%" />
+</div>
 
 <div align="center">
 
-<!-- Language Switcher -->
-<p>
-  <a href="README.md">
-    <img src="https://img.shields.io/badge/🇺🇸_English-4285f4?style=for-the-badge&logoColor=white" alt="English" />
-  </a>
-  <a href="README_fa.md">
-    <img src="https://img.shields.io/badge/🇮🇷_فارسی-00A86B?style=for-the-badge&logoColor=white" alt="Persian" />
-  </a>
-</p>
-
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,8,25&height=200&section=header&text=سلام%20کهکشان!&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=32" />
-
-<!-- Dynamic Intro -->
-<h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Vazirmatn&size=35&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&multiline=true&repeat=false&width=700&height=100&lines=👨‍💻+اسماعیل+سرحدی;🚀+نوآور+IoT+و+خالق+آینده+دیجیتال" alt="Typing SVG" />
-</h1>
-
-<!-- Professional Tags -->
-<p>
-  <img src="https://img.shields.io/badge/🔥_نوآور_IoT-8B5CF6?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/⚡_سیستم‌های_جاسازی-EC4899?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/🧠_مهندس_AI/ML-3B82F6?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/🌟_کارآفرین_فناوری-10B981?style=for-the-badge&logoColor=black" />
-</p>
-
-<!-- Animated Stats -->
-<img src="https://github-profile-trophy.vercel.app/?username=esmail-sarhadi&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" />
-
-<!-- Visitor Counter -->
-<img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&style=for-the-badge&color=blueviolet&abbreviated=true&label=بازدیدکنندگان" />
+[![English](https://img.shields.io/badge/🇺🇸_ENGLISH-00E5FF?style=flat-square&labelColor=050810)](README.md) [![فارسی](https://img.shields.io/badge/🇮🇷_فارسی-7CFFB2?style=flat-square&labelColor=050810)](README_fa.md) [![Visitors](https://komarev.com/ghpvc/?username=esmail-sarhadi&style=flat-square&color=00E5FF&abbreviated=true)](https://github.com/Esmail-sarhadi)
 
 </div>
 
----
+<img src="assets/divider.svg" alt="" width="100%" />
 
-## 🌟 درباره معمار سیستم‌ها
+<h2 dir="rtl" align="right">درباره من</h2>
 
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&icon_color=EC4899&text_color=FFFFFF&custom_title=آمار%20گیت‌هاب" width="400" />
-
-```yaml
-نام: "اسماعیل سرحدی"
-نقش: "معمار سیستم‌های IoT"
-کدها: ["C++", "C", "Python", "JavaScript", "Assembly"]
-معماری: ["IoT", "Embedded Systems", "Microservices", "Edge Computing"]
-تمرکز_فعلی: "ساخت آینده هوش متصل"
-شعار: "نوآوری فردا، یک دستگاه هوشمند در هر زمان"
-```
-
-🎯 **بیانیه ماموریت**
-> تبدیل ایده‌ها به واقعیت‌های هوشمند و متصل که مرزهای ممکن در IoT و سیستم‌های جاسازی شده را جابجا می‌کند.
-
-### 💼 سفر حرفه‌ای
-
-<details>
-<summary><b>🏢 مدیرعامل سابق - شرکت راهکارهای هوشمند IoT</b></summary>
-
-- 📈 رهبری تیم ۱۵+ مهندس
-- 🚀 راه‌اندازی ۲۵+ محصول موفق IoT
-- 💰 تولید درآمد بیش از ۲ میلیون دلار
-- 🌍 استقرار راهکارها در ۱۰+ کشور
-- 🏆 برنده "جایزه تعالی نوآوری ۲۰۲۳"
-
-</details>
-
-<details>
-<summary><b>🎓 تحصیلات و گواهینامه‌ها</b></summary>
-
-- 🎓 **کارشناسی مهندسی کامپیوتر** - دانشگاه سیستان و بلوچستان
-- 🏅 **گواهی متخصص IoT** - Cisco
-- 🔧 **متخصص سیستم‌های جاسازی شده** - ARM
-- ☁️ **گواهی AWS IoT Core**
-- 🔐 **امنیت سایبری در IoT** - (ISC)²
-
-</details>
-
----
-
-## 🛠️ ابزارخانه فناوری
-
-<div align="center">
-
-### 💻 زبان‌های برنامه‌نویسی
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,c,python,js,typescript,rust,go" />
-</p>
-
-### 🔧 فریمورک‌ها و ابزارها
-<p>
-  <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,linux,docker,kubernetes,aws,azure,terraform" />
-</p>
-
-### 📊 پایگاه‌داده و تحلیل
-<p>
-  <img src="https://skillicons.dev/icons?i=mongodb,postgresql,redis,influxdb,grafana,elasticsearch" />
-</p>
-
-### 🎨 محیط توسعه
-<p>
-  <img src="https://skillicons.dev/icons?i=vscode,vim,git,github,gitlab,cmake,qt" />
-</p>
-
-</div>
-
----
-
-## 📊 تحلیل‌های گیت‌هاب
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=darkhub&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&custom_title=آمار%20کاربری" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=esmail-sarhadi&layout=compact&langs_count=12&theme=darkhub&hide_border=true&bg_color=0D1117&custom_title=زبان‌های%20برتر" />
-
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=esmail-sarhadi&theme=darkhub&hide_border=true&background=0D1117&stroke=8B5CF6&ring=EC4899&fire=10B981&currStreakLabel=8B5CF6" />
-
-<!-- Activity Graph -->
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=esmail-sarhadi&bg_color=0D1117&color=8B5CF6&line=EC4899&point=FFFFFF&area=true&hide_border=true&custom_title=نمودار%20فعالیت%20سالانه" />
-
-</div>
-
----
-
-## 🚀 پروژه‌های ویژه
-
-<div align="center">
-
-<!-- Project Cards would go here - these are placeholder examples -->
-<a href="#">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=esmail-sarhadi&repo=smart-home-iot&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=FFFFFF&icon_color=EC4899" />
-</a>
-
-<a href="#">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=esmail-sarhadi&repo=industrial-automation&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=FFFFFF&icon_color=EC4899" />
-</a>
-
-</div>
-
-### 🏆 نکات برجسته پروژه‌ها
-
-| 🎯 پروژه | 🔧 پشته فناوری | 🌟 ویژگی‌ها | 📈 تأثیر |
-|-----------|---------------|-------------|-----------|
-| **زیرساخت شهر هوشمند** | `C++` `MQTT` `LoRaWAN` `AWS IoT` | نظارت لحظه‌ای، تحلیل هوش مصنوعی | افزایش ۳۰٪ کارایی |
-| **مجموعه اتوماسیون صنعتی** | `Python` `Modbus` `OPC-UA` `Docker` | نگهداری پیش‌بینانه، محاسبات لبه | صرفه‌جویی ۵۰۰ هزار دلار |
-| **شبکه IoT کشاورزی** | `Arduino` `ESP32` `ThingSpeak` `ML` | نظارت محصولات، آبیاری خودکار | صرفه‌جویی ۴۰٪ آب |
-| **پوشیدنی‌های سلامت** | `C` `BLE` `React Native` `Firebase` | نظارت حیاتی، هشدارهای اضطراری | تأثیر بر ۱۰ هزار نفر |
-
----
-
-## 💡 ماتریس تخصص
-
-<table align="center">
-  <tr>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="50px" />
-      <br><strong>C/C++</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50px" />
-      <br><strong>Python</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="50px" />
-      <br><strong>سیستم‌های جاسازی</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50px" />
-      <br><strong>سیستم‌های لینوکس</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="50px" />
-      <br><strong>Cloud/IoT</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50px" />
-      <br><strong>DevOps</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="50px" />
-      <br><strong>AI/ML</strong>
-      <br>⭐⭐⭐⭐⚪
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50px" />
-      <br><strong>کنترل نسخه</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-  </tr>
+<table dir="rtl">
+<tbody>
+<tr><td align="right" width="170"><b>نام</b></td><td align="right">اسماعیل سرحدی</td></tr>
+<tr><td align="right"><b>حوزه</b></td><td align="right">مهندس سیستم‌های نهفته · اینترنت اشیاء صنعتی</td></tr>
+<tr><td align="right"><b>موقعیت</b></td><td align="right">زاهدان، ایران</td></tr>
+<tr><td align="right"><b>فعالیت</b></td><td align="right">از سال ۲۰۱۸ · ۷۶ مخزن عمومی</td></tr>
+<tr><td align="right"><b>زبان‌ها</b></td><td align="right"><code dir="ltr">C</code> · <code dir="ltr">C++</code> · <code dir="ltr">Python</code> · <code dir="ltr">JavaScript</code></td></tr>
+<tr><td align="right"><b>سخت‌افزار</b></td><td align="right"><code dir="ltr">ESP32</code> · <code dir="ltr">STM32</code> · <code dir="ltr">Arduino</code></td></tr>
+<tr><td align="right"><b>باس صنعتی</b></td><td align="right"><code dir="ltr">Modbus RTU/TCP</code> · <code dir="ltr">RS-485</code></td></tr>
+<tr><td align="right"><b>بی‌سیم</b></td><td align="right"><code dir="ltr">Wi-Fi</code> · <code dir="ltr">Bluetooth</code> · <code dir="ltr">LoRa (RFM95)</code></td></tr>
+<tr><td align="right"><b>تله‌متری</b></td><td align="right"><code dir="ltr">MQTT</code> · <code dir="ltr">REST</code> · <code dir="ltr">WebSocket</code> · <code dir="ltr">SNMP v2</code> · <code dir="ltr">IEC 60870-5-104</code></td></tr>
+<tr><td align="right"><b>نرم‌افزار</b></td><td align="right"><code dir="ltr">Flask</code> · <code dir="ltr">React</code> · <code dir="ltr">Next.js</code> · <code dir="ltr">Android</code> · <code dir="ltr">SQL</code></td></tr>
+<tr><td align="right"><b>وضعیت</b></td><td align="right">🟢 آمادهٔ همکاری — پروژه‌های نهفته و اینترنت اشیاء صنعتی</td></tr>
+</tbody>
 </table>
 
----
+<img src="assets/divider.svg" alt="" width="100%" />
 
-## 🎯 تمرکز فعلی
+<h2 dir="rtl" align="right">واقعاً چه چیزی می‌سازم</h2>
 
-<div align="center">
-
-```mermaid
-mindmap
-  root((نوآوری IoT))
-    محاسبات لبه
-      پردازش لحظه‌ای
-      تأخیر کم
-      امنیت
-    یکپارچگی هوش مصنوعی
-      تحلیل پیش‌بینانه
-      بینایی کامپیوتر
-      NLP برای IoT
-    پایداری
-      فناوری سبز
-      کارایی انرژی
-      ردپای کربن
-    صنعت ۴.۰
-      تولید هوشمند
-      دوقلوهای دیجیتال
-      اتوماسیون
-```
-
-</div>
-
-### 🚀 اهداف ۲۰۲۴
-
-- [ ] 🌟 راه‌اندازی فریمورک IoT متن‌باز
-- [ ] 📚 انتشار مقالات فنی درباره امنیت IoT
-- [ ] 🎯 مشارکت در ۱۰+ پروژه متن‌باز
-- [ ] 🏆 سخنرانی در ۵+ کنفرانس بین‌المللی
-- [ ] 🤝 راهنمایی ۲۰+ توسعه‌دهنده جوان
-- [ ] 💡 ثبت ۳+ پتنت فناوری
-
----
-
-## 📈 بینش‌های مشارکت
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=esmail-sarhadi&theme=darkhub&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=FFFFFF" />
-
-<!-- 3D Contribution Graph -->
-<img src="https://github.com/esmail-sarhadi/esmail-sarhadi/blob/output/github-contribution-grid-snake-dark.svg" />
-
-</div>
-
----
-
-## 🌐 اتصال و همکاری
-
-<div align="center">
-
-### 💬 بیایید آینده را با هم بسازیم
-
-<p>
-  <a href="mailto:sarhadiemsail@gmail.com">
-    <img src="https://img.shields.io/badge/📧_ایمیل-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://linkedin.com/in/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/💼_لینکدین-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/esmail62535258">
-    <img src="https://img.shields.io/badge/🐦_توییتر-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
-  <a href="https://github.com/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/💻_گیت‌هاب-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
+<p dir="rtl" align="right">
+بیشتر پروفایل‌های اینترنت اشیاء یک دیوار از لوگو نشان می‌دهند. چیزی که مهم است، لایه‌ای است که خراب می‌شود:
 </p>
 
-<p>
-  <a href="https://dev.to/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/📝_وبلاگ-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" />
-  </a>
-  <a href="https://medium.com/@esmail-sarhadi">
-    <img src="https://img.shields.io/badge/✍️_مدیوم-12100E?style=for-the-badge&logo=medium&logoColor=white" />
-  </a>
-  <a href="https://stackoverflow.com/users/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/❓_Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />
-  </a>
-  <a href="https://discord.gg/your-discord">
-    <img src="https://img.shields.io/badge/💬_دیسکورد-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
-</p>
-
-### 🎯 علایق همکاری
-
-<table align="center">
-  <tr>
-    <td align="center">🤖 <strong>راهکارهای IoT</strong></td>
-    <td align="center">🔧 <strong>سیستم‌های جاسازی</strong></td>
-    <td align="center">🧠 <strong>پروژه‌های AI/ML</strong></td>
-  </tr>
-  <tr>
-    <td align="center">☁️ <strong>معماری ابری</strong></td>
-    <td align="center">🔐 <strong>امنیت سایبری</strong></td>
-    <td align="center">🌱 <strong>متن‌باز</strong></td>
-  </tr>
+<table dir="rtl">
+<tbody>
+<tr><td width="34"><b>۰۱</b></td><td align="right">
+<b>فریم‌وری که در میدان دوام می‌آورد.</b> روی <code dir="ltr">ESP32</code> و <code dir="ltr">STM32</code> با C/C++ خام، همراه با مسیر به‌روزرسانی <code dir="ltr">OTA</code>، بازیابی با <code dir="ltr">Watchdog</code> و رابط وب برای تنظیمات — چون دستگاهی که باید برای تعمیرش رانندگی کنی، همان دستگاهی است که خراب می‌ماند.
+</td></tr>
+<tr><td><b>۰۲</b></td><td align="right">
+<b>پل بین پروتکل‌ها.</b> بیرون کشیدن داده از تجهیزات <code dir="ltr">Modbus</code>/<code dir="ltr">RS-485</code>، درایوهای دور متغیر و کنترلرهای قدیمی، و رساندنش به جایی که به کار بیاید — روی <code dir="ltr">MQTT</code>، <code dir="ltr">REST</code> یا <code dir="ltr">WebSocket</code>.
+</td></tr>
+<tr><td><b>۰۳</b></td><td align="right">
+<b>شبکهٔ حس‌گر LoRa.</b> تله‌متری چندگرهی جایی که نه وای‌فای هست و نه پریز برق — لینک‌های <code dir="ltr">RFM95</code>، گرهٔ جمع‌آوری مرکزی و در صورت نیاز ارسال به فضای ابری.
+</td></tr>
+<tr><td><b>۰۴</b></td><td align="right">
+<b>تله‌متری صنعتی.</b> عامل <code dir="ltr">SNMP v2</code> روی میکروکنترلر، پردازش <code dir="ltr">NMEA/GPS</code> و <code dir="ltr">IEC 60870-5-104</code> برای یکپارچه‌سازی با <code dir="ltr">SCADA</code>.
+</td></tr>
+<tr><td><b>۰۵</b></td><td align="right">
+<b>داشبوردی که اپراتور واقعاً استفاده کند.</b> فرانت‌اند با <code dir="ltr">Flask</code> و <code dir="ltr">React/Next.js</code> برای دادهٔ زنده — طراحی‌شده برای کسی که جلوی دستگاه ایستاده، نه برای اسکرین‌شات.
+</td></tr>
+</tbody>
 </table>
 
-</div>
-
----
-
-## 💎 حمایت از کارم
+<br />
 
 <div align="center">
-
-<p>اگر کار من را ارزشمند می‌یابید، از من حمایت کنید:</p>
-
-<a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&source=lk_donation&medium=referral">
-  <img src="https://img.shields.io/badge/💰_اهدای_کریپتو-8B5CF6?style=for-the-badge&logoColor=white" />
-</a>
-<a href="https://github.com/sponsors/esmail-sarhadi">
-  <img src="https://img.shields.io/badge/❤️_اسپانسر_گیت‌هاب-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" />
-</a>
-<a href="https://ko-fi.com/esmail-sarhadi">
-  <img src="https://img.shields.io/badge/☕_قهوه_بخرید-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" />
-</a>
-
+  <img src="assets/stack.svg" alt="معماری سیستم: میدان، کنترل، انتقال، یکپارچه‌سازی، کاربرد" width="100%" />
 </div>
 
----
+<img src="assets/divider.svg" alt="" width="100%" />
 
-## 🎊 حقایق جالب
+<h2 dir="rtl" align="right">پروژه‌های منتخب</h2>
 
-<div align="center">
+<p dir="rtl" align="right">همهٔ مخزن‌های زیر عمومی هستند. تعداد ستاره و زبان برنامه‌نویسی زنده از گیت‌هاب خوانده می‌شود.</p>
+
+<table dir="rtl">
+<thead>
+<tr>
+  <th width="34"></th>
+  <th width="230" align="right">پروژه</th>
+  <th align="right">توضیح</th>
+  <th width="180" align="right">فناوری</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>۰۱</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/esp32-ota-web-server"><b dir="ltr">esp32-ota-web-server</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/esp32-ota-web-server?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td align="right">به‌روزرسانی فریم‌ور به‌صورت بی‌سیم، از روی رابط وبی که خود <code dir="ltr">ESP32</code> سرو می‌کند. فایل باینری را می‌فرستی و دستگاه با نسخهٔ جدید بالا می‌آید. همان الگویی که در هر محصول مستقرشده تکرار می‌کنم.</td>
+  <td align="right"><code dir="ltr">C++</code> <code dir="ltr">ESP32</code> <code dir="ltr">OTA</code></td>
+</tr>
+<tr>
+  <td><b>۰۲</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/phpserver-webserver-esp32"><b dir="ltr">phpserver-webserver-esp32</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/phpserver-webserver-esp32?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td align="right">ایستگاه محیطی چندحس‌گره — دما و رطوبت با <code dir="ltr">DHT21</code>، حس‌گر ضربان و سنجش گاز با <code dir="ltr">MQ135</code> — که داده‌ها را از رابط وب روی خود دستگاه سرو می‌کند.</td>
+  <td align="right"><code dir="ltr">ESP32</code> <code dir="ltr">DHT21</code> <code dir="ltr">MQ135</code></td>
+</tr>
+<tr>
+  <td><b>۰۳</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/heathguard"><b dir="ltr">heathguard</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/heathguard?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td align="right">سامانهٔ پایش محیط و سلامت. جمع‌آوری داده از حس‌گرها، تعریف آستانه‌ها و نمای اپراتوری از همان اتاقی که دستگاه واقعاً در آن قرار دارد.</td>
+  <td align="right"><code dir="ltr">ESP32</code> <code dir="ltr">Sensors</code></td>
+</tr>
+<tr>
+  <td><b>۰۴</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/talking-skeleton"><b dir="ltr">talking-skeleton</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/talking-skeleton?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td align="right">مولاژ آناتومی متحرک: چراغ داخل هر عضو، پخش صدا با <code dir="ltr">DFPlayer Mini</code> و فک متحرک — کنترل‌شده با بلوتوث و RF و یک اپلیکیشن اندروید اختصاصی.</td>
+  <td align="right"><code dir="ltr">Kotlin</code> <code dir="ltr">ESP32</code> <code dir="ltr">DFPlayer</code></td>
+</tr>
+<tr>
+  <td><b>۰۵</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/LoRa-ESP32-Communication"><b dir="ltr">LoRa-ESP32-Communication</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/LoRa-ESP32-Communication?style=flat-square&color=7CFFB2&labelColor=050810" /></td>
+  <td align="right">پیاده‌سازی مرجع برای لینک <code dir="ltr">LoRa</code> روی <code dir="ltr">ESP32</code> — راه‌اندازی، قالب‌بندی فریم، ارسال و دریافت. نقطهٔ شروع شبکه‌های حس‌گری که بعد از آن ساخته شدند.</td>
+  <td align="right"><code dir="ltr">C++</code> <code dir="ltr">LoRa</code> <code dir="ltr">ESP32</code></td>
+</tr>
+<tr>
+  <td><b>۰۶</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/Lora-Esp32-ThingSpeak"><b dir="ltr">Lora-Esp32-ThingSpeak</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/Lora-Esp32-ThingSpeak?style=flat-square&color=7CFFB2&labelColor=050810" /></td>
+  <td align="right">شبکهٔ <code dir="ltr">LoRa</code> چندگرهی: چند فرستنده دما و رطوبت را به یک سرور مرکزی می‌فرستند، سرور فریم‌ها را پردازش و در صورت نیاز به <code dir="ltr">ThingSpeak</code> ارسال می‌کند.</td>
+  <td align="right"><code dir="ltr">C++</code> <code dir="ltr">LoRa</code> <code dir="ltr">ThingSpeak</code></td>
+</tr>
+<tr>
+  <td><b>۰۷</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/esp32_snmp"><b dir="ltr">esp32_snmp</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/esp32_snmp?style=flat-square&color=B388FF&labelColor=050810" /></td>
+  <td align="right">عامل <code dir="ltr">SNMP v2</code> روی <code dir="ltr">ESP32</code> هم روی اترنت (<code dir="ltr">ENC28J60</code>) و هم وای‌فای — تا یک میکروکنترلر در سیستم پایش شبکه به‌عنوان یک گرهٔ درجه‌یک دیده شود.</td>
+  <td align="right"><code dir="ltr">C++</code> <code dir="ltr">SNMP v2</code> <code dir="ltr">ENC28J60</code></td>
+</tr>
+<tr>
+  <td><b>۰۸</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/Shihlin-drive"><b dir="ltr">Shihlin-drive</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/Shihlin-drive?style=flat-square&color=B388FF&labelColor=050810" /></td>
+  <td align="right">ارتباط <code dir="ltr">RS-485</code> با درایو دور متغیر شی‌لین <code dir="ltr">SH040</code> با توان ۷.۵ کیلووات — خواندن پارامترها و نوشتن نقاط تنظیم از سمت کنترلر. تجهیز صنعتی واقعی، نقشهٔ رجیستر واقعی.</td>
+  <td align="right"><code dir="ltr">RS-485</code> <code dir="ltr">Modbus</code> <code dir="ltr">VFD</code></td>
+</tr>
+<tr>
+  <td><b>۰۹</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/binary-encoding-visualization"><b dir="ltr">binary-encoding-visualization</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/binary-encoding-visualization?style=flat-square&color=FF6B9D&labelColor=050810" /></td>
+  <td align="right">رابط گرافیکی پایتون که روش‌های کدگذاری خطی را کنار هم نشان می‌دهد: Unipolar، Polar NRZ-L/NRZ-I، Polar RZ، Manchester، Differential Manchester و AMI. ساخته شد تا یک فصل کتاب درسی بالاخره قابل دیدن شود.</td>
+  <td align="right"><code dir="ltr">Python</code> <code dir="ltr">Tkinter</code></td>
+</tr>
+<tr>
+  <td><b>۱۰</b></td>
+  <td align="right"><a href="https://github.com/Esmail-sarhadi/ESP32-Smart-Touch-Control-System"><b dir="ltr">ESP32-Smart-Touch-Control-System</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/ESP32-Smart-Touch-Control-System?style=flat-square&color=FF6B9D&labelColor=050810" /></td>
+  <td align="right">کنترل با حس‌گر لمسی، زمان‌بندی و همگام‌سازی وضعیت به‌صورت بلادرنگ بین سخت‌افزار و یک رابط وب واکنش‌گرا — با حالت تاریک، که طبیعتاً واجب است.</td>
+  <td align="right"><code dir="ltr">ESP32</code> <code dir="ltr">Touch</code> <code dir="ltr">Web UI</code></td>
+</tr>
+</tbody>
+</table>
 
 <details>
-<summary><b>🤖 شوخی‌های برنامه‌نویس</b></summary>
+<summary><b>مخزن‌های دیگری که ارزش دیدن دارند</b></summary>
 
-```
-سوال: چرا برنامه‌نویسها حالت تاریک را ترجیح می‌دهند؟
-جواب: چون نور باگ جذب می‌کند! 🐛
+<br />
 
-سوال: چند برنامه‌نویس برای تعویض لامپ لازم است؟
-جواب: هیچ‌کدام، این مسئله سخت‌افزاری است! 💡
-
-سوال: چرا دستگاه IoT به روانشناس رفت؟
-جواب: مشکل اتصال داشت! 📡
-```
+<table dir="rtl">
+<thead>
+<tr><th align="right">مخزن</th><th align="right">چرا وجود دارد</th></tr>
+</thead>
+<tbody>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/ESP32-NMEA-Generator-Decoder-Mqtt"><b dir="ltr">ESP32-NMEA-Generator-Decoder-Mqtt</b></a></td><td align="right">تولید و تجزیهٔ جمله‌های <code dir="ltr">NMEA</code> روی خود دستگاه و انتشار روی <code dir="ltr">MQTT</code></td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/IoT-Temperature-and-Humidity-Monitor-with-ESP32"><b dir="ltr">IoT-Temperature-and-Humidity-Monitor-with-ESP32</b></a></td><td align="right">پایش با <code dir="ltr">DHT21</code>، کنترل لامپ و خروجی CSV از مرورگر</td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/ESP32-BT-TempRelay"><b dir="ltr">ESP32-BT-TempRelay</b></a></td><td align="right">تله‌متری بلوتوث به‌همراه کنترل رله، بدون نیاز به شبکه</td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/SmartCool-IoT"><b dir="ltr">SmartCool-IoT</b></a></td><td align="right">کنترلر کولر آبی بر پایهٔ <code dir="ltr">ESP32</code> با ورودی لمسی و <code dir="ltr">MQTT</code></td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/esp32-ota-update-example"><b dir="ltr">esp32-ota-update-example</b></a></td><td align="right">نمونهٔ حداقلی به‌روزرسانی <code dir="ltr">OTA</code> — عمداً کوچک نگه داشته شده</td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/enc28j60-esp32-library"><b dir="ltr">enc28j60-esp32-library</b></a></td><td align="right">درایور اترنت <code dir="ltr">ENC28J60</code> برای <code dir="ltr">ESP32</code>، اصلاح و پایدارسازی‌شده</td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/Face-Recognition-Attendance-System"><b dir="ltr">Face-Recognition-Attendance-System</b></a></td><td align="right">ثبت حضور با <code dir="ltr">OpenCV</code> و <code dir="ltr">face_recognition</code> و ذخیره در CSV</td></tr>
+<tr><td align="right"><a href="https://github.com/Esmail-sarhadi/Stock-Price-Prediction-using-SimpleRNN"><b dir="ltr">Stock-Price-Prediction-using-SimpleRNN</b></a></td><td align="right">شبکهٔ بازگشتی برای پیش‌بینی سری‌های زمانی</td></tr>
+</tbody>
+</table>
 
 </details>
 
-<details>
-<summary><b>📊 آمار گیت‌هاب</b></summary>
+<img src="assets/divider.svg" alt="" width="100%" />
 
-- 🔥 طولانی‌ترین نوار: **۱۲۷ روز**
-- ⭐ مجموع ستاره‌ها: **۵۰۰+**
-- 🍴 مخازن فورک شده: **۲۰۰+**
-- 👥 دنبال‌کنندگان: **۱۰۰۰+**
-- 🤝 دنبال شده: **۳۰۰+**
-
-</details>
-
-</div>
-
----
+<h2 dir="rtl" align="right">آمار گیت‌هاب</h2>
 
 <div align="center">
 
-### 🌟 "نوآوری آینده، یک دستگاه هوشمند در هر زمان" 🌟
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=esmail-sarhadi&theme=github_dark" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=esmail-sarhadi&theme=github_dark" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,8,25&height=120&section=footer&animation=twinkling" />
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=esmail-sarhadi&theme=github_dark" />
 
-<p>
-  <img src="https://readme-typing-svg.demolab.com?font=Vazirmatn&size=20&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=400&lines=از+بازدید+شما+متشکریم!;بیایید+با+هم+نوآوری+کنیم!;ساخت+فناوری+فردا+امروز!" alt="Typing SVG" />
-</p>
-
-⭐ **اگر این مخزن مفید بود، ستاره بدهید!** ⭐
+<img width="100%" src="https://streak-stats.demolab.com/?user=esmail-sarhadi&background=050810&border=14304F&stroke=00E5FF&ring=00E5FF&fire=7CFFB2&currStreakNum=EAF6FF&currStreakLabel=7CFFB2&sideNums=8FB6D9&sideLabels=4E7CA8&dates=3E6E9C&excludeDaysLabel=3E6E9C" />
 
 </div>
+
+<details>
+<summary><b>نمودار مشارکت</b></summary>
+
+<br />
+
+<div align="center">
+  <img src="assets/github-snake.svg" alt="مار مشارکت‌ها" width="100%" />
+</div>
+
+</details>
+
+<img src="assets/divider.svg" alt="" width="100%" />
+
+<h2 dir="rtl" align="right">سوابق</h2>
+
+<table dir="rtl">
+<tbody>
+<tr><td align="right" width="230"><b>مؤسس و مدیرعامل</b></td><td align="right">زندگی هوشمند سانا — زاهدان · ۱۴۰۰ تا ۱۴۰۳<br/><sub>محصولات اینترنت اشیاء و زندگی هوشمند؛ تیم را از راه‌اندازی برد تا داشبورد سرتاسر هدایت کردم. در جریان: دریافت مجوز شرکت دانش‌بنیان.</sub></td></tr>
+<tr><td align="right"><b>مدیر فناوری</b></td><td align="right">شرکت پلاستیک امواج — بابلسر · ۱۳۹۸ تا ۱۴۰۰<br/><sub>مدیریت فناوری و کار روی سیستم‌های نصب‌شده در محل.</sub></td></tr>
+<tr><td align="right"><b>کارشناسی مهندسی کامپیوتر</b></td><td align="right">دانشگاه سیستان و بلوچستان · ۱۳۹۸ تا ۱۴۰۳</td></tr>
+<tr><td align="right"><b>مقام اول بوت‌کمپ</b></td><td align="right">بوت‌کمپ اینترنت اشیاء آی‌اوتی‌ایران، با پروژهٔ گلخانهٔ هوشمند<br/><sub>به‌عنوان نفر اول برنامه انتخاب شدم.</sub></td></tr>
+<tr><td align="right"><b>پژوهشگر برتر</b></td><td align="right">شناخته‌شده به‌عنوان پژوهشگر برتر دانشگاه سیستان و بلوچستان</td></tr>
+<tr><td align="right"><b>دوره‌ها</b></td><td align="right">اینترنت اشیاء — پارک علم و فناوری سیستان و بلوچستان · اینترنت اشیاء — توسینسو</td></tr>
+</tbody>
+</table>
+
+<img src="assets/divider.svg" alt="" width="100%" />
+
+<h2 dir="rtl" align="right">راه‌های ارتباط</h2>
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/EMAIL-sarhadiesmail@gmail.com-00E5FF?style=for-the-badge&labelColor=050810&logo=gmail&logoColor=00E5FF)](mailto:sarhadiesmail@gmail.com) [![Website](https://img.shields.io/badge/WEBSITE-esmailsarhadi.mycvresume.ir-7CFFB2?style=for-the-badge&labelColor=050810&logo=googlechrome&logoColor=7CFFB2)](https://esmailsarhadi.mycvresume.ir/)
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-esmail--sarhadi-5B8DEF?style=for-the-badge&labelColor=050810&logo=linkedin&logoColor=5B8DEF)](https://linkedin.com/in/esmail-sarhadi) [![X](https://img.shields.io/badge/X-@esmail62535258-B388FF?style=for-the-badge&labelColor=050810&logo=x&logoColor=B388FF)](https://twitter.com/esmail62535258) [![GitHub](https://img.shields.io/badge/GITHUB-Esmail--sarhadi-FF6B9D?style=for-the-badge&labelColor=050810&logo=github&logoColor=FF6B9D)](https://github.com/Esmail-sarhadi)
+
+</div>
+
+<p dir="rtl" align="right"><b>آمادهٔ همکاری در:</b> فریم‌ور سیستم‌های نهفته · اتوماسیون صنعتی · یکپارچه‌سازی Modbus/SCADA · شبکه‌های حس‌گر LoRa · ساخت محصول اینترنت اشیاء</p>
+
+<div align="center">
+  <img src="assets/divider.svg" alt="" width="100%" />
+</div>
+
+<img src="assets/footer.svg" alt="اول سخت‌افزار. فریم‌ور صادق. سیستمی که کار می‌کند." width="100%" />

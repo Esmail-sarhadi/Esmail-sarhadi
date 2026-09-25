@@ -1,378 +1,243 @@
-# 🔥 ESMAIL SARHADI - IoT ARCHITECT & SYSTEMS ENGINEER
+<div align="center">
+  <img src="assets/hero.svg" alt="Esmail Sarhadi — Embedded Systems Engineer, Industrial IoT" width="100%" />
+</div>
 
 <div align="center">
 
-<!-- Language Switcher -->
-<p>
-  <a href="README.md">
-    <img src="https://img.shields.io/badge/🇺🇸_English-4285f4?style=for-the-badge&logoColor=white" alt="English" />
-  </a>
-  <a href="README_fa.md">
-    <img src="https://img.shields.io/badge/🇮🇷_فارسی-00A86B?style=for-the-badge&logoColor=white" alt="Persian" />
-  </a>
-</p>
-
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=HELLO%20WORLD!&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=32" />
-
-<!-- Dynamic Intro -->
-<h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=35&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=100&lines=👨‍💻+ESMAIL+SARHADI;🚀+IoT+INNOVATOR+%26+TECH+VISIONARY" alt="Typing SVG" />
-</h1>
-
-<!-- Professional Tags -->
-<p>
-  <img src="https://img.shields.io/badge/🔥_IoT_Innovator-FF6B35?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/⚡_Embedded_Systems-00D4FF?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/🧠_AI/ML_Engineer-B537F2?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/🌟_Tech_Entrepreneur-00FF41?style=for-the-badge&logoColor=black" />
-</p>
-
-<!-- Animated Stats -->
-<img src="https://github-profile-trophy.vercel.app/?username=esmail-sarhadi&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" />
-
-<!-- Visitor Counter -->
-<img src="https://komarev.com/ghpvc/?username=esmail-sarhadi&style=for-the-badge&color=blueviolet&abbreviated=true" />
+[![English](https://img.shields.io/badge/🇺🇸_ENGLISH-00E5FF?style=flat-square&labelColor=050810)](README.md) [![فارسی](https://img.shields.io/badge/🇮🇷_فارسی-7CFFB2?style=flat-square&labelColor=050810)](README_fa.md) [![Visitors](https://komarev.com/ghpvc/?username=esmail-sarhadi&style=flat-square&color=00E5FF&abbreviated=true)](https://github.com/Esmail-sarhadi)
 
 </div>
 
 ---
 
-## 🌟 ABOUT THE ARCHITECT
+## `>` whoami
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=FF6B35&text_color=FFFFFF" width="400" />
+```console
+esmail@zahedan:~$ cat profile.yaml
 
-```yaml
-name: "Esmail Sarhadi"
-role: "IoT Systems Architect"
-code: ["C++", "C", "Python", "JavaScript", "Assembly"]
-architecture: ["IoT", "Embedded Systems", "Microservices", "Edge Computing"]
-current_focus: "Building the Future of Connected Intelligence"
-motto: "Innovating Tomorrow, One Smart Device at a Time"
+  name         Esmail Sarhadi
+  role         Embedded Systems Engineer · Industrial IoT
+  base         Zahedan, Iran (UTC+3:30)
+  since        2018 — 76 public repositories
+  languages    C · C++ · Python · JavaScript
+  silicon      ESP32 · STM32 · Arduino
+  field bus    Modbus RTU/TCP · RS-485
+  wireless     Wi-Fi · Bluetooth · LoRa (RFM95) · UHF
+  telemetry    MQTT · HTTP/REST · WebSocket · SNMP v2 · IEC 60870-5-104
+  software     Flask · React · Next.js · Android · SQL
+  status       [ OPEN ] — available for embedded & industrial IoT work
+
+esmail@zahedan:~$ █
 ```
 
-🎯 **MISSION STATEMENT**
-> Transforming ideas into intelligent, connected realities that push the boundaries of what's possible in IoT and embedded systems.
-
-### 💼 PROFESSIONAL JOURNEY
-
-<details>
-<summary><b>🏢 Former CEO - IoT & Smart Solutions Company</b></summary>
-
-- 📈 Led a team of 15+ engineers
-- 🚀 Launched 25+ successful IoT products
-- 💰 Generated $2M+ in revenue
-- 🌍 Deployed solutions across 10+ countries
-- 🏆 Won "Innovation Excellence Award 2023"
-
-</details>
-
-<details>
-<summary><b>🎓 Education & Certifications</b></summary>
-
-- 🎓 **B.Sc. Computer Engineering** - University of Sistan and Baluchestan
-- 🏅 **IoT Specialist Certification** - Cisco
-- 🔧 **Embedded Systems Professional** - ARM
-- ☁️ **AWS IoT Core Certified**
-- 🔐 **Cybersecurity in IoT** - (ISC)²
-
-</details>
-
 ---
 
-## 🛠️ TECH ARSENAL
+## What I actually build
 
-<div align="center">
+Most IoT profiles show a wall of logos. Here is the part that matters — the layer where things break.
 
-### 💻 PROGRAMMING LANGUAGES
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,c,python,js,typescript,rust,go" />
-</p>
+<table>
+<tr><td width="34"><b>01</b></td><td>
 
-### 🔧 FRAMEWORKS & TOOLS
-<p>
-  <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,linux,docker,kubernetes,aws,azure,terraform" />
-</p>
+**Firmware that survives the field.** ESP32 and STM32 in bare-metal C/C++, with OTA update paths, watchdog recovery and web-server config UIs — because a device you have to drive to is a device that stays broken.
 
-### 📊 DATABASES & ANALYTICS
-<p>
-  <img src="https://skillicons.dev/icons?i=mongodb,postgresql,redis,influxdb,grafana,elasticsearch" />
-</p>
+</td></tr>
+<tr><td><b>02</b></td><td>
 
-### 🎨 DEVELOPMENT ENVIRONMENT
-<p>
-  <img src="https://skillicons.dev/icons?i=vscode,vim,git,github,gitlab,cmake,qt" />
-</p>
+**Protocol bridges.** Pulling data out of Modbus/RS-485 equipment, variable-frequency drives and legacy controllers, and getting it somewhere useful over MQTT, REST or WebSocket.
 
-</div>
+</td></tr>
+<tr><td><b>03</b></td><td>
 
----
+**LoRa sensor networks.** Multi-node telemetry where there is no Wi-Fi and no power outlet — RFM95 links, central collection nodes, optional uplink to the cloud.
 
-## 📊 GITHUB ANALYTICS
+</td></tr>
+<tr><td><b>04</b></td><td>
 
-<div align="center">
+**Industrial telemetry.** SNMP v2 agents on microcontrollers, NMEA/GPS ingestion, and IEC 60870-5-104 telecontrol for SCADA-side integration.
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=esmail-sarhadi&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=esmail-sarhadi&layout=compact&langs_count=12&theme=radical&hide_border=true&bg_color=0D1117" />
+</td></tr>
+<tr><td><b>05</b></td><td>
 
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=esmail-sarhadi&theme=radical&hide_border=true&background=0D1117" />
+**Operator dashboards.** Flask and React/Next.js front-ends for live data — designed for the person standing in front of the machine, not for a screenshot.
 
-<!-- Activity Graph -->
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=esmail-sarhadi&bg_color=0D1117&color=00D4FF&line=FF6B35&point=FFFFFF&area=true&hide_border=true" />
-
-</div>
-
----
-
-## 🚀 FEATURED PROJECTS
-
-<div align="center">
-
-<!-- Project 1 -->
-<a href="#">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=esmail-sarhadi&repo=smart-home-iot&theme=radical&hide_border=true&bg_color=0D1117" />
-</a>
-
-<!-- Project 2 -->
-<a href="#">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=esmail-sarhadi&repo=industrial-automation&theme=radical&hide_border=true&bg_color=0D1117" />
-</a>
-
-</div>
-
-### 🏆 PROJECT HIGHLIGHTS
-
-| 🎯 Project | 🔧 Tech Stack | 🌟 Features | 📈 Impact |
-|-----------|---------------|-------------|-----------|
-| **Smart City Infrastructure** | `C++` `MQTT` `LoRaWAN` `AWS IoT` | Real-time monitoring, AI analytics | 30% efficiency increase |
-| **Industrial Automation Suite** | `Python` `Modbus` `OPC-UA` `Docker` | Predictive maintenance, Edge computing | $500K cost savings |
-| **Agricultural IoT Network** | `Arduino` `ESP32` `ThingSpeak` `ML` | Crop monitoring, Auto-irrigation | 40% water conservation |
-| **Healthcare Wearables** | `C` `BLE` `React Native` `Firebase` | Vital monitoring, Emergency alerts | 10,000+ lives impacted |
-
----
-
-## 💡 EXPERTISE MATRIX
-
-<table align="center">
-  <tr>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="50px" />
-      <br><strong>C/C++</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50px" />
-      <br><strong>Python</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="50px" />
-      <br><strong>Embedded Systems</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center" width="200px">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50px" />
-      <br><strong>Linux Systems</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="50px" />
-      <br><strong>Cloud/IoT</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50px" />
-      <br><strong>DevOps</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="50px" />
-      <br><strong>AI/ML</strong>
-      <br>⭐⭐⭐⭐⚪
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50px" />
-      <br><strong>Version Control</strong>
-      <br>⭐⭐⭐⭐⭐
-    </td>
-  </tr>
+</td></tr>
 </table>
 
----
-
-## 🎯 CURRENT FOCUS
+<br />
 
 <div align="center">
-
-```mermaid
-mindmap
-  root((IoT Innovation))
-    Edge Computing
-      Real-time Processing
-      Low Latency
-      Security
-    AI Integration
-      Predictive Analytics
-      Computer Vision
-      NLP for IoT
-    Sustainability
-      Green Technology
-      Energy Efficiency
-      Carbon Footprint
-    Industry 4.0
-      Smart Manufacturing
-      Digital Twins
-      Automation
-```
-
-</div>
-
-### 🚀 2024 GOALS
-
-- [ ] 🌟 Launch open-source IoT framework
-- [ ] 📚 Publish technical articles on IoT security
-- [ ] 🎯 Contribute to 10+ open-source projects
-- [ ] 🏆 Speak at 5+ international conferences
-- [ ] 🤝 Mentor 20+ junior developers
-- [ ] 💡 File 3+ technology patents
-
----
-
-## 📈 CONTRIBUTION INSIGHTS
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=esmail-sarhadi&theme=radical&hide_border=true&bg_color=0D1117" />
-
-<!-- 3D Contribution Graph -->
-<img src="https://github.com/esmail-sarhadi/esmail-sarhadi/blob/output/github-contribution-grid-snake-dark.svg" />
-
+  <img src="assets/stack.svg" alt="System architecture: field, control, transport, integration, application" width="100%" />
 </div>
 
 ---
 
-## 🌐 CONNECT & COLLABORATE
+## Selected work
 
-<div align="center">
+Every repository below is public. Star counts and languages are live from GitHub.
 
-### 💬 LET'S BUILD THE FUTURE TOGETHER
-
-<p>
-  <a href="mailto:sarhadiemsail@gmail.com">
-    <img src="https://img.shields.io/badge/📧_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://linkedin.com/in/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/💼_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/esmail62535258">
-    <img src="https://img.shields.io/badge/🐦_Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
-  <a href="https://github.com/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/💻_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-
-<p>
-  <a href="https://dev.to/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/📝_Blog-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" />
-  </a>
-  <a href="https://medium.com/@esmail-sarhadi">
-    <img src="https://img.shields.io/badge/✍️_Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" />
-  </a>
-  <a href="https://stackoverflow.com/users/esmail-sarhadi">
-    <img src="https://img.shields.io/badge/❓_Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />
-  </a>
-  <a href="https://discord.gg/your-discord">
-    <img src="https://img.shields.io/badge/💬_Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
-</p>
-
-### 🎯 COLLABORATION INTERESTS
-
-<table align="center">
-  <tr>
-    <td align="center">🤖 <strong>IoT Solutions</strong></td>
-    <td align="center">🔧 <strong>Embedded Systems</strong></td>
-    <td align="center">🧠 <strong>AI/ML Projects</strong></td>
-  </tr>
-  <tr>
-    <td align="center">☁️ <strong>Cloud Architecture</strong></td>
-    <td align="center">🔐 <strong>Cybersecurity</strong></td>
-    <td align="center">🌱 <strong>Open Source</strong></td>
-  </tr>
+<table>
+<thead>
+<tr>
+  <th width="34"></th>
+  <th width="250">Project</th>
+  <th>What it does</th>
+  <th width="190">Stack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>01</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/esp32-ota-web-server"><b>esp32-ota-web-server</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/esp32-ota-web-server?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td>Over-the-air firmware updates served from a web interface hosted on the ESP32 itself. Upload a binary, the device reboots into it. The pattern I reuse in every deployed product.</td>
+  <td><code>C++</code> <code>ESP32</code> <code>OTA</code></td>
+</tr>
+<tr>
+  <td><b>02</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/phpserver-webserver-esp32"><b>phpserver-webserver-esp32</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/phpserver-webserver-esp32?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td>Multi-sensor environmental station — DHT21 temperature/humidity, pulse sensor and MQ135 gas sensing — with the readings served from an on-device web interface.</td>
+  <td><code>ESP32</code> <code>DHT21</code> <code>MQ135</code></td>
+</tr>
+<tr>
+  <td><b>03</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/heathguard"><b>heathguard</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/heathguard?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td>Environmental and health monitoring platform. Sensor acquisition, thresholds, and an operator-facing view of the room the device is actually sitting in.</td>
+  <td><code>ESP32</code> <code>Sensors</code></td>
+</tr>
+<tr>
+  <td><b>04</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/talking-skeleton"><b>talking-skeleton</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/talking-skeleton?style=flat-square&color=00E5FF&labelColor=050810" /></td>
+  <td>Animated anatomical model: per-organ LEDs, DFPlayer Mini audio narration and a moving jaw, driven over Bluetooth and RF, with a custom Android controller app.</td>
+  <td><code>Kotlin</code> <code>ESP32</code> <code>DFPlayer</code></td>
+</tr>
+<tr>
+  <td><b>05</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/LoRa-ESP32-Communication"><b>LoRa-ESP32-Communication</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/LoRa-ESP32-Communication?style=flat-square&color=7CFFB2&labelColor=050810" /></td>
+  <td>Reference implementation for LoRa links on ESP32 — setup, framing, send and receive. The starting point for the sensor networks that came after it.</td>
+  <td><code>C++</code> <code>LoRa</code> <code>ESP32</code></td>
+</tr>
+<tr>
+  <td><b>06</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/Lora-Esp32-ThingSpeak"><b>Lora-Esp32-ThingSpeak</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/Lora-Esp32-ThingSpeak?style=flat-square&color=7CFFB2&labelColor=050810" /></td>
+  <td>Multi-node LoRa network where several transmitters report temperature and humidity to a central server, which processes the frames and optionally uplinks them to ThingSpeak.</td>
+  <td><code>C++</code> <code>LoRa</code> <code>ThingSpeak</code></td>
+</tr>
+<tr>
+  <td><b>07</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/esp32_snmp"><b>esp32_snmp</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/esp32_snmp?style=flat-square&color=B388FF&labelColor=050810" /></td>
+  <td>SNMP v2 agent running on an ESP32 over both Ethernet (ENC28J60) and Wi-Fi, so a microcontroller shows up as a first-class node in network monitoring.</td>
+  <td><code>C++</code> <code>SNMP v2</code> <code>ENC28J60</code></td>
+</tr>
+<tr>
+  <td><b>08</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/Shihlin-drive"><b>Shihlin-drive</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/Shihlin-drive?style=flat-square&color=B388FF&labelColor=050810" /></td>
+  <td>RS-485 communications with a Shihlin SH040 7.5 kW variable-frequency drive — reading parameters and writing setpoints from a controller. Real industrial equipment, real register map.</td>
+  <td><code>RS-485</code> <code>Modbus</code> <code>VFD</code></td>
+</tr>
+<tr>
+  <td><b>09</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/binary-encoding-visualization"><b>binary-encoding-visualization</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/binary-encoding-visualization?style=flat-square&color=FF6B9D&labelColor=050810" /></td>
+  <td>Python GUI that visualises line-coding schemes side by side: Unipolar, Polar NRZ-L/NRZ-I, Polar RZ, Manchester, Differential Manchester and AMI. Built to make a textbook chapter behave.</td>
+  <td><code>Python</code> <code>Tkinter</code></td>
+</tr>
+<tr>
+  <td><b>10</b></td>
+  <td><a href="https://github.com/Esmail-sarhadi/ESP32-Smart-Touch-Control-System"><b>ESP32-Smart-Touch-Control-System</b></a><br/>
+      <img src="https://img.shields.io/github/stars/Esmail-sarhadi/ESP32-Smart-Touch-Control-System?style=flat-square&color=FF6B9D&labelColor=050810" /></td>
+  <td>Touch-sensing control with scheduling and real-time state synchronisation between the hardware and a responsive web UI — including dark mode, because of course.</td>
+  <td><code>ESP32</code> <code>Touch</code> <code>Web UI</code></td>
+</tr>
+</tbody>
 </table>
 
-</div>
-
----
-
-## 💎 SUPPORT MY WORK
-
-<div align="center">
-
-<p>If you find my work valuable, consider supporting me:</p>
-
-<a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&source=lk_donation&medium=referral">
-  <img src="https://img.shields.io/badge/💰_Crypto_Donation-FF6B35?style=for-the-badge&logoColor=white" />
-</a>
-<a href="https://github.com/sponsors/esmail-sarhadi">
-  <img src="https://img.shields.io/badge/❤️_GitHub_Sponsor-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" />
-</a>
-<a href="https://ko-fi.com/esmail-sarhadi">
-  <img src="https://img.shields.io/badge/☕_Buy_Me_Coffee-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" />
-</a>
-
-</div>
-
----
-
-## 🎊 FUN FACTS
-
-<div align="center">
-
 <details>
-<summary><b>🤖 Random Developer Jokes</b></summary>
+<summary><b>More repositories worth a look</b></summary>
 
-```
-Q: Why do programmers prefer dark mode?
-A: Because light attracts bugs! 🐛
+<br />
 
-Q: How many programmers does it take to change a light bulb?
-A: None, that's a hardware problem! 💡
-
-Q: Why did the IoT device go to therapy?
-A: It had connectivity issues! 📡
-```
+| Repository | Why it exists |
+|---|---|
+| [**ESP32-NMEA-Generator-Decoder-Mqtt**](https://github.com/Esmail-sarhadi/ESP32-NMEA-Generator-Decoder-Mqtt) | Generates and parses NMEA sentences on-device, published over MQTT |
+| [**IoT-Temperature-and-Humidity-Monitor-with-ESP32**](https://github.com/Esmail-sarhadi/IoT-Temperature-and-Humidity-Monitor-with-ESP32) | DHT21 monitoring with lamp control and CSV export from the browser |
+| [**ESP32-BT-TempRelay**](https://github.com/Esmail-sarhadi/ESP32-BT-TempRelay) | Bluetooth telemetry plus relay control, no network required |
+| [**SmartCool-IoT**](https://github.com/Esmail-sarhadi/SmartCool-IoT) | ESP32 evaporative-cooler controller with touch input and MQTT |
+| [**esp32-ota-update-example**](https://github.com/Esmail-sarhadi/esp32-ota-update-example) | Minimal OTA update example, kept small on purpose |
+| [**enc28j60-esp32-library**](https://github.com/Esmail-sarhadi/enc28j60-esp32-library) | Fixed and stabilised ENC28J60 Ethernet driver for ESP32 |
+| [**Face-Recognition-Attendance-System**](https://github.com/Esmail-sarhadi/Face-Recognition-Attendance-System) | OpenCV + face_recognition attendance logging to CSV |
+| [**Stock-Price-Prediction-using-SimpleRNN**](https://github.com/Esmail-sarhadi/Stock-Price-Prediction-using-SimpleRNN) | Recurrent network for time-series prediction |
 
 </details>
 
-<details>
-<summary><b>📊 GitHub Stats</b></summary>
+---
 
-- 🔥 Longest streak: **127 days**
-- ⭐ Total stars earned: **500+**
-- 🍴 Repositories forked: **200+**
-- 👥 Followers: **1,000+**
-- 🤝 Following: **300+**
+## GitHub numbers
+
+<div align="center">
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=esmail-sarhadi&theme=github_dark" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=esmail-sarhadi&theme=github_dark" />
+
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=esmail-sarhadi&theme=github_dark" />
+
+<img width="100%" src="https://streak-stats.demolab.com/?user=esmail-sarhadi&background=050810&border=14304F&stroke=00E5FF&ring=00E5FF&fire=7CFFB2&currStreakNum=EAF6FF&currStreakLabel=7CFFB2&sideNums=8FB6D9&sideLabels=4E7CA8&dates=3E6E9C&excludeDaysLabel=3E6E9C" />
+
+</div>
+
+<details>
+<summary><b>Contribution graph</b></summary>
+
+<br />
+
+<div align="center">
+  <img src="assets/github-snake.svg" alt="Contribution snake" width="100%" />
+</div>
 
 </details>
+
+---
+
+## Track record
+
+<div align="center">
+
+| | |
+|---|---|
+| **Founder & CEO** | Sana Smart Life — Zahedan, Iran · 2021 – 2024<br/><sub>IoT and smart-living products; team led end-to-end from board bring-up to dashboard. In progress: knowledge-based (دانش‌بنیان) company certification.</sub> |
+| **Technology Manager** | Plastic Amvaj Co. — Babolsar, Iran · 2019 – 2021<br/><sub>Industrial technology management and on-site systems work.</sub> |
+| **B.Sc. Computer Engineering** | University of Sistan and Baluchestan · 2019 – 2024 |
+| **1st place — IoT bootcamp** | IoTiran national IoT bootcamp, with a smart-greenhouse project<br/><sub>Selected as first in the programme.</sub> |
+| **Top researcher** | Recognised as top researcher at the University of Sistan and Baluchestan |
+| **Training** | IoT — Sistan & Baluchestan Science and Technology Park · IoT — Tosinsu |
 
 </div>
 
 ---
 
+## Contact
+
 <div align="center">
 
-### 🌟 "INNOVATING THE FUTURE, ONE SMART DEVICE AT A TIME" 🌟
+[![Email](https://img.shields.io/badge/EMAIL-sarhadiesmail@gmail.com-00E5FF?style=for-the-badge&labelColor=050810&logo=gmail&logoColor=00E5FF)](mailto:sarhadiesmail@gmail.com) [![Website](https://img.shields.io/badge/WEBSITE-esmailsarhadi.mycvresume.ir-7CFFB2?style=for-the-badge&labelColor=050810&logo=googlechrome&logoColor=7CFFB2)](https://esmailsarhadi.mycvresume.ir/)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" />
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-esmail--sarhadi-5B8DEF?style=for-the-badge&labelColor=050810&logo=linkedin&logoColor=5B8DEF)](https://linkedin.com/in/esmail-sarhadi) [![X](https://img.shields.io/badge/X-@esmail62535258-B388FF?style=for-the-badge&labelColor=050810&logo=x&logoColor=B388FF)](https://twitter.com/esmail62535258) [![GitHub](https://img.shields.io/badge/GITHUB-Esmail--sarhadi-FF6B9D?style=for-the-badge&labelColor=050810&logo=github&logoColor=FF6B9D)](https://github.com/Esmail-sarhadi)
 
-<p>
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=400&lines=Thanks+for+visiting!;Let's+innovate+together!;Building+tomorrow's+tech+today!" alt="Typing SVG" />
-</p>
+<br />
 
-⭐ **Star this repository if you find it helpful!** ⭐
+**Open to:** embedded firmware · industrial automation · Modbus/SCADA integration · LoRa sensor networks · IoT product builds
+
+<br />
+
+<img src="assets/divider.svg" alt="" width="100%" />
 
 </div>
+
+<img src="assets/footer.svg" alt="Hardware first. Firmware honest. Systems that run." width="100%" />
