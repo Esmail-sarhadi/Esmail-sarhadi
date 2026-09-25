@@ -1,1261 +1,534 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/1.jpg" type="image/jpeg">
-    <title>اسماعیل سرحدی - کاشف کهکشان فناوری</title>
-    <meta name="description" content="اسماعیل سرحدی - کاشف کهکشان IoT و معمار سیستم‌های هوشمند">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            /* Galaxy Colors */
-            --cosmic-black: #000000;
-            --deep-space: #0a0a0f;
-            --nebula-blue: #1e3a8a;
-            --nebula-purple: #7c3aed;
-            --star-white: #ffffff;
-            --cosmic-orange: #fb923c;
-            --plasma-pink: #ec4899;
-            --stellar-yellow: #fbbf24;
-            --cosmic-red: #dc2626;
-            --galaxy-cyan: #06b6d4;
-            
-            /* Text Colors */
-            --text-bright: #f8fafc;
-            --text-dim: #cbd5e1;
-            --text-faint: #64748b;
-        }
-
-        body {
-            font-family: 'Vazirmatn', 'Orbitron', monospace;
-            background: var(--cosmic-black);
-            color: var(--text-bright);
-            overflow-x: hidden;
-            min-height: 100vh;
-            position: relative;
-        }
-
-        /* Galaxy Background */
-        .galaxy-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: radial-gradient(ellipse at center, 
-                var(--deep-space) 0%, 
-                var(--cosmic-black) 50%, 
-                var(--cosmic-black) 100%);
-        }
-
-        /* Spiral Galaxy */
-        .spiral-galaxy {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 1200px;
-            height: 1200px;
-            transform: translate(-50%, -50%) rotate(0deg);
-            animation: galaxy-rotation 120s linear infinite;
-            opacity: 0.6;
-        }
-
-        @keyframes galaxy-rotation {
-            from { transform: translate(-50%, -50%) rotate(0deg); }
-            to { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-
-        .spiral-arm {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform-origin: center;
-            width: 600px;
-            height: 4px;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                var(--nebula-blue) 20%, 
-                var(--nebula-purple) 40%, 
-                var(--cosmic-orange) 60%, 
-                var(--stellar-yellow) 80%, 
-                transparent 100%);
-            border-radius: 2px;
-            box-shadow: 0 0 20px var(--nebula-blue);
-        }
-
-        .spiral-arm:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg); }
-        .spiral-arm:nth-child(2) { transform: translate(-50%, -50%) rotate(60deg); }
-        .spiral-arm:nth-child(3) { transform: translate(-50%, -50%) rotate(120deg); }
-        .spiral-arm:nth-child(4) { transform: translate(-50%, -50%) rotate(180deg); }
-        .spiral-arm:nth-child(5) { transform: translate(-50%, -50%) rotate(240deg); }
-        .spiral-arm:nth-child(6) { transform: translate(-50%, -50%) rotate(300deg); }
-
-        /* Galaxy Core */
-        .galaxy-core {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100px;
-            height: 100px;
-            transform: translate(-50%, -50%);
-            background: radial-gradient(circle, 
-                var(--stellar-yellow) 0%, 
-                var(--cosmic-orange) 30%, 
-                var(--cosmic-red) 60%, 
-                transparent 100%);
-            border-radius: 50%;
-            box-shadow: 0 0 50px var(--stellar-yellow);
-            animation: core-pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes core-pulse {
-            0%, 100% { 
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 0.8;
-            }
-            50% { 
-                transform: translate(-50%, -50%) scale(1.2);
-                opacity: 1;
-            }
-        }
-
-        /* Cosmic Stars */
-        .stars-layer {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .star {
-            position: absolute;
-            background: var(--star-white);
-            border-radius: 50%;
-            animation: star-twinkle 3s ease-in-out infinite;
-        }
-
-        @keyframes star-twinkle {
-            0%, 100% { 
-                opacity: 0.3; 
-                transform: scale(0.5);
-                box-shadow: 0 0 4px var(--star-white);
-            }
-            50% { 
-                opacity: 1; 
-                transform: scale(1);
-                box-shadow: 0 0 12px var(--star-white);
-            }
-        }
-
-        /* Nebula Clouds */
-        .nebula {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(40px);
-            animation: nebula-drift 60s ease-in-out infinite;
-        }
-
-        @keyframes nebula-drift {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            25% { transform: translate(20px, -30px) scale(1.1); }
-            50% { transform: translate(-20px, 20px) scale(0.9); }
-            75% { transform: translate(30px, 10px) scale(1.05); }
-        }
-
-        /* Cosmic Particles */
-        .cosmic-particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: var(--galaxy-cyan);
-            border-radius: 50%;
-            animation: particle-float 8s linear infinite;
-        }
-
-        @keyframes particle-float {
-            0% {
-                transform: translateY(100vh) translateX(0);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-10vh) translateX(50px);
-                opacity: 0;
-            }
-        }
-
-        /* Navigation */
-        .nav-cosmos {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 20px 0;
-            background: linear-gradient(135deg, 
-                rgba(0, 0, 0, 0.8) 0%, 
-                rgba(30, 58, 138, 0.3) 50%, 
-                rgba(0, 0, 0, 0.8) 100%);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(251, 146, 60, 0.3);
-            z-index: 1000;
-        }
-
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cosmic-logo {
-            font-family: 'Orbitron', monospace;
-            font-size: 1.8rem;
-            font-weight: 900;
-            background: linear-gradient(45deg, 
-                var(--stellar-yellow), 
-                var(--cosmic-orange), 
-                var(--plasma-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 20px var(--cosmic-orange);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-link {
-            color: var(--text-bright);
-            text-decoration: none;
-            font-weight: 600;
-            padding: 10px 20px;
-            border: 1px solid transparent;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .nav-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(251, 146, 60, 0.3), 
-                transparent);
-            transition: left 0.5s ease;
-        }
-
-        .nav-link:hover::before {
-            left: 100%;
-        }
-
-        .nav-link:hover {
-            border-color: var(--cosmic-orange);
-            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
-            color: var(--cosmic-orange);
-        }
-
-        .lang-selector {
-            display: flex;
-            gap: 15px;
-        }
-
-        .lang-btn {
-            padding: 8px 16px;
-            background: rgba(30, 58, 138, 0.3);
-            border: 1px solid var(--galaxy-cyan);
-            border-radius: 20px;
-            color: var(--text-bright);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .lang-btn:hover {
-            background: rgba(6, 182, 212, 0.2);
-            box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
-        }
-
-        /* Hero Section */
-        .hero-cosmos {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 100px 40px 40px;
-            position: relative;
-        }
-
-        .hero-grid {
-            max-width: 1200px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .hero-content {
-            z-index: 2;
-        }
-
-        .cosmic-title {
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 900;
-            margin-bottom: 30px;
-            background: linear-gradient(45deg, 
-                var(--star-white) 0%,
-                var(--stellar-yellow) 25%,
-                var(--cosmic-orange) 50%,
-                var(--plasma-pink) 75%,
-                var(--nebula-purple) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            background-size: 300% 300%;
-            animation: cosmic-flow 6s ease-in-out infinite;
-            text-shadow: 0 0 30px rgba(251, 146, 60, 0.5);
-        }
-
-        @keyframes cosmic-flow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        .hero-subtitle {
-            font-size: 1.4rem;
-            color: var(--galaxy-cyan);
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .hero-description {
-            font-size: 1.1rem;
-            color: var(--text-dim);
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
-
-        .cosmic-buttons {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .cosmic-btn {
-            padding: 15px 30px;
-            border: 2px solid;
-            border-radius: 30px;
-            font-size: 1rem;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cosmic-btn-primary {
-            background: linear-gradient(45deg, var(--cosmic-orange), var(--plasma-pink));
-            border-color: var(--cosmic-orange);
-            color: var(--star-white);
-        }
-
-        .cosmic-btn-secondary {
-            background: transparent;
-            border-color: var(--galaxy-cyan);
-            color: var(--galaxy-cyan);
-        }
-
-        .cosmic-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(251, 146, 60, 0.4);
-        }
-
-        .cosmic-btn-secondary:hover {
-            background: rgba(6, 182, 212, 0.1);
-            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.4);
-        }
-
-        /* Avatar Section */
-        .avatar-cosmos {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .avatar-orbit {
-            position: relative;
-            width: 300px;
-            height: 300px;
-        }
-
-        .avatar-ring {
-            position: absolute;
-            border: 2px solid;
-            border-radius: 50%;
-            animation: ring-rotation 10s linear infinite;
-        }
-
-        .avatar-ring:nth-child(1) {
-            width: 320px;
-            height: 320px;
-            border-color: var(--cosmic-orange);
-            top: -10px;
-            left: -10px;
-            animation-duration: 15s;
-        }
-
-        .avatar-ring:nth-child(2) {
-            width: 350px;
-            height: 350px;
-            border-color: var(--galaxy-cyan);
-            top: -25px;
-            left: -25px;
-            animation-duration: 20s;
-            animation-direction: reverse;
-        }
-
-        .avatar-ring:nth-child(3) {
-            width: 380px;
-            height: 380px;
-            border-color: var(--plasma-pink);
-            top: -40px;
-            left: -40px;
-            animation-duration: 25s;
-        }
-
-        @keyframes ring-rotation {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .avatar-image {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            border: 4px solid var(--stellar-yellow);
-            box-shadow: 0 0 50px var(--cosmic-orange);
-            position: relative;
-            z-index: 2;
-            animation: avatar-glow 3s ease-in-out infinite;
-        }
-
-        @keyframes avatar-glow {
-            0%, 100% { 
-                box-shadow: 0 0 30px var(--cosmic-orange);
-            }
-            50% { 
-                box-shadow: 0 0 60px var(--stellar-yellow);
-            }
-        }
-
-        /* Planet Orbits */
-        .planet {
-            position: absolute;
-            border-radius: 50%;
-            animation: planet-orbit 8s linear infinite;
-        }
-
-        .planet-1 {
-            width: 12px;
-            height: 12px;
-            background: var(--cosmic-red);
-            top: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation-duration: 8s;
-        }
-
-        .planet-2 {
-            width: 8px;
-            height: 8px;
-            background: var(--galaxy-cyan);
-            bottom: 50px;
-            right: 50%;
-            transform: translateX(50%);
-            animation-duration: 12s;
-            animation-direction: reverse;
-        }
-
-        .planet-3 {
-            width: 10px;
-            height: 10px;
-            background: var(--plasma-pink);
-            top: 50%;
-            left: 50px;
-            transform: translateY(-50%);
-            animation-duration: 10s;
-        }
-
-        @keyframes planet-orbit {
-            from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-            to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-        }
-
-        /* Content Sections */
-        .section-cosmos {
-            padding: 80px 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .section-title {
-            font-family: 'Orbitron', monospace;
-            font-size: 2.5rem;
-            font-weight: 800;
-            text-align: center;
-            margin-bottom: 60px;
-            background: linear-gradient(45deg, 
-                var(--stellar-yellow), 
-                var(--cosmic-orange), 
-                var(--plasma-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, 
-                var(--cosmic-orange), 
-                var(--plasma-pink));
-            border-radius: 2px;
-        }
-
-        /* Card Grid */
-        .cosmic-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .cosmic-card {
-            background: linear-gradient(135deg, 
-                rgba(30, 58, 138, 0.1) 0%, 
-                rgba(0, 0, 0, 0.8) 50%, 
-                rgba(124, 58, 237, 0.1) 100%);
-            border: 1px solid rgba(251, 146, 60, 0.3);
-            border-radius: 20px;
-            padding: 30px;
-            backdrop-filter: blur(20px);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cosmic-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(251, 146, 60, 0.1), 
-                transparent);
-            transition: left 0.6s ease;
-        }
-
-        .cosmic-card:hover::before {
-            left: 100%;
-        }
-
-        .cosmic-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--cosmic-orange);
-            box-shadow: 0 20px 40px rgba(251, 146, 60, 0.3);
-        }
-
-        .card-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, 
-                var(--cosmic-orange), 
-                var(--stellar-yellow));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .card-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--text-bright);
-            margin-bottom: 15px;
-        }
-
-        .card-description {
-            color: var(--text-dim);
-            line-height: 1.6;
-        }
-
-        /* Skills Constellation */
-        .skills-constellation {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 20px;
-            margin-top: 50px;
-        }
-
-        .skill-star {
-            background: linear-gradient(135deg, 
-                rgba(30, 58, 138, 0.2) 0%, 
-                rgba(0, 0, 0, 0.9) 100%);
-            border: 2px solid var(--galaxy-cyan);
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .skill-star::after {
-            content: '';
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            width: 6px;
-            height: 6px;
-            background: var(--stellar-yellow);
-            border-radius: 50%;
-            animation: skill-twinkle 2s ease-in-out infinite;
-        }
-
-        @keyframes skill-twinkle {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
-        }
-
-        .skill-star:hover {
-            transform: translateY(-5px) scale(1.05);
-            border-color: var(--cosmic-orange);
-            box-shadow: 0 15px 30px rgba(6, 182, 212, 0.3);
-        }
-
-        .skill-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: var(--galaxy-cyan);
-        }
-
-        .skill-name {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--text-bright);
-        }
-
-        /* Stats Galaxy */
-        .stats-galaxy {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .stat-planet {
-            background: radial-gradient(circle at center, 
-                rgba(251, 146, 60, 0.2) 0%, 
-                rgba(0, 0, 0, 0.9) 70%);
-            border: 2px solid var(--cosmic-orange);
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stat-planet::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, 
-                transparent, 
-                rgba(251, 146, 60, 0.1), 
-                transparent);
-            animation: stat-rotate 4s linear infinite;
-            opacity: 0;
-        }
-
-        .stat-planet:hover::before {
-            opacity: 1;
-        }
-
-        @keyframes stat-rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .stat-planet:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(251, 146, 60, 0.4);
-        }
-
-        .stat-number {
-            font-family: 'Orbitron', monospace;
-            font-size: 2.5rem;
-            font-weight: 900;
-            background: linear-gradient(45deg, 
-                var(--stellar-yellow), 
-                var(--cosmic-orange));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            color: var(--text-dim);
-            font-weight: 500;
-        }
-
-        /* Contact Constellation */
-        .contact-constellation {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 50px;
-        }
-
-        .contact-star {
-            background: linear-gradient(135deg, 
-                rgba(124, 58, 237, 0.1) 0%, 
-                rgba(0, 0, 0, 0.9) 100%);
-            border: 2px solid var(--plasma-pink);
-            border-radius: 15px;
-            padding: 20px;
-            text-decoration: none;
-            color: var(--text-bright);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .contact-star:hover {
-            transform: translateY(-5px);
-            border-color: var(--cosmic-orange);
-            box-shadow: 0 15px 30px rgba(236, 72, 153, 0.3);
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            color: var(--plasma-pink);
-        }
-
-        /* Footer */
-        .footer-cosmos {
-            text-align: center;
-            padding: 60px 40px;
-            background: linear-gradient(135deg, 
-                rgba(0, 0, 0, 0.9) 0%, 
-                rgba(30, 58, 138, 0.2) 50%, 
-                rgba(0, 0, 0, 0.9) 100%);
-            border-top: 1px solid rgba(251, 146, 60, 0.3);
-            margin-top: 80px;
-        }
-
-        .footer-title {
-            font-family: 'Orbitron', monospace;
-            font-size: 1.4rem;
-            font-weight: 700;
-            background: linear-gradient(45deg, 
-                var(--stellar-yellow), 
-                var(--cosmic-orange), 
-                var(--plasma-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 15px;
-        }
-
-        .footer-subtitle {
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                text-align: center;
-            }
-            
-            .nav-content {
-                flex-direction: column;
-                gap: 20px;
-                padding: 0 20px;
-            }
-            
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .cosmic-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .avatar-orbit {
-                width: 250px;
-                height: 250px;
-            }
-            
-            .avatar-image {
-                width: 220px;
-                height: 220px;
-            }
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--cosmic-black);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, 
-                var(--cosmic-orange), 
-                var(--plasma-pink));
-            border-radius: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(180deg, 
-                var(--stellar-yellow), 
-                var(--cosmic-orange));
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/1.jpg" type="image/jpeg">
+  <title>اسماعیل سرحدی — معمار سیستم‌های نهفته و اینترنت اشیاء صنعتی</title>
+  <meta name="description" content="اسماعیل سرحدی - فریم‌وری که در میدان دوام می‌آورد: ESP32/STM32 در C/C++، پل‌های Modbus و RS-485، تله‌متری LoRa، کنترل SCADA، داشبوردهای اپراتوری.">
+  <link rel="alternate" hreflang="fa" href="https://esmail-sarhadi.github.io/Esmail-sarhadi/index_fa.html" />
+  <link rel="alternate" hreflang="en" href="https://esmail-sarhadi.github.io/Esmail-sarhadi/index.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050810;
+      --panel: #07121F;
+      --line: #14304F;
+      --cyan: #00E5FF;
+      --mint: #7CFFB2;
+      --purple: #B388FF;
+      --pink: #FF6B9D;
+      --amber: #FFB86C;
+      --text: #EAF6FF;
+      --muted: #4E7CA8;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.7;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased;
+      font-feature-settings: "kern" 1;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display:block; max-width:100%; }
+    .mono { font-family: 'JetBrains Mono', Consolas, Tahoma, monospace; direction: ltr; }
+    .display { font-family: 'Orbitron', sans-serif; }
+
+    nav.site-nav {
+      position: fixed; top:0; left:0; right:0; z-index: 100;
+      display:flex; justify-content:space-between; align-items:center;
+      padding: 18px 36px;
+      background: rgba(5,8,16,.78);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(20,48,79,.6);
+    }
+    nav .logo {
+      font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 1.15rem;
+      letter-spacing: 4px; color: var(--cyan);
+    }
+    nav .logo span { color: var(--mint); }
+    nav .nav-links { display:flex; gap: 28px; }
+    nav .nav-links a {
+      font-size: 0.95rem; font-weight: 600; letter-spacing: 0.5px;
+      color: #C9E2F5; padding: 6px 0; position:relative;
+    }
+    nav .nav-links a::after {
+      content:''; position:absolute; right:0; left:100%; bottom:0; height:2px;
+      background: var(--cyan); transition: left .3s ease;
+    }
+    nav .nav-links a:hover { color: var(--cyan); }
+    nav .nav-links a:hover::after { left:0; }
+    nav .lang { display:flex; gap: 8px; }
+    nav .lang a {
+      font-size: 0.8rem; letter-spacing: 2px; padding: 6px 10px;
+      border: 1px solid var(--line); color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    nav .lang a:hover { border-color: var(--cyan); background: rgba(0,229,255,.08); }
+
+    .scroll-progress { position: fixed; top:0; left:0; right:0; height: 3px; z-index: 200; background: transparent; }
+    .scroll-progress > i { display:block; height:100%; width: 0%; background: linear-gradient(90deg, var(--cyan), var(--mint)); box-shadow: 0 0 12px var(--cyan); }
+
+    section.hero {
+      position: relative; min-height: 100vh; overflow: hidden;
+      perspective: 1400px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero .layer { position: absolute; inset:0; transform-style: preserve-3d; will-change: transform; pointer-events: none; }
+    .hero .l-bg {
+      background:
+        radial-gradient(ellipse at 70% 60%, rgba(0,229,255,.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 30% 30%, rgba(124,255,178,.08) 0%, transparent 50%);
+      transform: translateZ(-400px);
+    }
+    .hero .l-grid {
+      background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 64px 64px;
+      transform: translateZ(-300px);
+      opacity: .45;
+    }
+    .hero .l-svg { display:flex; align-items:center; justify-content:center; transform: translateZ(-100px); opacity: .32; }
+    .hero .l-svg img { width: min(1100px, 92vw); height: auto; filter: drop-shadow(0 30px 60px rgba(0,0,0,.6)); }
+    .hero .l-content { position: relative; z-index: 4; text-align:center; padding: 0 24px; transform: translateZ(60px); }
+    .hero h1 {
+      font-family: 'Orbitron', 'Vazirmatn', sans-serif; font-weight: 900;
+      font-size: clamp(2.2rem, 6.5vw, 5.4rem); line-height: 1.1; letter-spacing: -1px;
+      margin-bottom: 22px;
+    }
+    .hero h1 .accent { color: var(--mint); }
+    .hero .tag { font-family: 'JetBrains Mono', monospace; font-size: 1.0rem; color: var(--mint); letter-spacing: 3px; text-transform: uppercase; }
+    .hero .lede { max-width: 720px; margin: 22px auto 36px; color: #9CC4E4; font-size: 1.16rem; line-height: 1.9; }
+    .hero .ctas { display:flex; gap: 16px; justify-content:center; flex-wrap: wrap; }
+    .btn {
+      display:inline-block; padding: 14px 28px; font-family: 'Orbitron', sans-serif;
+      font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      border: 2px solid var(--cyan); color: var(--cyan);
+      background: transparent; transition: all .25s ease;
+      position: relative; overflow: hidden;
+    }
+    .btn:hover { background: var(--cyan); color: var(--bg); box-shadow: 0 0 30px rgba(0,229,255,.55); }
+    .btn.ghost { border-color: var(--mint); color: var(--mint); }
+    .btn.ghost:hover { background: var(--mint); box-shadow: 0 0 30px rgba(124,255,178,.55); }
+
+    .scroll-cue {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+      color: var(--muted); letter-spacing: 4px; z-index: 5;
+    }
+    .scroll-cue i { display:block; margin: 8px auto 0; width: 1px; height: 36px; background: linear-gradient(180deg, var(--cyan), transparent); animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:1} }
+
+    section.block { padding: 110px 6vw 100px; max-width: 1400px; margin: 0 auto; position: relative; }
+    .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--cyan); letter-spacing: 4px; margin-bottom: 14px; }
+    h2.title { font-family: 'Vazirmatn', 'Orbitron', sans-serif; font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1.15; margin-bottom: 14px; }
+    .sub { color: var(--muted); font-size: 1.05rem; max-width: 720px; margin-bottom: 36px; }
+
+    section.wall-wrap { position: relative; height: 380vh; perspective: 1600px; }
+    .wall-sticky {
+      position: sticky; top: 0; height: 100vh; overflow: hidden;
+      background: linear-gradient(180deg, var(--bg) 0%, #020509 100%);
+      perspective: 1200px;
+      display: flex; align-items: center;
+    }
+    .wall-sticky::before {
+      content:''; position:absolute; inset:0;
+      background-image:
+        linear-gradient(rgba(20,48,79,.6) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,48,79,.6) 1px, transparent 1px);
+      background-size: 80px 80px;
+      transform: perspective(900px) rotateX(58deg) translateY(20%) scale(2);
+      transform-origin: center top;
+      opacity: .25; pointer-events:none;
+    }
+    .wall-header { position: absolute; top: 36px; left: 0; right: 0; text-align: center; z-index: 5; }
+    .wall-header h2 { font-family: 'Vazirmatn', sans-serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; }
+    .wall-header .sub { margin: 8px auto 0; max-width: 640px; }
+
+    .wall-track { display: flex; gap: 56px; padding: 0 8vw; transform-style: preserve-3d; will-change: transform; flex-direction: row-reverse; }
+    .wall-card {
+      flex: 0 0 540px; height: 68vh;
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 28px; display: flex; flex-direction: column; gap: 14px;
+      position: relative; overflow: hidden;
+      transform-style: preserve-3d; will-change: transform;
+      transition: border-color .3s ease, box-shadow .3s ease;
+      text-align: right;
+    }
+    .wall-card::before { content:''; position:absolute; left:0; right:0; top:0; height: 3px; background: linear-gradient(90deg, var(--cyan), var(--mint)); }
+    .wall-card:hover { border-color: var(--cyan); box-shadow: 0 20px 60px rgba(0,229,255,.25); }
+    .wall-card .index { font-family: 'JetBrains Mono', monospace; color: var(--muted); font-size: 0.78rem; letter-spacing: 3px; direction: ltr; text-align: left; }
+    .wall-card h3 { font-family: 'Vazirmatn', sans-serif; font-weight: 700; font-size: 1.4rem; }
+    .wall-card p { color: #9CC4E4; font-size: 0.98rem; flex: 1; }
+    .wall-card .meta {
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;
+      color: var(--mint); direction: ltr;
+    }
+    .wall-card .tags { display:flex; gap: 6px; flex-wrap: wrap; direction: ltr; justify-content: flex-end; }
+    .wall-card .tag { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; padding: 3px 8px; border: 1px solid var(--line); color: var(--cyan); }
+    .wall-card a.repo-link { color: var(--mint); }
+
+    .wall-progress { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); width: min(420px, 60vw); height: 2px; background: var(--line); z-index: 6; }
+    .wall-progress > i { display:block; height: 100%; width: 0%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+    .wall-hint {
+      position: absolute; bottom: 56px; left: 50%; transform: translateX(-50%);
+      font-family: 'JetBrains Mono', monospace; color: var(--muted);
+      font-size: 0.72rem; letter-spacing: 3px; z-index: 6;
+    }
+
+    .tilt-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 30px; perspective: 900px; }
+    .tilt-card {
+      background: var(--panel); border: 1px solid var(--line); padding: 24px;
+      transform-style: preserve-3d; transition: transform .35s ease, border-color .3s ease;
+      will-change: transform;
+    }
+    .tilt-card:hover { border-color: var(--cyan); }
+    .tilt-card h3 { font-family: 'Vazirmatn', sans-serif; font-size: 1.15rem; margin-bottom: 10px; }
+    .tilt-card p { color: #9CC4E4; font-size: 0.98rem; }
+
+    footer { padding: 60px 6vw 40px; text-align: center; border-top: 1px solid var(--line); margin-top: 40px; }
+    footer .mono { color: var(--muted); font-size: 0.78rem; letter-spacing: 3px; }
+
+    @media (max-width: 800px) {
+      nav .nav-links { display: none; }
+      .wall-card { flex: 0 0 86vw; height: 72vh; padding: 20px; }
+      .wall-track { gap: 32px; padding: 0 6vw; }
+      .hero .l-svg { display: none; }
+    }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #020509; }
+    ::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 5px; box-shadow: 0 0 8px var(--cyan); }
+  </style>
 </head>
 <body>
-    <!-- Galaxy Background -->
-    <div class="galaxy-container">
-        <div class="spiral-galaxy">
-            <div class="spiral-arm"></div>
-            <div class="spiral-arm"></div>
-            <div class="spiral-arm"></div>
-            <div class="spiral-arm"></div>
-            <div class="spiral-arm"></div>
-            <div class="spiral-arm"></div>
-            <div class="galaxy-core"></div>
-        </div>
 
-        <!-- Stars Layer -->
-        <div class="stars-layer" id="starsLayer"></div>
+<div class="scroll-progress"><i id="progressBar"></i></div>
 
-        <!-- Nebula Clouds -->
-        <div class="nebula" id="nebula1" style="top: 20%; left: 10%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(30, 58, 138, 0.3) 0%, transparent 70%);"></div>
-        <div class="nebula" id="nebula2" style="top: 60%; right: 15%; width: 150px; height: 150px; background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, transparent 70%);"></div>
-        <div class="nebula" id="nebula3" style="bottom: 20%; left: 20%; width: 180px; height: 180px; background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 70%);"></div>
+<nav class="site-nav">
+  <a class="logo" href="#top">SARHADI<span>·</span>ESMAIL</a>
+  <div class="nav-links">
+    <a href="#who">پروفایل</a>
+    <a href="#wall">پروژه‌ها</a>
+    <a href="#stack">معماری</a>
+    <a href="#numbers">آمار</a>
+    <a href="#timeline">سوابق</a>
+    <a href="#contact">تماس</a>
+  </div>
+  <div class="lang">
+    <a href="index.html">EN</a>
+    <a href="index_fa.html">فارسی</a>
+  </div>
+</nav>
 
-        <!-- Cosmic Particles -->
-        <div id="cosmicParticles"></div>
+<section class="hero" id="top">
+  <div class="layer l-bg" data-depth="0"></div>
+  <div class="layer l-grid" data-depth="-300"></div>
+  <div class="layer l-svg" data-depth="-100"><img src="assets/hero.svg" alt=""></div>
+  <div class="layer l-content" data-depth="60">
+    <div class="tag">معمار سیستم‌های نهفته · اینترنت اشیاء صنعتی</div>
+    <h1>فریم‌وری که در <span class="accent">میدان</span> دوام بیاورد.</h1>
+    <p class="lede">ESP32 و STM32 در C/C++ خام. پل‌های Modbus و RS-485. شبکه‌های حس‌گر LoRa. کنترل از راه دور SCADA. دستگاه‌های واقعی، داشبوردهای واقعی، سایت‌های واقعی — از زاهدان.</p>
+    <div class="ctas">
+      <a class="btn" href="#wall">دیدن کارها</a>
+      <a class="btn ghost" href="#contact">شروع پروژه</a>
     </div>
+  </div>
+  <div class="scroll-cue">SCROLL<i></i></div>
+</section>
 
-    <!-- Navigation -->
-    <nav class="nav-cosmos">
-        <div class="nav-content">
-            <div class="cosmic-logo">کهکشان.اسماعیل</div>
-            <div class="nav-links">
-                <a href="#about" class="nav-link">درباره</a>
-                <a href="#skills" class="nav-link">مهارت‌ها</a>
-                <a href="#stats" class="nav-link">آمار</a>
-                <a href="#contact" class="nav-link">ارتباط</a>
-            </div>
-            <div class="lang-selector">
-                <a href="index.html" class="lang-btn">
-                    <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/4x3/gb.svg" width="16" alt="English">
-                    EN
-                </a>
-                <a href="index_fa.html" class="lang-btn">
-                    <img src="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/flags/4x3/ir.svg" width="16" alt="فارسی">
-                    فا
-                </a>
-            </div>
-        </div>
-    </nav>
+<section class="block" id="who">
+  <div class="eyebrow">FIG.00 // PROFILE.YAML</div>
+  <h2 class="title">آنچه اول می‌خوانی.</h2>
+  <p class="sub">بدون امتیازدهی، بدون اغراق. هر چیز کجا و با چه چیزی.</p>
+  <img src="assets/terminal.svg" alt="profile.yaml" style="width:100%;margin-top:20px">
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero-cosmos">
-        <div class="hero-grid">
-            <div class="hero-content">
-                <h1 class="cosmic-title">کاشف کهکشان فناوری</h1>
-                <h2 class="hero-subtitle">اسماعیل سرحدی</h2>
-                <p class="hero-description">
-                    🌌 معمار سیستم‌های جاسازی شده در کهکشان IoT<br>
-                    ⭐ خالق راهکارهای هوشمند برای تمدن‌های دیجیتال<br>
-                    🚀 کاوشگر فناوری‌های آینده در عمق فضای سایبر
-                </p>
-                <div class="cosmic-buttons">
-                    <a href="#about" class="cosmic-btn cosmic-btn-primary">
-                        <span>کاوش کهکشان</span>
-                        <span>🌟</span>
-                    </a>
-                    <a href="#contact" class="cosmic-btn cosmic-btn-secondary">
-                        <span>ارتباط کیهانی</span>
-                        <span>📡</span>
-                    </a>
-                </div>
-            </div>
+<section class="block">
+  <div class="eyebrow">FIG.0A // BOOT SEQUENCE</div>
+  <h2 class="title">هر دستگاهی یک داستان تعریف می‌کند.</h2>
+  <p class="sub">این ظاهر موفقیت است وقتی یک نود بالا می‌آید. هر حس‌گر، هر باس، هر واچ‌داگ — تأیید شد.</p>
+  <img src="assets/boot-sequence.svg" alt="boot sequence" style="width:100%;margin-top:20px">
+</section>
 
-            <div class="avatar-cosmos">
-                <div class="avatar-orbit">
-                    <div class="avatar-ring"></div>
-                    <div class="avatar-ring"></div>
-                    <div class="avatar-ring"></div>
-                    <img src="assets/1.jpg" alt="اسماعیل سرحدی" class="avatar-image">
-                    <div class="planet planet-1"></div>
-                    <div class="planet planet-2"></div>
-                    <div class="planet planet-3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="wall-wrap" id="wall">
+  <div class="wall-sticky">
+    <div class="wall-header">
+      <div class="eyebrow">FIG.01 // دیوار سهبعدی</div>
+      <h2>پروژه‌ها · ۱۰ مخزن، ستاره‌های زنده.</h2>
+      <p class="sub">برای هل دادن دیوار به پهلو اسکرول کنید. کارت‌ها وقتی از مرکز دور می‌شوند می‌چرخند.</p>
+    </div>
+    <div class="wall-track" id="wallTrack">
+      <article class="wall-card">
+        <div class="index">01 / FIELD-PROVEN</div>
+        <h3>esp32-ota-web-server</h3>
+        <p>به‌روزرسانی فریم‌ور از رابط وبی که خود ESP32 سرو می‌کند. فایل باینری را می‌فرستی و دستگاه با نسخهٔ جدید بالا می‌آید. الگویی که در هر محصول مستقرشده تکرار می‌شود.</p>
+        <div class="tags"><span class="tag">C++</span><span class="tag">ESP32</span><span class="tag">OTA</span></div>
+        <div class="meta"><span>★ 6</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/esp32-ota-web-server">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">02 / محیط</div>
+        <h3>phpserver-webserver-esp32</h3>
+        <p>ایستگاه چندحس‌گره — DHT21، ضربان و MQ135 — با داده‌هایی که از رابط وب روی خود دستگاه سرو می‌شود. در پایش کیفیت هوا استفاده شده.</p>
+        <div class="tags"><span class="tag">ESP32</span><span class="tag">DHT21</span><span class="tag">MQ135</span></div>
+        <div class="meta"><span>★ 6</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/phpserver-webserver-esp32">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">03 / سلامت</div>
+        <h3>heathguard</h3>
+        <p>پایش محیطی و سلامت. جمع‌آوری داده از حس‌گرها، آستانه‌ها و نمای اپراتور از همان اتاقی که دستگاه در آن قرار دارد.</p>
+        <div class="tags"><span class="tag">ESP32</span><span class="tag">Sensors</span></div>
+        <div class="meta"><span>★ 6</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/heathguard">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">04 / سخت‌افزار + اپ</div>
+        <h3>talking-skeleton</h3>
+        <p>مولاژ آناتومی با چراغ هر عضو، پخش صدا با DFPlayer و فک متحرک. کنترل با بلوتوث و RF از یک اپ اندروید اختصاصی.</p>
+        <div class="tags"><span class="tag">Kotlin</span><span class="tag">ESP32</span><span class="tag">DFPlayer</span></div>
+        <div class="meta"><span>★ 5</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/talking-skeleton">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">05 / بی‌سیم</div>
+        <h3>LoRa-ESP32-Communication</h3>
+        <p>پیاده‌سازی مرجع برای لینک‌های LoRa روی ESP32 — راه‌اندازی، قالب‌بندی فریم، ارسال، دریافت. نقطهٔ شروع هر شبکهٔ حس‌گری که بعد از آن ساخته شد.</p>
+        <div class="tags"><span class="tag">C++</span><span class="tag">LoRa</span><span class="tag">ESP32</span></div>
+        <div class="meta"><span>★ 5</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/LoRa-ESP32-Communication">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">06 / صنعتی</div>
+        <h3>esp32_snmp</h3>
+        <p>عامل SNMP v2 روی ESP32 هم روی اترنت و هم وای‌فای — یک میکروکنترلر به‌عنوان یک گرهٔ درجه‌یک در پایش شبکه ظاهر می‌شود.</p>
+        <div class="tags"><span class="tag">C++</span><span class="tag">SNMP v2</span><span class="tag">ENC28J60</span></div>
+        <div class="meta"><span>★ 2</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/esp32_snmp">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">07 / صنعتی · درایو</div>
+        <h3>Shihlin-drive</h3>
+        <p>RS-485 با درایو دور متغیر شی‌لین SH040 با توان ۷.۵ کیلووات — خواندن پارامترها و نوشتن نقاط تنظیم از سمت کنترلر. تجهیز صنعتی واقعی، نقشهٔ رجیستر واقعی.</p>
+        <div class="tags"><span class="tag">RS-485</span><span class="tag">Modbus</span><span class="tag">VFD</span></div>
+        <div class="meta"><span>★ 1</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/Shihlin-drive">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">08 / آموزشی</div>
+        <h3>binary-encoding-visualization</h3>
+        <p>رابط گرافیکی پایتون که روش‌های کدگذاری خطی را کنار هم نشان می‌دهد: NRZ-L/I، RZ، Manchester، Differential Manchester، AMI. ساخته شد تا یک فصل کتاب درسی بالاخره قابل دیدن شود.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Tkinter</span></div>
+        <div class="meta"><span>★ 6</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/binary-encoding-visualization">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">09 / LoRa چندگره‌ای</div>
+        <h3>Lora-Esp32-ThingSpeak</h3>
+        <p>شبکهٔ LoRa چندگره‌ای: چند فرستنده به یک سرور مرکزی گزارش می‌دهند، سرور فریم‌ها را پردازش و در صورت نیاز به ThingSpeak ارسال می‌کند.</p>
+        <div class="tags"><span class="tag">C++</span><span class="tag">LoRa</span><span class="tag">ThingSpeak</span></div>
+        <div class="meta"><span>★ 5</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/Lora-Esp32-ThingSpeak">مخزن ←</a></div>
+      </article>
+      <article class="wall-card">
+        <div class="index">10 / رابط · فریم‌ور</div>
+        <h3>ESP32-Smart-Touch-Control-System</h3>
+        <p>کنترل با حس‌گر لمسی، زمان‌بندی و همگام‌سازی وضعیت بلادرنگ بین سخت‌افزار و یک رابط وب واکنش‌گرا.</p>
+        <div class="tags"><span class="tag">ESP32</span><span class="tag">Touch</span><span class="tag">Web UI</span></div>
+        <div class="meta"><span>★ 5</span><a class="repo-link" href="https://github.com/Esmail-sarhadi/ESP32-Smart-Touch-Control-System">مخزن ←</a></div>
+      </article>
+    </div>
+    <div class="wall-progress"><i id="wallBar"></i></div>
+    <div class="wall-hint">SCROLL · ROTATE · DRAG</div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section class="section-cosmos" id="about">
-        <h2 class="section-title">ماموریت کهکشانی 🛸</h2>
-        <div class="cosmic-grid">
-            <div class="cosmic-card">
-                <div class="card-icon">🎓</div>
-                <h3 class="card-title">آکادمی ستاره‌ای</h3>
-                <p class="card-description">
-                    کارشناسی مهندسی کامپیوتر از دانشگاه سیستان و بلوچستان
-                    <br><br>
-                    تخصص در سیستم‌های هوشمند و فناوری‌های کهکشانی آینده
-                </p>
-            </div>
+<section class="block" id="stack">
+  <div class="eyebrow">FIG.02 // معماری</div>
+  <h2 class="title">از میدان تا داشبورد، در پنج لایه.</h2>
+  <p class="sub">همان شکلی که هر پروژه دنبال می‌کند. حس‌گر سمت چپ، اپراتور سمت راست. هر لایه واقعاً کجای سخت‌افزار قرار دارد — نه در اسلاید.</p>
+  <img src="assets/stack.svg" alt="architecture" style="width:100%;margin-top:20px">
 
-            <div class="cosmic-card">
-                <div class="card-icon">👑</div>
-                <h3 class="card-title">فرماندهی فضایی</h3>
-                <p class="card-description">
-                    مدیرعامل سابق شرکت راهکارهای هوشمند IoT
-                    <br><br>
-                    رهبری ۱۵+ مهندس در پروژه‌های انقلابی کهکشان فناوری
-                </p>
-            </div>
+  <div class="tilt-grid" style="margin-top:48px">
+    <div class="tilt-card">
+      <h3>فریم‌وری که دوام بیاورد</h3>
+      <p>درایورهای خام، مسیرهای OTA، بازیابی واچ‌داگ، تنظیمات روی دستگاه. بودجهٔ خواب برای نودهای باتری‌خور.</p>
+    </div>
+    <div class="tilt-card">
+      <h3>پل‌های پروتکل</h3>
+      <p>Modbus RTU/TCP، RS-485، MQTT، IEC 60870-5-104. مهندسی معکوس نقشهٔ رجیستر و یکپارچه‌سازی VFD/PLC.</p>
+    </div>
+    <div class="tilt-card">
+      <h3>تله‌متری LoRa</h3>
+      <p>۸۶۸ مگاهرتز، چندگره‌ای، با در نظر گرفتن duty cycle. جمع‌کنندهٔ مرکزی و در صورت نیاز ارسال به فضای ابری.</p>
+    </div>
+    <div class="tilt-card">
+      <h3>داشبورد اپراتور</h3>
+      <p>Flask، React، SQL. نگه‌داری سری‌های زمانی، آستانه‌های هشدار، نمای نقش‌مبنا. خروجی CSV.</p>
+    </div>
+  </div>
+</section>
 
-            <div class="cosmic-card">
-                <div class="card-icon">🔬</div>
-                <h3 class="card-title">تحقیقات بین‌ستاره‌ای</h3>
-                <p class="card-description">
-                    توسعه فناوری‌های نسل آینده IoT در عمق فضای سایبر
-                    <br><br>
-                    ترکیب هوش مصنوعی با سیستم‌های جاسازی شده کهکشانی
-                </p>
-            </div>
+<section class="block" id="numbers">
+  <div class="eyebrow">FIG.03 // تله‌متری</div>
+  <h2 class="title">کار واقعاً کجاست.</h2>
+  <p class="sub">اعداد مستقیم از API گیت‌هاب. بدون تخمین، بدون عدد بازاریابی.</p>
+  <img src="assets/skills-bars.svg" alt="repo distribution" style="width:100%;margin-top:20px">
+  <img src="assets/skills-radar.svg" alt="capability radar" style="width:100%;margin-top:24px">
+  <img src="assets/kpi-strip.svg" alt="key figures" style="width:100%;margin-top:24px">
+  <img src="assets/protocol-matrix.svg" alt="protocol matrix" style="width:100%;margin-top:24px">
+  <img src="assets/services.svg" alt="engagement models" style="width:100%;margin-top:24px">
+</section>
 
-            <div class="cosmic-card">
-                <div class="card-icon">🌱</div>
-                <h3 class="card-title">تکامل کیهانی</h3>
-                <p class="card-description">
-                    کاوشگر دائمی فناوری‌های پیشرفته در کهکشان‌های دور
-                    <br><br>
-                    حفظ جایگاه در خط مقدم نوآوری تمدن‌های دیجیتال
-                </p>
-            </div>
+<section class="block" id="timeline">
+  <div class="eyebrow">FIG.04 // سوابق</div>
+  <h2 class="title">۲۰۱۸ تا امروز. یک نفر، یک مسیر.</h2>
+  <img src="assets/timeline.svg" alt="timeline" style="width:100%;margin-top:20px">
 
-            <div class="cosmic-card">
-                <div class="card-icon">⚡</div>
-                <h3 class="card-title">حل معادلات کیهانی</h3>
-                <p class="card-description">
-                    رویکرد خلاقانه به چالش‌های فنی پیچیده فضایی
-                    <br><br>
-                    ایجاد راهکارهای غیرممکن در جهان‌های موازی
-                </p>
-            </div>
+  <div style="margin-top:48px">
+    <img src="assets/awards.svg" alt="awards & training" style="width:100%">
+  </div>
 
-            <div class="cosmic-card">
-                <div class="card-icon">🤝</div>
-                <h3 class="card-title">اتحاد کهکشانی</h3>
-                <p class="card-description">
-                    همکاری با تمدن‌های پیشرفته فضای سایبر
-                    <br><br>
-                    ساخت شبکه‌ای از متخصصان آینده در سراسر کیهان
-                </p>
-            </div>
-        </div>
-    </section>
+  <div style="margin-top:48px">
+    <img src="assets/quote.svg" alt="operating principle" style="width:100%">
+  </div>
+</section>
 
-    <!-- Skills Section -->
-    <section class="section-cosmos" id="skills">
-        <h2 class="section-title">صورت‌فلکی مهارت‌ها ⭐</h2>
-        <div class="skills-constellation">
-            <div class="skill-star">
-                <div class="skill-icon">⚡</div>
-                <div class="skill-name">C++</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🔧</div>
-                <div class="skill-name">C</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🐍</div>
-                <div class="skill-name">Python</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🌐</div>
-                <div class="skill-name">JavaScript</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🤖</div>
-                <div class="skill-name">IoT</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">📡</div>
-                <div class="skill-name">Arduino</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🔗</div>
-                <div class="skill-name">Embedded</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🐧</div>
-                <div class="skill-name">Linux</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🛠️</div>
-                <div class="skill-name">CMake</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">☁️</div>
-                <div class="skill-name">AWS</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🐳</div>
-                <div class="skill-name">Docker</div>
-            </div>
-            <div class="skill-star">
-                <div class="skill-icon">🧠</div>
-                <div class="skill-name">AI/ML</div>
-            </div>
-        </div>
-    </section>
+<section class="block">
+  <div class="eyebrow">FIG.05 // بخشی از کار که commit نمی‌شود</div>
+  <h2 class="title">بیشتر کار اینجاست.</h2>
+  <p class="sub">اسکلوسکوپ، دود هویه، بردبورد و مولتی‌متری که هیچ‌وقت آنچه می‌خواهم نشان نمی‌دهد. هیچ commit در گراف، همه در محصول نهایی.</p>
+  <img src="assets/lab-bench.svg" alt="workbench illustration" style="width:100%;margin-top:20px">
+</section>
 
-    <!-- Stats Section -->
-    <section class="section-cosmos" id="stats">
-        <h2 class="section-title">کهکشان آمار 📊</h2>
-        <div class="stats-galaxy">
-            <div class="stat-planet">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">ماموریت موفق</div>
-            </div>
-            <div class="stat-planet">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">سال سفر فضایی</div>
-            </div>
-            <div class="stat-planet">
-                <div class="stat-number">1M+</div>
-                <div class="stat-label">خط کد کیهانی</div>
-            </div>
-            <div class="stat-planet">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">مانیتورینگ کهکشان</div>
-            </div>
-        </div>
-    </section>
+<section class="block">
+  <div class="eyebrow">FIG.06 // توپولوژی مستقر</div>
+  <h2 class="title">یک سیستم مستقر واقعاً چه شکلی است.</h2>
+  <p class="sub">گره‌های میدانی، دروازه، بروکر، داشبورد. نقاط، جریان زندهٔ پاکت روی هر لینک.</p>
+  <img src="assets/network-topology.svg" alt="system topology" style="width:100%;margin-top:20px">
+</section>
 
-    <!-- Contact Section -->
-    <section class="section-cosmos" id="contact">
-        <h2 class="section-title">ارتباط بین‌کهکشانی 🌌</h2>
-        <div class="contact-constellation">
-            <a href="mailto:sarhadiemsail@gmail.com" class="contact-star">
-                <span class="contact-icon">📧</span>
-                <span>پیام کیهانی</span>
-            </a>
-            <a href="https://linkedin.com/in/esmail-sarhadi" class="contact-star">
-                <span class="contact-icon">💼</span>
-                <span>شبکه کهکشانی</span>
-            </a>
-            <a href="https://twitter.com/esmail62535258" class="contact-star">
-                <span class="contact-icon">🐦</span>
-                <span>سیگنال فضایی</span>
-            </a>
-            <a href="https://github.com/esmail-sarhadi" class="contact-star">
-                <span class="contact-icon">💻</span>
-                <span>مخزن ستاره‌ای</span>
-            </a>
-        </div>
-    </section>
+<section class="block">
+  <div class="eyebrow">FIG.07 // کد</div>
+  <h2 class="title">الگویی که در هر استقرار تکرار می‌شود.</h2>
+  <p class="sub">فریم‌ور واقعی ESP32، نه یک نمونهٔ ساختگی. اسکلت سرور OTA وبی که هر محصول دیگری از آن شروع شد.</p>
+  <img src="assets/code-window.svg" alt="code window" style="width:100%;margin-top:20px">
+</section>
 
-    <!-- Footer -->
-    <footer class="footer-cosmos">
-        <h3 class="footer-title">
-            نوآوری آینده، یک دستگاه هوشمند در هر کهکشان 🌌✨
-        </h3>
-        <p class="footer-subtitle">
-            طراحی شده در عمق فضا توسط اسماعیل سرحدی
-        </p>
-    </footer>
+<section class="block" id="contact">
+  <img src="assets/cta-button.svg" alt="start a project" style="width:100%">
 
-    <script>
-        // Create Cosmic Stars
-        function createStars() {
-            const starsLayer = document.getElementById('starsLayer');
-            const colors = ['#ffffff', '#fbbf24', '#fb923c', '#06b6d4', '#ec4899'];
-            
-            for (let i = 0; i < 300; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.width = (Math.random() * 3 + 1) + 'px';
-                star.style.height = star.style.width;
-                star.style.background = colors[Math.floor(Math.random() * colors.length)];
-                star.style.animationDelay = Math.random() * 3 + 's';
-                star.style.animationDuration = (Math.random() * 3 + 2) + 's';
-                starsLayer.appendChild(star);
-            }
-        }
+  <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+    <a href="mailto:sarhadiesmail@gmail.com" class="btn" style="text-align:center">ایمیل ←</a>
+    <a href="https://esmailsarhadi.mycvresume.ir/" class="btn ghost" style="text-align:center">رزومه ←</a>
+    <a href="https://linkedin.com/in/esmail-sarhadi" class="btn" style="text-align:center">لینکدین ←</a>
+    <a href="https://twitter.com/esmail62535258" class="btn ghost" style="text-align:center">X ←</a>
+    <a href="https://github.com/Esmail-sarhadi" class="btn" style="text-align:center">گیت‌هاب ←</a>
+  </div>
 
-        // Create Cosmic Particles
-        function createCosmicParticles() {
-            const container = document.getElementById('cosmicParticles');
-            const colors = ['#06b6d4', '#ec4899', '#fbbf24', '#7c3aed'];
-            
-            for (let i = 0; i < 50; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'cosmic-particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-                particle.style.animationDelay = Math.random() * 8 + 's';
-                particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
-                container.appendChild(particle);
-            }
-        }
+  <p class="mono" style="margin-top:32px;color:var(--muted);text-align:center">آمادهٔ همکاری در: فریم‌ور سیستم‌های نهفته · اتوماسیون صنعتی · Modbus/SCADA · شبکه‌های حس‌گر LoRa · ساخت محصول IoT · زاهدان / دورکاری</p>
+</section>
 
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+<footer>
+  <p class="mono">اول سخت‌افزار. فریم‌ور صادق. سیستمی که کار می‌کند.</p>
+  <p class="mono" style="margin-top:8px">© اسماعیل سرحدی · زاهدان، ایران</p>
+</footer>
 
-        // Parallax Effect for Galaxy
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const galaxy = document.querySelector('.spiral-galaxy');
-            const nebulas = document.querySelectorAll('.nebula');
-            
-            if (galaxy) {
-                galaxy.style.transform = `translate(-50%, -50%) rotate(${scrolled * 0.1}deg)`;
-            }
-            
-            nebulas.forEach((nebula, index) => {
-                const speed = 0.5 + (index * 0.1);
-                nebula.style.transform = `translate(${scrolled * speed * 0.1}px, ${scrolled * speed * 0.05}px)`;
-            });
-        });
+<script>
+(function () {
+  'use strict';
 
-        // Initialize
-        createStars();
-        createCosmicParticles();
+  var bar = document.getElementById('progressBar');
+  function onScroll() {
+    var h = document.documentElement;
+    var pct = (h.scrollTop || document.body.scrollTop) / Math.max(1, (h.scrollHeight - h.clientHeight));
+    bar.style.width = Math.min(100, Math.max(0, pct * 100)) + '%';
+    updateHero();
+    updateWall();
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
 
-        // Intersection Observer for Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+  // hero 3D + mouse parallax
+  var hero = document.querySelector('section.hero');
+  var heroLayers = hero ? hero.querySelectorAll('.layer') : [];
+  function updateHero() {
+    if (!hero) return;
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var heroH = hero.offsetHeight || 1;
+    for (var i = 0; i < heroLayers.length; i++) {
+      var layer = heroLayers[i];
+      var d = parseFloat(layer.dataset.depth || '0');
+      var ty = -y * (d > 0 ? d * 0.15 : Math.max(-0.4, d * 0.001));
+      layer.style.transform = 'translateZ(' + d + 'px) translateY(' + ty + 'px)';
+    }
+  }
+  if (hero) {
+    window.addEventListener('mousemove', function (e) {
+      var x = (e.clientX / window.innerWidth - 0.5) * 2;
+      var y = (e.clientY / window.innerHeight - 0.5) * 2;
+      for (var i = 0; i < heroLayers.length; i++) {
+        var layer = heroLayers[i];
+        var d = parseFloat(layer.dataset.depth || '0');
+        var k = d > 0 ? 8 : Math.min(10, -d * 0.04);
+        layer.style.transform += ' translateX(' + (x * k).toFixed(2) + 'px) translateY(' + (y * k).toFixed(2) + 'px)';
+      }
+    });
+  }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
-                }
-            });
-        }, observerOptions);
+  // THE WALL — scroll-driven horizontal 3D gallery
+  // In RTL we reverse the visual direction so the wall still moves "forward" in reading order.
+  var wall = document.getElementById('wall');
+  var wallSticky = wall ? wall.querySelector('.wall-sticky') : null;
+  var wallTrack = document.getElementById('wallTrack');
+  var wallCards = wallTrack ? wallTrack.querySelectorAll('.wall-card') : [];
+  var wallBar = document.getElementById('wallBar');
+  var isRTL = document.documentElement.dir === 'rtl';
+  function updateWall() {
+    if (!wall || !wallSticky || !wallTrack) return;
+    var rect = wall.getBoundingClientRect();
+    var viewport = window.innerHeight;
+    var total = wall.offsetHeight - viewport;
+    var p = total > 0 ? Math.min(1, Math.max(0, -rect.top / total)) : 0;
+    var trackW = wallTrack.scrollWidth;
+    var viewportW = window.innerWidth;
+    var maxX = -(trackW - viewportW + 80);
+    if (isRTL) maxX = -maxX;
+    wallTrack.style.transform = 'translate3d(' + (p * maxX).toFixed(2) + 'px, 0, 0)';
+    if (wallBar) wallBar.style.width = (p * 100).toFixed(1) + '%';
 
-        // Observe elements
-        document.querySelectorAll('.cosmic-card, .skill-star, .stat-planet').forEach(el => {
-            observer.observe(el);
-        });
+    var center = viewportW / 2;
+    for (var i = 0; i < wallCards.length; i++) {
+      var c = wallCards[i];
+      var r = c.getBoundingClientRect();
+      var cardCenter = r.left + r.width / 2;
+      var offset = (cardCenter - center) / (viewportW / 2);
+      offset = Math.max(-1.4, Math.min(1.4, offset));
+      var rotate = -offset * 18;
+      var z = -Math.abs(offset) * 140;
+      var opacity = 1 - Math.max(0, Math.min(0.85, Math.abs(offset) * 0.65));
+      c.style.transform = 'translateZ(' + z.toFixed(1) + 'px) rotateY(' + rotate.toFixed(1) + 'deg)';
+      c.style.opacity = opacity.toFixed(2);
+    }
+  }
 
-        // Add fade-in animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        `;
-        document.head.appendChild(style);
+  // tilt cards
+  var tiltCards = document.querySelectorAll('.tilt-card');
+  for (var i = 0; i < tiltCards.length; i++) {
+    tiltCards[i].addEventListener('mousemove', function (e) {
+      var r = this.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      this.style.transform =
+        'rotateY(' + (x * 8).toFixed(2) + 'deg) rotateX(' + (-y * 8).toFixed(2) + 'deg) translateZ(8px)';
+    });
+    tiltCards[i].addEventListener('mouseleave', function () {
+      this.style.transform = 'rotateY(0) rotateX(0) translateZ(0)';
+    });
+  }
 
-        // Dynamic Particle Creation
-        setInterval(() => {
-            if (document.querySelectorAll('.cosmic-particle').length < 50) {
-                const particle = document.createElement('div');
-                particle.className = 'cosmic-particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.background = ['#06b6d4', '#ec4899', '#fbbf24', '#7c3aed'][Math.floor(Math.random() * 4)];
-                particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
-                document.getElementById('cosmicParticles').appendChild(particle);
-                
-                setTimeout(() => {
-                    particle.remove();
-                }, 8000);
-            }
-        }, 2000);
-    </script>
+  onScroll();
+})();
+</script>
 </body>
 </html>
