@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Operating principle quote">
+  <defs>
+    <linearGradient id="qbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="qrule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="qdots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#16304F" opacity="0.45"/>
+    </pattern>
+    <filter id="qglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    @keyframes qblink { 0%,45%{opacity:1} 55%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes qflow  { to { stroke-dashoffset: -300; } }
+    .qblink { animation: qblink 2.4s steps(1,end) infinite; }
+    .qflow { stroke-dasharray: 6 22; animation: qflow 5s linear infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="180" fill="url(#qbg)"/>
+  <rect width="1200" height="180" fill="url(#qdots)"/>
+
+  <!-- corner marks -->
+  <g stroke="#1E4A78" stroke-width="1.6" fill="none">
+    <path d="M40 34 V24 H50"/><path d="M1160 34 V24 H1150"/>
+    <path d="M40 146 V156 H50"/><path d="M1160 146 V156 H1150"/>
+  </g>
+
+  <!-- quote glyph -->
+  <text class="sans" x="70" y="88" fill="#0E2846" font-size="86" font-weight="700">&#8220;</text>
+
+  <!-- text -->
+  <text class="sans" x="600" y="86" text-anchor="middle" fill="#EAF6FF" font-size="23" font-weight="600" letter-spacing="0.4">
+    A device you cannot update remotely is a device you will end up visiting in person.
+  </text>
+
+  <!-- rule -->
+  <line x1="380" y1="112" x2="820" y2="112" stroke="#122544" stroke-width="1"/>
+  <line x1="380" y1="112" x2="820" y2="112" stroke="url(#qrule)" stroke-width="1.6" class="qflow" opacity="0.6"/>
+
+  <!-- caption -->
+  <circle class="qblink" cx="556" cy="140" r="3" fill="#7CFFB2" filter="url(#qglow)"/>
+  <text class="mono" x="572" y="144" fill="#4E7CA8" font-size="11" letter-spacing="2.6">OPERATING PRINCIPLE &#183; WHY EVERY BUILD SHIPS WITH AN OTA PATH</text>
+</svg>

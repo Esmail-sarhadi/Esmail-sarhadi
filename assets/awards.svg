@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Awards, honours and training">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <radialGradient id="amedal" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFD98A"/>
+      <stop offset="55%" stop-color="#C9922F"/>
+      <stop offset="100%" stop-color="#6B4A10"/>
+    </radialGradient>
+    <linearGradient id="aribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7CFFB2"/><stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <pattern id="agrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0E1D33" stroke-width="1"/>
+    </pattern>
+    <filter id="aglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes ablink { 0%,45%{opacity:1} 55%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes ashine { 0%{opacity:.15} 50%{opacity:.55} 100%{opacity:.15} }
+    .ablink { animation: ablink 2.2s steps(1,end) infinite; }
+    .ashine { animation: ashine 3.6s ease-in-out infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="380" fill="url(#abg)"/>
+  <rect width="1200" height="380" fill="url(#agrid)" opacity="0.4"/>
+
+  <!-- header -->
+  <circle class="ablink" cx="34" cy="28" r="4" fill="#7CFFB2" filter="url(#aglow)"/>
+  <text class="mono" x="50" y="33" fill="#4E7CA8" font-size="11" letter-spacing="3">FIG.10 // RECOGNITION</text>
+  <text class="mono" x="34" y="62" fill="#EAF6FF" font-size="21" font-weight="700" letter-spacing="1.5">AWARDS &amp; TRAINING</text>
+  <text class="mono" x="34" y="84" fill="#3E6E9C" font-size="11" letter-spacing="1">// AS PUBLISHED ON esmailsarhadi.mycvresume.ir</text>
+  <text class="mono" x="1166" y="33" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">VERIFIED AGAINST CV</text>
+  <line x1="24" y1="98" x2="1176" y2="98" stroke="#14304F" stroke-width="1"/>
+
+  <!-- column headers -->
+  <text class="mono" x="40" y="124" fill="#FFD98A" font-size="11" letter-spacing="2">HONOURS</text>
+  <text class="mono" x="620" y="124" fill="#7CFFB2" font-size="11" letter-spacing="2">TRAINING</text>
+  <line x1="590" y1="106" x2="590" y2="356" stroke="#122544" stroke-width="1"/>
+
+  <!-- ============ HONOURS ============ -->
+  <g>
+    <!-- medal 1 -->
+    <g transform="translate(52,146)">
+      <circle cx="16" cy="16" r="15" fill="url(#amedal)" stroke="#8A6520" stroke-width="1.4"/>
+      <path d="M16 31 L16 9 M16 9 l-6 5 M16 9 l6 5" stroke="#5E4310" stroke-width="1.4" fill="none"/>
+      <circle class="ashine" cx="11" cy="11" r="4" fill="#FFF3D0"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">Top researcher</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">University of Sistan &amp; Baluchestan</text>
+    </g>
+
+    <!-- medal 2 -->
+    <g transform="translate(52,196)">
+      <circle cx="16" cy="16" r="15" fill="url(#amedal)" stroke="#8A6520" stroke-width="1.4"/>
+      <path d="M16 31 L16 9 M16 9 l-6 5 M16 9 l6 5" stroke="#5E4310" stroke-width="1.4" fill="none"/>
+      <circle class="ashine" cx="11" cy="11" r="4" fill="#FFF3D0" style="animation-delay:.5s"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">1st place &#183; IoT bootcamp</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">IoTiran &#183; smart greenhouse project</text>
+    </g>
+
+    <!-- medal 3 -->
+    <g transform="translate(52,246)">
+      <circle cx="16" cy="16" r="15" fill="url(#amedal)" stroke="#8A6520" stroke-width="1.4"/>
+      <path d="M16 31 L16 9 M16 9 l-6 5 M16 9 l6 5" stroke="#5E4310" stroke-width="1.4" fill="none"/>
+      <circle class="ashine" cx="11" cy="11" r="4" fill="#FFF3D0" style="animation-delay:1s"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">Ideation &amp; business planning</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">commercialisation programme</text>
+    </g>
+
+    <!-- medal 4 -->
+    <g transform="translate(52,296)">
+      <circle cx="16" cy="16" r="15" fill="url(#amedal)" stroke="#8A6520" stroke-width="1.4"/>
+      <path d="M16 31 L16 9 M16 9 l-6 5 M16 9 l6 5" stroke="#5E4310" stroke-width="1.4" fill="none"/>
+      <circle class="ashine" cx="11" cy="11" r="4" fill="#FFF3D0" style="animation-delay:1.5s"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">Creative industries accelerator</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">University of Iranshahr</text>
+    </g>
+  </g>
+
+  <!-- ============ TRAINING ============ -->
+  <g>
+    <g transform="translate(632,146)">
+      <rect x="0" y="0" width="30" height="30" rx="4" fill="#07182B" stroke="#1E4A78" stroke-width="1.3"/>
+      <path d="M8 21 l5 -5 4 4 5 -8" fill="none" stroke="#7CFFB2" stroke-width="1.6"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">IoT &#8212; Science &amp; Technology Park</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">Sistan &amp; Baluchestan</text>
+    </g>
+
+    <g transform="translate(632,196)">
+      <rect x="0" y="0" width="30" height="30" rx="4" fill="#07182B" stroke="#1E4A78" stroke-width="1.3"/>
+      <path d="M8 21 l5 -5 4 4 5 -8" fill="none" stroke="#7CFFB2" stroke-width="1.6"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">IoT bootcamp &#8212; IoTiran</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">smart greenhouse track</text>
+    </g>
+
+    <g transform="translate(632,246)">
+      <rect x="0" y="0" width="30" height="30" rx="4" fill="#07182B" stroke="#1E4A78" stroke-width="1.3"/>
+      <path d="M8 21 l5 -5 4 4 5 -8" fill="none" stroke="#7CFFB2" stroke-width="1.6"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">IoT course &#8212; Tosinsu</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">embedded &amp; connectivity</text>
+    </g>
+
+    <g transform="translate(632,296)">
+      <rect x="0" y="0" width="30" height="30" rx="4" fill="#07182B" stroke="#1E4A78" stroke-width="1.3"/>
+      <path d="M8 21 l5 -5 4 4 5 -8" fill="none" stroke="#7CFFB2" stroke-width="1.6"/>
+      <text class="mono" x="44" y="14" fill="#EAF6FF" font-size="12.5">C++ (self-taught) &#183; WordPress</text>
+      <text class="mono" x="44" y="31" fill="#4E7CA8" font-size="10">continuous, since 2016</text>
+    </g>
+  </g>
+
+  <!-- footer note -->
+  <text class="mono" x="40" y="360" fill="#2F5F8C" font-size="9" letter-spacing="1.3">NO UNVERIFIED CERTIFICATIONS LISTED &#183; IF IT IS NOT ON THE CV OR IN A REPO, IT IS NOT ON THIS PAGE</text>
+
+  <g stroke="#2A6FA8" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M16 30 V16 H30"/><path d="M1184 30 V16 H1170"/>
+    <path d="M16 350 V364 H30"/><path d="M1184 350 V364 H1170"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="378" rx="2" fill="none" stroke="#122544" stroke-width="2"/>
+</svg>

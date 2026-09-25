@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Services — firmware, protocol bridges, LoRa networks, dashboards">
+  <defs>
+    <linearGradient id="vbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="vcard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08182A"/><stop offset="100%" stop-color="#050F1B"/>
+    </linearGradient>
+    <pattern id="vgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0E1D33" stroke-width="1"/>
+    </pattern>
+    <filter id="vglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes vblink { 0%,45%{opacity:1} 55%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes vpulse { 0%,100%{opacity:.35} 50%{opacity:1} }
+    @keyframes vflow  { to { stroke-dashoffset: -400; } }
+    .vblink { animation: vblink 2.2s steps(1,end) infinite; }
+    .vpulse { animation: vpulse 3s ease-in-out infinite; }
+    .vflow { stroke-dasharray: 10 24; animation: vflow 4.5s linear infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="400" fill="url(#vbg)"/>
+  <rect width="1200" height="400" fill="url(#vgrid)" opacity="0.4"/>
+
+  <!-- header -->
+  <circle class="vblink" cx="34" cy="28" r="4" fill="#7CFFB2" filter="url(#vglow)"/>
+  <text class="mono" x="50" y="33" fill="#4E7CA8" font-size="11" letter-spacing="3">FIG.11 // ENGAGEMENT MODELS</text>
+  <text class="mono" x="34" y="62" fill="#EAF6FF" font-size="21" font-weight="700" letter-spacing="1.5">WHAT I CAN OWN END TO END</text>
+  <text class="mono" x="34" y="84" fill="#3E6E9C" font-size="11" letter-spacing="1">// BOARD BRING-UP THROUGH TO THE DASHBOARD THE OPERATOR ACTUALLY OPENS</text>
+  <text class="mono" x="1166" y="33" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">4 TRACKS</text>
+  <line x1="24" y1="98" x2="1176" y2="98" stroke="#14304F" stroke-width="1"/>
+
+  <!-- card geometry: 4 cards, w=272, gap=16, start x=30 -->
+  <!-- CARD 1 : x=30 -->
+  <g>
+    <rect x="30" y="118" width="272" height="248" rx="8" fill="url(#vcard)" stroke="#1E4A78" stroke-width="1.3"/>
+    <rect x="30" y="118" width="272" height="3" rx="1.5" fill="#00E5FF"/>
+    <rect x="52" y="140" width="42" height="42" rx="6" fill="#07182B" stroke="#2A6FA8" stroke-width="1.3"/>
+    <rect x="64" y="152" width="18" height="18" rx="2" fill="none" stroke="#00E5FF" stroke-width="1.4"/>
+    <g stroke="#00E5FF" stroke-width="1.2">
+      <path d="M52 161 H64 M82 161 H94 M73 140 V152 M73 170 V182"/>
+    </g>
+    <text class="mono" x="108" y="158" fill="#EAF6FF" font-size="14" letter-spacing="1">FIRMWARE</text>
+    <text class="mono" x="108" y="175" fill="#4E7CA8" font-size="9.5">C / C++ &#183; ESP32 / STM32</text>
+    <g class="mono" font-size="10.5" fill="#8FB6D9">
+      <text x="52" y="212">&#9656; Bare-metal drivers and HAL work</text>
+      <text x="52" y="234">&#9656; OTA update path + rollback</text>
+      <text x="52" y="256">&#9656; Watchdog, brown-out recovery</text>
+      <text x="52" y="278">&#9656; On-device configuration UI</text>
+      <text x="52" y="300">&#9656; Sleep budgets for battery nodes</text>
+    </g>
+    <circle class="vblink" cx="286" cy="140" r="3" fill="#00E5FF"/>
+    <text class="mono" x="52" y="344" fill="#2F5F8C" font-size="9" letter-spacing="1.4">DELIVERABLE: FIELD-PROVEN BUILD</text>
+  </g>
+
+  <!-- CARD 2 : x=318 -->
+  <g>
+    <rect x="318" y="118" width="272" height="248" rx="8" fill="url(#vcard)" stroke="#1E4A78" stroke-width="1.3"/>
+    <rect x="318" y="118" width="272" height="3" rx="1.5" fill="#7CFFB2"/>
+    <rect x="340" y="140" width="42" height="42" rx="6" fill="#07182B" stroke="#2A6FA8" stroke-width="1.3"/>
+    <circle cx="353" cy="161" r="3" fill="#7CFFB2"/>
+    <circle cx="369" cy="161" r="3" fill="#7CFFB2"/>
+    <path d="M356 161 H366" stroke="#7CFFB2" stroke-width="1.2"/>
+    <path d="M353 156 V150 M369 156 V150 M353 166 V172 M369 166 V172" stroke="#1E4A78" stroke-width="1.1"/>
+    <text class="mono" x="396" y="158" fill="#EAF6FF" font-size="14" letter-spacing="1">BRIDGES</text>
+    <text class="mono" x="396" y="175" fill="#4E7CA8" font-size="9.5">Modbus &#183; RS-485 &#183; gateways</text>
+    <g class="mono" font-size="10.5" fill="#8FB6D9">
+      <text x="340" y="212">&#9656; Reverse-engineer register maps</text>
+      <text x="340" y="234">&#9656; Modbus RTU / TCP translation</text>
+      <text x="340" y="256">&#9656; VFD and PLC integration</text>
+      <text x="340" y="278">&#9656; IEC 60870-5-104 telecontrol</text>
+      <text x="340" y="300">&#9656; Legacy serial to IP bridges</text>
+    </g>
+    <circle class="vblink" cx="574" cy="140" r="3" fill="#7CFFB2" style="animation-delay:.4s"/>
+    <text class="mono" x="340" y="344" fill="#2F5F8C" font-size="9" letter-spacing="1.4">DELIVERABLE: BUS-TO-IP BRIDGE</text>
+  </g>
+
+  <!-- CARD 3 : x=606 -->
+  <g>
+    <rect x="606" y="118" width="272" height="248" rx="8" fill="url(#vcard)" stroke="#1E4A78" stroke-width="1.3"/>
+    <rect x="606" y="118" width="272" height="3" rx="1.5" fill="#B388FF"/>
+    <rect x="628" y="140" width="42" height="42" rx="6" fill="#07182B" stroke="#2A6FA8" stroke-width="1.3"/>
+    <line x1="649" y1="170" x2="649" y2="156" stroke="#B388FF" stroke-width="1.6"/>
+    <circle cx="649" cy="153" r="2.4" fill="#B388FF"/>
+    <path class="vpulse" d="M637 158 Q649 142 661 158" fill="none" stroke="#B388FF" stroke-width="1.2"/>
+    <path class="vpulse" d="M631 154 Q649 132 667 154" fill="none" stroke="#B388FF" stroke-width="1.2" style="animation-delay:.7s"/>
+    <text class="mono" x="684" y="158" fill="#EAF6FF" font-size="14" letter-spacing="1">LoRa</text>
+    <text class="mono" x="684" y="175" fill="#4E7CA8" font-size="9.5">RFM95 &#183; multi-node telemetry</text>
+    <g class="mono" font-size="10.5" fill="#8FB6D9">
+      <text x="628" y="212">&#9656; Link budget and site survey</text>
+      <text x="628" y="234">&#9656; Node firmware + frame format</text>
+      <text x="628" y="256">&#9656; Central collector / concentrator</text>
+      <text x="628" y="278">&#9656; Duty-cycle and airtime planning</text>
+      <text x="628" y="300">&#9656; Optional cloud uplink</text>
+    </g>
+    <circle class="vblink" cx="862" cy="140" r="3" fill="#B388FF" style="animation-delay:.8s"/>
+    <text class="mono" x="628" y="344" fill="#2F5F8C" font-size="9" letter-spacing="1.4">DELIVERABLE: YEARS OF REPORTING</text>
+  </g>
+
+  <!-- CARD 4 : x=894 -->
+  <g>
+    <rect x="894" y="118" width="272" height="248" rx="8" fill="url(#vcard)" stroke="#1E4A78" stroke-width="1.3"/>
+    <rect x="894" y="118" width="272" height="3" rx="1.5" fill="#FF6B9D"/>
+    <rect x="916" y="140" width="42" height="42" rx="6" fill="#07182B" stroke="#2A6FA8" stroke-width="1.3"/>
+    <rect x="924" y="148" width="26" height="20" rx="2" fill="none" stroke="#FF6B9D" stroke-width="1.2"/>
+    <path d="M928 163 l5 -5 4 3 5 -9 4 6" fill="none" stroke="#FF6B9D" stroke-width="1.3"/>
+    <text class="mono" x="972" y="158" fill="#EAF6FF" font-size="14" letter-spacing="1">DASHBOARDS</text>
+    <text class="mono" x="972" y="175" fill="#4E7CA8" font-size="9.5">Flask &#183; React &#183; SQL</text>
+    <g class="mono" font-size="10.5" fill="#8FB6D9">
+      <text x="916" y="212">&#9656; REST and WebSocket back-ends</text>
+      <text x="916" y="234">&#9656; Time-series storage + retention</text>
+      <text x="916" y="256">&#9656; Alarm thresholds and history</text>
+      <text x="916" y="278">&#9656; Role-based operator views</text>
+      <text x="916" y="300">&#9656; Export to CSV / reporting</text>
+    </g>
+    <circle class="vblink" cx="1150" cy="140" r="3" fill="#FF6B9D" style="animation-delay:1.2s"/>
+    <text class="mono" x="916" y="344" fill="#2F5F8C" font-size="9" letter-spacing="1.4">DELIVERABLE: A TRUSTED SCREEN</text>
+  </g>
+
+  <!-- bus under cards -->
+  <line x1="24" y1="382" x2="1176" y2="382" stroke="#14304F" stroke-width="1.2"/>
+  <line x1="24" y1="382" x2="1176" y2="382" stroke="#00E5FF" stroke-width="1.6" class="vflow" opacity="0.5"/>
+
+  <g stroke="#2A6FA8" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M16 30 V16 H30"/><path d="M1184 30 V16 H1170"/>
+    <path d="M16 370 V384 H30"/><path d="M1184 370 V384 H1170"/>
+  </g>
+</svg>

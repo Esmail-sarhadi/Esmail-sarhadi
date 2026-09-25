@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Boot sequence log — ESP32 industrial node">
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070D18"/><stop offset="100%" stop-color="#04070F"/>
+    </linearGradient>
+    <linearGradient id="bbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#071523"/><stop offset="100%" stop-color="#0B1A32"/>
+    </linearGradient>
+    <linearGradient id="bscan" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bamb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bdots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#1B3358" opacity="0.35"/>
+    </pattern>
+    <filter id="bglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', 'Courier New', monospace; }
+    @keyframes bblink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes bscan  { from{transform:translateY(0)} to{transform:translateY(322px)} }
+    @keyframes bled   { 0%,45%{opacity:1} 55%,95%{opacity:.2} 100%{opacity:1} }
+    .bblink { animation: bblink 1.05s steps(1,end) infinite; }
+    .bscan  { animation: bscan 6s linear infinite; }
+    .bled   { animation: bled 2s steps(1,end) infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="420" fill="#03050A"/>
+  <rect width="1200" height="420" fill="url(#bdots)" opacity="0.3"/>
+  <ellipse cx="600" cy="210" rx="620" ry="230" fill="url(#bamb)"/>
+
+  <!-- frame -->
+  <rect x="40" y="16" width="1120" height="388" rx="10" fill="url(#bbg)" stroke="#1A4568" stroke-width="1.4"/>
+  <path d="M50 16 H1150 A10 10 0 0 1 1160 26 V56 H40 V26 A10 10 0 0 1 50 16 Z" fill="url(#bbar)"/>
+  <line x1="42" y1="56" x2="1158" y2="56" stroke="#14304F" stroke-width="1.2"/>
+
+  <text class="mono" x="600" y="39" text-anchor="middle" fill="#3E6E9C" font-size="12" letter-spacing="2.5">SERIAL CONSOLE &#183; ttyS0 &#183; 115200 8N1</text>
+  <circle class="bled" cx="70" cy="36" r="4" fill="#7CFFB2" filter="url(#bglow)"/>
+  <text class="mono" x="1136" y="39" text-anchor="end" fill="#2F5F8C" font-size="9.5" letter-spacing="1.5">EsmailOS 5.4.0-esp32</text>
+
+  <!-- log lines -->
+  <g class="mono" font-size="12.5">
+    <text x="70" y="88"><tspan fill="#2F5F8C">[    0.000000]</tspan><tspan fill="#EAF6FF"> Booting EsmailOS on Xtensa LX6</tspan></text>
+    <text x="70" y="110"><tspan fill="#2F5F8C">[    0.014200]</tspan><tspan fill="#7FB2DC"> CPU0: </tspan><tspan fill="#C9E2F5">dual-core @ 240 MHz</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="132"><tspan fill="#2F5F8C">[    0.021100]</tspan><tspan fill="#7FB2DC"> Memory: </tspan><tspan fill="#C9E2F5">520 KB SRAM &#183; 4 MB flash</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="154"><tspan fill="#2F5F8C">[    0.048900]</tspan><tspan fill="#7FB2DC"> devicetree: </tspan><tspan fill="#C9E2F5">esp32-wroom-32e</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+
+    <text x="70" y="176" fill="#2F5F8C"># bus bring-up</text>
+
+    <text x="70" y="198"><tspan fill="#2F5F8C">[    0.092300]</tspan><tspan fill="#00E5FF"> spi_flash</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">4 MB, mode DIO</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="220"><tspan fill="#2F5F8C">[    0.134500]</tspan><tspan fill="#00E5FF"> wifi</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">STA associated, RSSI -58 dBm</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="242"><tspan fill="#2F5F8C">[    0.188200]</tspan><tspan fill="#00E5FF"> lora</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">RFM95 @ 868.0 MHz, SF7</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="264"><tspan fill="#2F5F8C">[    0.223400]</tspan><tspan fill="#00E5FF"> modbus</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">RS-485 @ 9600 8N1, 4 nodes</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="286"><tspan fill="#2F5F8C">[    0.276100]</tspan><tspan fill="#B388FF"> snmp</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">agent v2c, 12 OIDs served</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+    <text x="70" y="308"><tspan fill="#2F5F8C">[    0.318900]</tspan><tspan fill="#B388FF"> mqtt</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">broker session established</tspan><tspan fill="#7CFFB2">  [ OK ]</tspan></text>
+
+    <text x="70" y="330" fill="#2F5F8C"># safety</text>
+
+    <text x="70" y="352"><tspan fill="#2F5F8C">[    0.401200]</tspan><tspan fill="#FFB86C"> ota</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">partition table verified, rollback armed</tspan></text>
+    <text x="70" y="374"><tspan fill="#2F5F8C">[    0.455600]</tspan><tspan fill="#FFB86C"> watchdog</tspan><tspan fill="#7FB2DC">: </tspan><tspan fill="#C9E2F5">armed, timeout 5 s</tspan></text>
+    <text x="70" y="396"><tspan fill="#00E5FF">esmail@zahedan</tspan><tspan fill="#3E6E9C">:~$</tspan><tspan fill="#EAF6FF"> uptime --since 2018</tspan></text>
+  </g>
+
+  <!-- scan band -->
+  <rect class="bscan" x="46" y="66" width="1108" height="40" fill="url(#bscan)"/>
+
+  <!-- caret -->
+  <rect class="bblink" x="452" y="385" width="8" height="14" fill="#7CFFB2"/>
+
+  <g stroke="#2A6FA8" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M16 30 V16 H30"/><path d="M1184 30 V16 H1170"/>
+    <path d="M16 390 V404 H30"/><path d="M1184 390 V404 H1170"/>
+  </g>
+</svg>

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Protocol matrix — field bus, wireless, telemetry, industrial and positioning protocols">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050810"/><stop offset="100%" stop-color="#03050A"/>
+    </linearGradient>
+    <linearGradient id="mchip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08182A"/><stop offset="100%" stop-color="#050F1B"/>
+    </linearGradient>
+    <pattern id="mgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#0E1D33" stroke-width="1"/>
+    </pattern>
+    <filter id="mglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; }
+    @keyframes mled1 { 0%,45%{opacity:1} 55%,95%{opacity:.15} 100%{opacity:1} }
+    @keyframes mled2 { 0%,25%{opacity:.15} 35%,75%{opacity:1} 85%,100%{opacity:.15} }
+    .mled1 { animation: mled1 2.2s steps(1,end) infinite; }
+    .mled2 { animation: mled2 2.8s steps(1,end) infinite; }
+    @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+  </style>
+
+  <rect width="1200" height="380" fill="url(#mbg)"/>
+  <rect width="1200" height="380" fill="url(#mgrid)" opacity="0.4"/>
+
+  <!-- header -->
+  <circle class="mled1" cx="34" cy="28" r="4" fill="#7CFFB2" filter="url(#mglow)"/>
+  <text class="mono" x="50" y="33" fill="#4E7CA8" font-size="11" letter-spacing="3">FIG.12 // PROTOCOL MATRIX</text>
+  <text class="mono" x="34" y="62" fill="#EAF6FF" font-size="21" font-weight="700" letter-spacing="1.5">EVERY LAYER I HAVE HAD TO DEBUG</text>
+  <text class="mono" x="34" y="84" fill="#3E6E9C" font-size="11" letter-spacing="1">// TAG ON EACH CHIP SHOWS WHERE THE EVIDENCE LIVES: A PUBLIC REPO OR THE CV</text>
+  <text class="mono" x="1166" y="33" text-anchor="end" fill="#2F5F8C" font-size="9" letter-spacing="2">15 ENTRIES</text>
+  <line x1="24" y1="98" x2="1176" y2="98" stroke="#14304F" stroke-width="1"/>
+
+  <!-- chips: 5 cols x 3 rows ; w=222, h=62, gap=14 ; start x=30, y=112 -->
+  <!-- ROW 1 -->
+  <g>
+    <rect x="30" y="112" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="30" y="112" width="3" height="62" rx="1.5" fill="#00E5FF"/>
+    <circle class="mled1" cx="52" cy="134" r="3.4" fill="#00E5FF"/>
+    <text class="mono" x="66" y="138" fill="#EAF6FF" font-size="13">RS-485</text>
+    <text class="mono" x="66" y="156" fill="#4E7CA8" font-size="9">half-duplex diff. bus</text>
+    <text class="mono" x="238" y="138" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="266" y="112" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="266" y="112" width="3" height="62" rx="1.5" fill="#00E5FF"/>
+    <circle class="mled2" cx="288" cy="134" r="3.4" fill="#00E5FF"/>
+    <text class="mono" x="302" y="138" fill="#EAF6FF" font-size="13">Modbus RTU</text>
+    <text class="mono" x="302" y="156" fill="#4E7CA8" font-size="9">master/slave polling</text>
+    <text class="mono" x="474" y="138" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="502" y="112" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="502" y="112" width="3" height="62" rx="1.5" fill="#7CFFB2"/>
+    <circle class="mled1" cx="524" cy="134" r="3.4" fill="#7CFFB2" style="animation-delay:.3s"/>
+    <text class="mono" x="538" y="138" fill="#EAF6FF" font-size="13">LoRa / RFM95</text>
+    <text class="mono" x="538" y="156" fill="#4E7CA8" font-size="9">868 MHz, SF7..SF12</text>
+    <text class="mono" x="710" y="138" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="738" y="112" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="738" y="112" width="3" height="62" rx="1.5" fill="#7CFFB2"/>
+    <circle class="mled2" cx="760" cy="134" r="3.4" fill="#7CFFB2" style="animation-delay:.6s"/>
+    <text class="mono" x="774" y="138" fill="#EAF6FF" font-size="13">Wi-Fi / BLE</text>
+    <text class="mono" x="774" y="156" fill="#4E7CA8" font-size="9">soft-AP + GATT</text>
+    <text class="mono" x="946" y="138" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="974" y="112" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="974" y="112" width="3" height="62" rx="1.5" fill="#7CFFB2"/>
+    <circle class="mled1" cx="996" cy="134" r="3.4" fill="#7CFFB2" style="animation-delay:.9s"/>
+    <text class="mono" x="1010" y="138" fill="#EAF6FF" font-size="13">UHF / RF remote</text>
+    <text class="mono" x="1010" y="156" fill="#4E7CA8" font-size="9">433 MHz receiver</text>
+    <text class="mono" x="1182" y="138" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+
+  <!-- ROW 2 -->
+  <g>
+    <rect x="30" y="188" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="30" y="188" width="3" height="62" rx="1.5" fill="#B388FF"/>
+    <circle class="mled2" cx="52" cy="210" r="3.4" fill="#B388FF"/>
+    <text class="mono" x="66" y="214" fill="#EAF6FF" font-size="13">MQTT</text>
+    <text class="mono" x="66" y="232" fill="#4E7CA8" font-size="9">pub/sub, retained, QoS</text>
+    <text class="mono" x="238" y="214" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="266" y="188" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="266" y="188" width="3" height="62" rx="1.5" fill="#B388FF"/>
+    <circle class="mled1" cx="288" cy="210" r="3.4" fill="#B388FF" style="animation-delay:.5s"/>
+    <text class="mono" x="302" y="214" fill="#EAF6FF" font-size="13">SNMP v2c</text>
+    <text class="mono" x="302" y="232" fill="#4E7CA8" font-size="9">agent on ESP32</text>
+    <text class="mono" x="474" y="214" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="502" y="188" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="502" y="188" width="3" height="62" rx="1.5" fill="#B388FF"/>
+    <circle class="mled2" cx="524" cy="210" r="3.4" fill="#B388FF" style="animation-delay:1s"/>
+    <text class="mono" x="538" y="214" fill="#EAF6FF" font-size="13">HTTP / REST</text>
+    <text class="mono" x="538" y="232" fill="#4E7CA8" font-size="9">on-device server</text>
+    <text class="mono" x="710" y="214" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="738" y="188" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="738" y="188" width="3" height="62" rx="1.5" fill="#FFB86C"/>
+    <circle class="mled1" cx="760" cy="210" r="3.4" fill="#FFB86C"/>
+    <text class="mono" x="774" y="214" fill="#EAF6FF" font-size="13">NMEA-0183</text>
+    <text class="mono" x="774" y="232" fill="#4E7CA8" font-size="9">GPGGA parse + generate</text>
+    <text class="mono" x="946" y="214" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+  <g>
+    <rect x="974" y="188" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#1E4A78" stroke-width="1.2"/>
+    <rect x="974" y="188" width="3" height="62" rx="1.5" fill="#FFB86C"/>
+    <circle class="mled2" cx="996" cy="210" r="3.4" fill="#FFB86C" style="animation-delay:.7s"/>
+    <text class="mono" x="1010" y="214" fill="#EAF6FF" font-size="13">WebSocket</text>
+    <text class="mono" x="1010" y="232" fill="#4E7CA8" font-size="9">live dashboard push</text>
+    <text class="mono" x="1182" y="214" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+
+  <!-- ROW 3 -->
+  <g>
+    <rect x="30" y="264" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#22496E" stroke-width="1.2"/>
+    <rect x="30" y="264" width="3" height="62" rx="1.5" fill="#5B8DEF"/>
+    <circle class="mled1" cx="52" cy="286" r="3.4" fill="#5B8DEF"/>
+    <text class="mono" x="66" y="290" fill="#EAF6FF" font-size="13">IEC 60870-5-104</text>
+    <text class="mono" x="66" y="308" fill="#4E7CA8" font-size="9">SCADA telecontrol</text>
+    <text class="mono" x="238" y="290" text-anchor="end" fill="#B388FF" font-size="8.5">CV</text>
+    
+  </g>
+  <g>
+    <rect x="266" y="264" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#22496E" stroke-width="1.2"/>
+    <rect x="266" y="264" width="3" height="62" rx="1.5" fill="#5B8DEF"/>
+    <circle class="mled2" cx="288" cy="286" r="3.4" fill="#5B8DEF" style="animation-delay:.4s"/>
+    <text class="mono" x="302" y="290" fill="#EAF6FF" font-size="13">Modbus TCP</text>
+    <text class="mono" x="302" y="308" fill="#4E7CA8" font-size="9">MBAP framing over IP</text>
+    <text class="mono" x="474" y="290" text-anchor="end" fill="#B388FF" font-size="8.5">CV</text>
+    
+  </g>
+  <g>
+    <rect x="502" y="264" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#22496E" stroke-width="1.2"/>
+    <rect x="502" y="264" width="3" height="62" rx="1.5" fill="#FF6B9D"/>
+    <circle class="mled1" cx="524" cy="286" r="3.4" fill="#FF6B9D"/>
+    <text class="mono" x="538" y="290" fill="#EAF6FF" font-size="13">RFID</text>
+    <text class="mono" x="538" y="308" fill="#4E7CA8" font-size="9">tag read, access control</text>
+    <text class="mono" x="710" y="290" text-anchor="end" fill="#B388FF" font-size="8.5">CV</text>
+    
+  </g>
+  <g>
+    <rect x="738" y="264" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#22496E" stroke-width="1.2"/>
+    <rect x="738" y="264" width="3" height="62" rx="1.5" fill="#FF6B9D"/>
+    <circle class="mled2" cx="760" cy="286" r="3.4" fill="#FF6B9D" style="animation-delay:.8s"/>
+    <text class="mono" x="774" y="290" fill="#EAF6FF" font-size="13">UWB</text>
+    <text class="mono" x="774" y="308" fill="#4E7CA8" font-size="9">time-of-flight, anchors</text>
+    <text class="mono" x="946" y="290" text-anchor="end" fill="#B388FF" font-size="8.5">CV</text>
+    
+  </g>
+  <g>
+    <rect x="974" y="264" width="222" height="62" rx="6" fill="url(#mchip)" stroke="#22496E" stroke-width="1.2"/>
+    <rect x="974" y="264" width="3" height="62" rx="1.5" fill="#FF6B9D"/>
+    <circle class="mled1" cx="996" cy="286" r="3.4" fill="#FF6B9D" style="animation-delay:1.2s"/>
+    <text class="mono" x="1010" y="290" fill="#EAF6FF" font-size="13">I2C / SPI / 1-Wire</text>
+    <text class="mono" x="1010" y="308" fill="#4E7CA8" font-size="9">sensor/display bus</text>
+    <text class="mono" x="1182" y="290" text-anchor="end" fill="#00E5FF" font-size="8.5">REPO</text>
+    
+  </g>
+
+  <!-- legend -->
+  <g class="mono" font-size="9">
+    <rect x="30" y="340" width="222" height="22" rx="4" fill="#061020" stroke="#14304F"/>
+    <text x="42" y="355" fill="#00E5FF">REPO</text>
+    <text x="80" y="355" fill="#4E7CA8">= public code exists</text>
+    <rect x="266" y="340" width="222" height="22" rx="4" fill="#061020" stroke="#14304F"/>
+    <text x="278" y="355" fill="#B388FF">CV</text>
+    <text x="304" y="355" fill="#4E7CA8">= listed on the CV, not yet public</text>
+  </g>
+
+  <g stroke="#2A6FA8" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M16 30 V16 H30"/><path d="M1184 30 V16 H1170"/>
+    <path d="M16 350 V364 H30"/><path d="M1184 350 V364 H1170"/>
+  </g>
+</svg>
