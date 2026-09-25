@@ -8,63 +8,43 @@
 
 </div>
 
-<img src="assets/divider.svg" alt="" width="100%" />
+---
 
-<h2 dir="rtl" align="right">درباره من</h2>
+<img src="assets/terminal.svg" alt="ترمینال — profile.yaml" width="100%" />
 
-<table dir="rtl">
-<tbody>
-<tr><td align="right" width="170"><b>نام</b></td><td align="right">اسماعیل سرحدی</td></tr>
-<tr><td align="right"><b>حوزه</b></td><td align="right">مهندس سیستم‌های نهفته · اینترنت اشیاء صنعتی</td></tr>
-<tr><td align="right"><b>موقعیت</b></td><td align="right">زاهدان، ایران</td></tr>
-<tr><td align="right"><b>فعالیت</b></td><td align="right">از سال ۲۰۱۸ · ۷۶ مخزن عمومی</td></tr>
-<tr><td align="right"><b>زبان‌ها</b></td><td align="right"><code dir="ltr">C</code> · <code dir="ltr">C++</code> · <code dir="ltr">Python</code> · <code dir="ltr">JavaScript</code></td></tr>
-<tr><td align="right"><b>سخت‌افزار</b></td><td align="right"><code dir="ltr">ESP32</code> · <code dir="ltr">STM32</code> · <code dir="ltr">Arduino</code></td></tr>
-<tr><td align="right"><b>باس صنعتی</b></td><td align="right"><code dir="ltr">Modbus RTU/TCP</code> · <code dir="ltr">RS-485</code></td></tr>
-<tr><td align="right"><b>بی‌سیم</b></td><td align="right"><code dir="ltr">Wi-Fi</code> · <code dir="ltr">Bluetooth</code> · <code dir="ltr">LoRa (RFM95)</code></td></tr>
-<tr><td align="right"><b>تله‌متری</b></td><td align="right"><code dir="ltr">MQTT</code> · <code dir="ltr">REST</code> · <code dir="ltr">WebSocket</code> · <code dir="ltr">SNMP v2</code> · <code dir="ltr">IEC 60870-5-104</code></td></tr>
-<tr><td align="right"><b>نرم‌افزار</b></td><td align="right"><code dir="ltr">Flask</code> · <code dir="ltr">React</code> · <code dir="ltr">Next.js</code> · <code dir="ltr">Android</code> · <code dir="ltr">SQL</code></td></tr>
-<tr><td align="right"><b>وضعیت</b></td><td align="right">🟢 آمادهٔ همکاری — پروژه‌های نهفته و اینترنت اشیاء صنعتی</td></tr>
-</tbody>
-</table>
+<img src="assets/divider-wave.svg" alt="" width="100%" />
 
-<img src="assets/divider.svg" alt="" width="100%" />
+---
 
-<h2 dir="rtl" align="right">واقعاً چه چیزی می‌سازم</h2>
+<img src="assets/section-build.svg" alt="بخش ۰۱ — آنچه واقعاً می‌سازم" width="100%" />
 
-<p dir="rtl" align="right">
-بیشتر پروفایل‌های اینترنت اشیاء یک دیوار از لوگو نشان می‌دهند. چیزی که مهم است، لایه‌ای است که خراب می‌شود:
-</p>
+<p dir="rtl" align="right">بیشتر پروفایل‌های اینترنت اشیاء یک دیوار از لوگو نشان می‌دهند. چیزی که مهم است، لایه‌ای است که خراب می‌شود:</p>
 
 <table dir="rtl">
 <tbody>
-<tr><td width="34"><b>۰۱</b></td><td align="right">
-<b>فریم‌وری که در میدان دوام می‌آورد.</b> روی <code dir="ltr">ESP32</code> و <code dir="ltr">STM32</code> با C/C++ خام، همراه با مسیر به‌روزرسانی <code dir="ltr">OTA</code>، بازیابی با <code dir="ltr">Watchdog</code> و رابط وب برای تنظیمات — چون دستگاهی که باید برای تعمیرش رانندگی کنی، همان دستگاهی است که خراب می‌ماند.
-</td></tr>
-<tr><td><b>۰۲</b></td><td align="right">
-<b>پل بین پروتکل‌ها.</b> بیرون کشیدن داده از تجهیزات <code dir="ltr">Modbus</code>/<code dir="ltr">RS-485</code>، درایوهای دور متغیر و کنترلرهای قدیمی، و رساندنش به جایی که به کار بیاید — روی <code dir="ltr">MQTT</code>، <code dir="ltr">REST</code> یا <code dir="ltr">WebSocket</code>.
-</td></tr>
-<tr><td><b>۰۳</b></td><td align="right">
-<b>شبکهٔ حس‌گر LoRa.</b> تله‌متری چندگرهی جایی که نه وای‌فای هست و نه پریز برق — لینک‌های <code dir="ltr">RFM95</code>، گرهٔ جمع‌آوری مرکزی و در صورت نیاز ارسال به فضای ابری.
-</td></tr>
-<tr><td><b>۰۴</b></td><td align="right">
-<b>تله‌متری صنعتی.</b> عامل <code dir="ltr">SNMP v2</code> روی میکروکنترلر، پردازش <code dir="ltr">NMEA/GPS</code> و <code dir="ltr">IEC 60870-5-104</code> برای یکپارچه‌سازی با <code dir="ltr">SCADA</code>.
-</td></tr>
-<tr><td><b>۰۵</b></td><td align="right">
-<b>داشبوردی که اپراتور واقعاً استفاده کند.</b> فرانت‌اند با <code dir="ltr">Flask</code> و <code dir="ltr">React/Next.js</code> برای دادهٔ زنده — طراحی‌شده برای کسی که جلوی دستگاه ایستاده، نه برای اسکرین‌شات.
-</td></tr>
+<tr><td width="34"><b>۰۱</b></td><td align="right"><b dir="ltr">فریم‌وری که در میدان دوام می‌آورد.</b> روی <code dir="ltr">ESP32</code> و <code dir="ltr">STM32</code> با C/C++ خام، به‌همراه مسیر به‌روزرسانی <code dir="ltr">OTA</code>، بازیابی با <code dir="ltr">Watchdog</code> و رابط وب برای تنظیمات — چون دستگاهی که برای تعمیرش باید رانندگی کنی، همان دستگاهی است که خراب می‌ماند.</td></tr>
+<tr><td><b>۰۲</b></td><td align="right"><b>پل بین پروتکل‌ها.</b> بیرون‌کشیدن داده از تجهیزات <code dir="ltr">Modbus</code>/<code dir="ltr">RS-485</code>، درایوهای دور متغیر و کنترلرهای قدیمی، و رساندنش به جایی که به‌کار بیاید — روی <code dir="ltr">MQTT</code>، <code dir="ltr">REST</code> یا <code dir="ltr">WebSocket</code>.</td></tr>
+<tr><td><b>۰۳</b></td><td align="right"><b>شبکهٔ حس‌گر LoRa.</b> تله‌متری چندگره‌ای جایی که نه وای‌فای هست و نه پریز برق — لینک‌های <code dir="ltr">RFM95</code>، گرهٔ جمع‌آوری مرکزی، و در صورت نیاز ارسال به فضای ابری.</td></tr>
+<tr><td><b>۰۴</b></td><td align="right"><b>تله‌متری صنعتی.</b> عامل <code dir="ltr">SNMP v2</code> روی میکروکنترلر، پردازش <code dir="ltr">NMEA/GPS</code> و <code dir="ltr">IEC 60870-5-104</code> برای یکپارچه‌سازی با <code dir="ltr">SCADA</code>.</td></tr>
+<tr><td><b>۰۵</b></td><td align="right"><b>داشبوردی که اپراتور واقعاً استفاده کند.</b> فرانت‌اند با <code dir="ltr">Flask</code> و <code dir="ltr">React/Next.js</code> برای دادهٔ زنده — طراحی‌شده برای کسی که جلوی دستگاه ایستاده، نه برای اسکرین‌شات.</td></tr>
 </tbody>
 </table>
-
-<br />
 
 <div align="center">
   <img src="assets/stack.svg" alt="معماری سیستم: میدان، کنترل، انتقال، یکپارچه‌سازی، کاربرد" width="100%" />
 </div>
 
-<img src="assets/divider.svg" alt="" width="100%" />
+<img src="assets/divider-circuit.svg" alt="" width="100%" />
 
-<h2 dir="rtl" align="right">پروژه‌های منتخب</h2>
+<div align="center">
+  <img src="assets/network-topology.svg" alt="توپولوژی سیستم مستقر — گره‌های میدان، دروازه ESP32، بروکر و داشبورد" width="100%" />
+</div>
+
+<img src="assets/divider-packets.svg" alt="" width="100%" />
+
+---
+
+<img src="assets/section-projects.svg" alt="بخش ۰۲ — کارهای منتخب" width="100%" />
 
 <p dir="rtl" align="right">همهٔ مخزن‌های زیر عمومی هستند. تعداد ستاره و زبان برنامه‌نویسی زنده از گیت‌هاب خوانده می‌شود.</p>
 
@@ -117,7 +97,7 @@
   <td><b>۰۶</b></td>
   <td align="right"><a href="https://github.com/Esmail-sarhadi/Lora-Esp32-ThingSpeak"><b dir="ltr">Lora-Esp32-ThingSpeak</b></a><br/>
       <img src="https://img.shields.io/github/stars/Esmail-sarhadi/Lora-Esp32-ThingSpeak?style=flat-square&color=7CFFB2&labelColor=050810" /></td>
-  <td align="right">شبکهٔ <code dir="ltr">LoRa</code> چندگرهی: چند فرستنده دما و رطوبت را به یک سرور مرکزی می‌فرستند، سرور فریم‌ها را پردازش و در صورت نیاز به <code dir="ltr">ThingSpeak</code> ارسال می‌کند.</td>
+  <td align="right">شبکهٔ <code dir="ltr">LoRa</code> چندگره‌ای: چند فرستنده دما و رطوبت را به یک سرور مرکزی می‌فرستند، سرور فریم‌ها را پردازش و در صورت نیاز به <code dir="ltr">ThingSpeak</code> ارسال می‌کند.</td>
   <td align="right"><code dir="ltr">C++</code> <code dir="ltr">LoRa</code> <code dir="ltr">ThingSpeak</code></td>
 </tr>
 <tr>
@@ -151,6 +131,10 @@
 </tbody>
 </table>
 
+<div align="center">
+  <img src="assets/code-window.svg" alt="قطعهٔ واقعی C++ ESP32 از الگوی سرور OTA" width="100%" />
+</div>
+
 <details>
 <summary><b>مخزن‌های دیگری که ارزش دیدن دارند</b></summary>
 
@@ -174,9 +158,9 @@
 
 </details>
 
-<img src="assets/divider.svg" alt="" width="100%" />
+---
 
-<h2 dir="rtl" align="right">آمار گیت‌هاب</h2>
+<img src="assets/section-stats.svg" alt="بخش ۰۳ — تله‌متری گیت‌هاب" width="100%" />
 
 <div align="center">
 
@@ -189,6 +173,12 @@
 
 </div>
 
+<img src="assets/skills-bars.svg" alt="شکل ۰۶ — توزیع مخزن‌ها بر اساس زبان و فناوری" width="100%" />
+
+<img src="assets/skills-radar.svg" alt="شکل ۰۷ — رادار توانمندی: مخزن به‌ازای فناوری، مساحت متناسب با تعداد" width="100%" />
+
+<img src="assets/kpi-strip.svg" alt="شکل ۰۸ — شاخص‌های کلیدی: مخزن، ستاره، پروژهٔ ESP32، C/C++، مشارکت، از" width="100%" />
+
 <details>
 <summary><b>نمودار مشارکت</b></summary>
 
@@ -200,24 +190,13 @@
 
 </details>
 
-<img src="assets/divider.svg" alt="" width="100%" />
+---
 
-<h2 dir="rtl" align="right">سوابق</h2>
+<img src="assets/timeline.svg" alt="بخش ۰۴ — سوابق، ۲۰۱۸ تا امروز" width="100%" />
 
-<table dir="rtl">
-<tbody>
-<tr><td align="right" width="230"><b>مؤسس و مدیرعامل</b></td><td align="right">زندگی هوشمند سانا — زاهدان · ۱۴۰۰ تا ۱۴۰۳<br/><sub>محصولات اینترنت اشیاء و زندگی هوشمند؛ تیم را از راه‌اندازی برد تا داشبورد سرتاسر هدایت کردم. در جریان: دریافت مجوز شرکت دانش‌بنیان.</sub></td></tr>
-<tr><td align="right"><b>مدیر فناوری</b></td><td align="right">شرکت پلاستیک امواج — بابلسر · ۱۳۹۸ تا ۱۴۰۰<br/><sub>مدیریت فناوری و کار روی سیستم‌های نصب‌شده در محل.</sub></td></tr>
-<tr><td align="right"><b>کارشناسی مهندسی کامپیوتر</b></td><td align="right">دانشگاه سیستان و بلوچستان · ۱۳۹۸ تا ۱۴۰۳</td></tr>
-<tr><td align="right"><b>مقام اول بوت‌کمپ</b></td><td align="right">بوت‌کمپ اینترنت اشیاء آی‌اوتی‌ایران، با پروژهٔ گلخانهٔ هوشمند<br/><sub>به‌عنوان نفر اول برنامه انتخاب شدم.</sub></td></tr>
-<tr><td align="right"><b>پژوهشگر برتر</b></td><td align="right">شناخته‌شده به‌عنوان پژوهشگر برتر دانشگاه سیستان و بلوچستان</td></tr>
-<tr><td align="right"><b>دوره‌ها</b></td><td align="right">اینترنت اشیاء — پارک علم و فناوری سیستان و بلوچستان · اینترنت اشیاء — توسینسو</td></tr>
-</tbody>
-</table>
+---
 
-<img src="assets/divider.svg" alt="" width="100%" />
-
-<h2 dir="rtl" align="right">راه‌های ارتباط</h2>
+<img src="assets/section-contact.svg" alt="بخش ۰۵ — برقراری ارتباط" width="100%" />
 
 <div align="center">
 
@@ -229,8 +208,4 @@
 
 <p dir="rtl" align="right"><b>آمادهٔ همکاری در:</b> فریم‌ور سیستم‌های نهفته · اتوماسیون صنعتی · یکپارچه‌سازی Modbus/SCADA · شبکه‌های حس‌گر LoRa · ساخت محصول اینترنت اشیاء</p>
 
-<div align="center">
-  <img src="assets/divider.svg" alt="" width="100%" />
-</div>
-
-<img src="assets/footer.svg" alt="اول سخت‌افزار. فریم‌ور صادق. سیستمی که کار می‌کند." width="100%" />
+<img src="assets/footer-cta.svg" alt="بیایید چیزی بسازیم که در میدان دوام بیاورد" width="100%" />

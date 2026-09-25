@@ -10,69 +10,37 @@
 
 ---
 
-## `>` whoami
+<img src="assets/terminal.svg" alt="terminal — profile.yaml" width="100%" />
 
-```console
-esmail@zahedan:~$ cat profile.yaml
-
-  name         Esmail Sarhadi
-  role         Embedded Systems Engineer · Industrial IoT
-  base         Zahedan, Iran (UTC+3:30)
-  since        2018 — 76 public repositories
-  languages    C · C++ · Python · JavaScript
-  silicon      ESP32 · STM32 · Arduino
-  field bus    Modbus RTU/TCP · RS-485
-  wireless     Wi-Fi · Bluetooth · LoRa (RFM95) · UHF
-  telemetry    MQTT · HTTP/REST · WebSocket · SNMP v2 · IEC 60870-5-104
-  software     Flask · React · Next.js · Android · SQL
-  status       [ OPEN ] — available for embedded & industrial IoT work
-
-esmail@zahedan:~$ █
-```
+<img src="assets/divider-wave.svg" alt="" width="100%" />
 
 ---
 
-## What I actually build
+<img src="assets/section-build.svg" alt="section 01 — what I actually build" width="100%" />
 
 Most IoT profiles show a wall of logos. Here is the part that matters — the layer where things break.
 
-<table>
-<tr><td width="34"><b>01</b></td><td>
-
-**Firmware that survives the field.** ESP32 and STM32 in bare-metal C/C++, with OTA update paths, watchdog recovery and web-server config UIs — because a device you have to drive to is a device that stays broken.
-
-</td></tr>
-<tr><td><b>02</b></td><td>
-
-**Protocol bridges.** Pulling data out of Modbus/RS-485 equipment, variable-frequency drives and legacy controllers, and getting it somewhere useful over MQTT, REST or WebSocket.
-
-</td></tr>
-<tr><td><b>03</b></td><td>
-
-**LoRa sensor networks.** Multi-node telemetry where there is no Wi-Fi and no power outlet — RFM95 links, central collection nodes, optional uplink to the cloud.
-
-</td></tr>
-<tr><td><b>04</b></td><td>
-
-**Industrial telemetry.** SNMP v2 agents on microcontrollers, NMEA/GPS ingestion, and IEC 60870-5-104 telecontrol for SCADA-side integration.
-
-</td></tr>
-<tr><td><b>05</b></td><td>
-
-**Operator dashboards.** Flask and React/Next.js front-ends for live data — designed for the person standing in front of the machine, not for a screenshot.
-
-</td></tr>
-</table>
-
-<br />
+- **Firmware that survives the field.** ESP32 and STM32 in bare-metal C/C++, with OTA update paths, watchdog recovery and web-server config UIs — because a device you have to drive to is a device that stays broken.
+- **Protocol bridges.** Pulling data out of Modbus/RS-485 equipment, variable-frequency drives and legacy controllers, and getting it somewhere useful over MQTT, REST or WebSocket.
+- **LoRa sensor networks.** Multi-node telemetry where there is no Wi-Fi and no power outlet — RFM95 links, central collection nodes, optional uplink to the cloud.
+- **Industrial telemetry.** SNMP v2 agents on microcontrollers, NMEA/GPS ingestion, and IEC 60870-5-104 telecontrol for SCADA-side integration.
+- **Operator dashboards.** Flask and React/Next.js front-ends for live data — designed for the person standing in front of the machine, not for a screenshot.
 
 <div align="center">
-  <img src="assets/stack.svg" alt="System architecture: field, control, transport, integration, application" width="100%" />
+  <img src="assets/stack.svg" alt="system architecture: field, control, transport, integration, application" width="100%" />
 </div>
+
+<img src="assets/divider-circuit.svg" alt="" width="100%" />
+
+<div align="center">
+  <img src="assets/network-topology.svg" alt="deployed system topology — field nodes, ESP32 gateway, broker and dashboard" width="100%" />
+</div>
+
+<img src="assets/divider-packets.svg" alt="" width="100%" />
 
 ---
 
-## Selected work
+<img src="assets/section-projects.svg" alt="section 02 — selected work" width="100%" />
 
 Every repository below is public. Star counts and languages are live from GitHub.
 
@@ -159,6 +127,10 @@ Every repository below is public. Star counts and languages are live from GitHub
 </tbody>
 </table>
 
+<div align="center">
+  <img src="assets/code-window.svg" alt="real ESP32 C++ snippet from the OTA web server pattern" width="100%" />
+</div>
+
 <details>
 <summary><b>More repositories worth a look</b></summary>
 
@@ -179,7 +151,7 @@ Every repository below is public. Star counts and languages are live from GitHub
 
 ---
 
-## GitHub numbers
+<img src="assets/section-stats.svg" alt="section 03 — github telemetry" width="100%" />
 
 <div align="center">
 
@@ -192,37 +164,30 @@ Every repository below is public. Star counts and languages are live from GitHub
 
 </div>
 
+<img src="assets/skills-bars.svg" alt="FIG.06 — repository distribution by language and by technology" width="100%" />
+
+<img src="assets/skills-radar.svg" alt="FIG.07 — capability radar: repositories per technology, area-proportional" width="100%" />
+
+<img src="assets/kpi-strip.svg" alt="FIG.08 — key figures: repos, stars, ESP32 projects, C/C++, contributions, since" width="100%" />
+
 <details>
 <summary><b>Contribution graph</b></summary>
 
 <br />
 
 <div align="center">
-  <img src="assets/github-snake.svg" alt="Contribution snake" width="100%" />
+  <img src="assets/github-snake.svg" alt="contribution snake" width="100%" />
 </div>
 
 </details>
 
 ---
 
-## Track record
-
-<div align="center">
-
-| | |
-|---|---|
-| **Founder & CEO** | Sana Smart Life — Zahedan, Iran · 2021 – 2024<br/><sub>IoT and smart-living products; team led end-to-end from board bring-up to dashboard. In progress: knowledge-based (دانش‌بنیان) company certification.</sub> |
-| **Technology Manager** | Plastic Amvaj Co. — Babolsar, Iran · 2019 – 2021<br/><sub>Industrial technology management and on-site systems work.</sub> |
-| **B.Sc. Computer Engineering** | University of Sistan and Baluchestan · 2019 – 2024 |
-| **1st place — IoT bootcamp** | IoTiran national IoT bootcamp, with a smart-greenhouse project<br/><sub>Selected as first in the programme.</sub> |
-| **Top researcher** | Recognised as top researcher at the University of Sistan and Baluchestan |
-| **Training** | IoT — Sistan & Baluchestan Science and Technology Park · IoT — Tosinsu |
-
-</div>
+<img src="assets/timeline.svg" alt="section 04 — track record, 2018 to present" width="100%" />
 
 ---
 
-## Contact
+<img src="assets/section-contact.svg" alt="section 05 — establish uplink" width="100%" />
 
 <div align="center">
 
@@ -234,10 +199,6 @@ Every repository below is public. Star counts and languages are live from GitHub
 
 **Open to:** embedded firmware · industrial automation · Modbus/SCADA integration · LoRa sensor networks · IoT product builds
 
-<br />
-
-<img src="assets/divider.svg" alt="" width="100%" />
-
 </div>
 
-<img src="assets/footer.svg" alt="Hardware first. Firmware honest. Systems that run." width="100%" />
+<img src="assets/footer-cta.svg" alt="LET'S SHIP SOMETHING THAT SURVIVES THE FIELD" width="100%" />
